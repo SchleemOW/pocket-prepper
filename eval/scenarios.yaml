@@ -1,0 +1,599 @@
+# ═══════════════════════════════════════════════════════════════
+# POCKET PREPPER - EVALUATION SCENARIOS v2
+# ~10 questions per module area, diverse geographies and situations
+# ═══════════════════════════════════════════════════════════════
+
+scenarios:
+
+  # ─────────────────────────────────────────────────────────────
+  # SURVIVAL - GENERAL
+  # ─────────────────────────────────────────────────────────────
+  - id: survival_general_tests
+    name: "Survival General - Mixed Scenarios"
+    context: "Complete infrastructure collapse. No emergency services, no supply chains, no communication. You are alone with no equipment."
+    questions:
+      - module: survival_general
+        question: "I just survived a disaster and I'm panicking. How do I calm down and think clearly?"
+        required_concepts: ["stress", "plan", "priorities", "calm"]
+        forbidden_concepts: ["therapist", "call someone"]
+
+      - module: survival_general
+        question: "What should my first priorities be in the first 24 hours after a collapse?"
+        required_concepts: ["water", "shelter", "fire"]
+        forbidden_concepts: ["call 911", "emergency services"]
+
+      - module: survival_general
+        question: "How do I signal for rescue if I'm stranded?"
+        required_concepts: ["fire", "smoke", "signal", "mirror"]
+        forbidden_concepts: ["cell phone", "call"]
+
+      - module: survival_general
+        question: "I'm trapped in a building after an earthquake. What do I do?"
+        required_concepts: ["cover", "debris", "breathe", "signal"]
+        forbidden_concepts: ["call emergency", "fire department"]
+
+      - module: survival_general
+        question: "How do I prioritize survival needs? What kills first?"
+        required_concepts: ["exposure", "water", "food", "shelter"]
+        forbidden_concepts: ["hospital"]
+
+  # ─────────────────────────────────────────────────────────────
+  # SURVIVAL - FIRE & SHELTER
+  # ─────────────────────────────────────────────────────────────
+  - id: fire_shelter_tests
+    name: "Fire & Shelter - Mixed Climates"
+    context: "No modern tools or supplies available. Must use natural materials and improvisation."
+    questions:
+      - module: survival_fire_shelter
+        question: "How do I start a fire with no matches, lighter, or modern tools?"
+        required_concepts: ["friction", "bow drill", "tinder"]
+        forbidden_concepts: ["buy", "store"]
+
+      - module: survival_fire_shelter
+        question: "It's raining heavily. How do I build a waterproof shelter quickly?"
+        required_concepts: ["lean-to", "leaves", "branches", "angle"]
+        forbidden_concepts: ["tent", "buy", "hardware store"]
+
+      - module: survival_fire_shelter
+        question: "How do I keep a fire going overnight without constantly feeding it?"
+        required_concepts: ["log", "bank", "coal", "slow"]
+        forbidden_concepts: ["gas", "lighter fluid"]
+
+      - module: survival_fire_shelter
+        question: "What are the best natural materials for insulating a shelter?"
+        required_concepts: ["leaves", "grass", "debris", "thick"]
+        forbidden_concepts: ["insulation foam", "buy"]
+
+      - module: survival_fire_shelter
+        question: "How do I build a shelter that protects from both rain and cold wind?"
+        required_concepts: ["wind", "wall", "waterproof", "insulation"]
+        forbidden_concepts: ["contractor", "hardware"]
+
+      - module: survival_fire_shelter
+        question: "What mistakes do people make when building fires that waste energy?"
+        required_concepts: ["wet wood", "tinder", "wind"]
+        forbidden_concepts: ["buy firewood"]
+
+  # ─────────────────────────────────────────────────────────────
+  # SURVIVAL - DESERT
+  # ─────────────────────────────────────────────────────────────
+  - id: desert_tests
+    name: "Desert Survival - Hot Arid Regions"
+    context: "Stranded in a hot desert. Temperatures 40-50°C by day, 5-15°C at night. Almost no vegetation. No infrastructure."
+    questions:
+      - module: survival_desert
+        question: "It's 45°C and I have no water. How do I find water in the desert?"
+        required_concepts: ["dig", "solar still", "dew", "vegetation"]
+        forbidden_concepts: ["tap water", "store", "buy"]
+
+      - module: survival_desert
+        question: "Should I travel during the day or night in the desert?"
+        required_concepts: ["night", "heat", "conserve", "shade"]
+        forbidden_concepts: ["car", "air conditioning"]
+
+      - module: survival_desert
+        question: "How do I build a solar still to collect water?"
+        required_concepts: ["hole", "plastic", "container", "condensation", "sun"]
+        forbidden_concepts: ["buy", "store"]
+
+      - module: survival_desert
+        question: "How do I protect myself from heat stroke in extreme heat?"
+        required_concepts: ["shade", "rest", "water", "cover"]
+        forbidden_concepts: ["hospital", "air conditioning"]
+
+      - module: survival_desert
+        question: "What can I eat in a desert environment?"
+        required_concepts: ["insects", "reptile", "cactus"]
+        forbidden_concepts: ["grocery", "restaurant"]
+
+      - module: survival_desert
+        question: "How do I navigate in a desert with no landmarks?"
+        required_concepts: ["sun", "star", "shadow", "direction"]
+        forbidden_concepts: ["GPS", "phone"]
+
+      - module: survival_desert
+        question: "A sandstorm is approaching. What do I do?"
+        required_concepts: ["cover", "face", "breathe", "shelter"]
+        forbidden_concepts: ["building", "car"]
+
+  # ─────────────────────────────────────────────────────────────
+  # SURVIVAL - COLD WEATHER
+  # ─────────────────────────────────────────────────────────────
+  - id: cold_tests
+    name: "Cold Weather Survival - Sub-zero"
+    context: "Stranded in sub-zero conditions. Snow on the ground. No modern heating. Temperature -15°C."
+    questions:
+      - module: survival_cold
+        question: "I'm soaking wet and it's -15°C. How do I avoid hypothermia?"
+        required_concepts: ["dry", "insulation", "fire", "wind"]
+        forbidden_concepts: ["hospital", "heater"]
+
+      - module: survival_cold
+        question: "How do I build a snow shelter to survive the night?"
+        required_concepts: ["snow", "dig", "insulation", "ventilation"]
+        forbidden_concepts: ["hotel", "cabin"]
+
+      - module: survival_cold
+        question: "My fingers and toes are numb and white. Is this frostbite? What do I do?"
+        required_concepts: ["warm", "gradual", "skin"]
+        forbidden_concepts: ["hospital", "emergency room"]
+
+      - module: survival_cold
+        question: "How do I find food in a frozen winter landscape?"
+        required_concepts: ["trap", "ice fishing", "bark", "hunt"]
+        forbidden_concepts: ["grocery", "store"]
+
+      - module: survival_cold
+        question: "How do I melt snow for drinking water safely?"
+        required_concepts: ["fire", "melt", "boil", "container"]
+        forbidden_concepts: ["tap", "bottle"]
+
+  # ─────────────────────────────────────────────────────────────
+  # MEDICINE - TRAUMA
+  # ─────────────────────────────────────────────────────────────
+  - id: medicine_trauma_tests
+    name: "Medicine Trauma - No Hospital Available"
+    context: "No hospitals, no doctors, no pharmacies. You must treat injuries with whatever materials you can find."
+    questions:
+      - module: medicine_trauma
+        question: "Someone is bleeding heavily from a leg wound. How do I stop the bleeding?"
+        required_concepts: ["pressure", "elevate", "cloth", "tourniquet"]
+        forbidden_concepts: ["ambulance", "hospital", "emergency room"]
+
+      - module: medicine_trauma
+        question: "I think someone has a broken arm. How do I splint it with no medical supplies?"
+        required_concepts: ["splint", "straight", "immobilize", "padding"]
+        forbidden_concepts: ["hospital", "X-ray", "emergency"]
+
+      - module: medicine_trauma
+        question: "Someone has a severe burn from a fire. How do I treat it?"
+        required_concepts: ["cool", "water", "clean", "cover"]
+        forbidden_concepts: ["hospital", "burn unit", "ambulance"]
+
+      - module: medicine_trauma
+        question: "How do I close a deep wound when I have no stitches or medical tape?"
+        required_concepts: ["clean", "close", "strip", "bandage"]
+        forbidden_concepts: ["hospital", "surgeon"]
+
+      - module: medicine_trauma
+        question: "Someone fell and hit their head hard. They're confused. What do I watch for?"
+        required_concepts: ["conscious", "pupil", "vomit", "sleep"]
+        forbidden_concepts: ["CT scan", "hospital", "ambulance"]
+
+  # ─────────────────────────────────────────────────────────────
+  # MEDICINE - INFECTION
+  # ─────────────────────────────────────────────────────────────
+  - id: medicine_infection_tests
+    name: "Medicine Infection - No Pharmacy Available"
+    context: "No access to modern medicine or pharmacy. Must treat infections with available materials."
+    questions:
+      - module: medicine_infection
+        question: "How do I know if a wound is infected and what do I do?"
+        required_concepts: ["red", "swollen", "pus", "clean", "hot"]
+        forbidden_concepts: ["doctor", "hospital", "pharmacy"]
+
+      - module: medicine_infection
+        question: "Multiple people have diarrhea from bad water. How do I treat them?"
+        required_concepts: ["rehydration", "salt", "sugar", "water", "boil"]
+        forbidden_concepts: ["pharmacy", "doctor"]
+
+      - module: medicine_infection
+        question: "How do I make oral rehydration solution with no medical supplies?"
+        required_concepts: ["water", "salt", "sugar", "liter"]
+        forbidden_concepts: ["pharmacy", "store"]
+
+      - module: medicine_infection
+        question: "How do I prevent disease from spreading in a group with no sanitation?"
+        required_concepts: ["wash", "hands", "latrine", "separate", "boil"]
+        forbidden_concepts: ["hospital", "health department"]
+
+      - module: medicine_infection
+        question: "Someone has a high fever for 3 days. What can I do without medicine?"
+        required_concepts: ["cool", "water", "rest", "fluids"]
+        forbidden_concepts: ["pharmacy", "doctor", "hospital"]
+
+  # ─────────────────────────────────────────────────────────────
+  # MEDICINE - CHILDBIRTH
+  # ─────────────────────────────────────────────────────────────
+  - id: childbirth_tests
+    name: "Childbirth - No Hospital Available"
+    context: "A woman is about to give birth. No hospital, no doctor, no modern medical equipment exists."
+    questions:
+      - module: medicine_childbirth
+        question: "A woman is in labor. What are the basic steps for a safe home delivery?"
+        required_concepts: ["clean", "position", "push", "cord"]
+        forbidden_concepts: ["hospital", "doctor", "ambulance"]
+
+      - module: medicine_childbirth
+        question: "How do I cut and tie the umbilical cord safely?"
+        required_concepts: ["tie", "cut", "sterile", "clean"]
+        forbidden_concepts: ["hospital", "doctor"]
+
+      - module: medicine_childbirth
+        question: "The mother is bleeding heavily after delivery. What do I do?"
+        required_concepts: ["massage", "uterus", "breastfeed", "pressure"]
+        forbidden_concepts: ["hospital", "ambulance", "blood transfusion"]
+
+      - module: medicine_childbirth
+        question: "The baby isn't breathing after birth. What do I do immediately?"
+        required_concepts: ["clear", "airway", "stimulate", "breathe"]
+        forbidden_concepts: ["hospital", "NICU"]
+
+      - module: medicine_childbirth
+        question: "How can I tell if a pregnancy is high-risk before labor begins?"
+        required_concepts: ["bleeding", "swelling", "position", "previous"]
+        forbidden_concepts: ["ultrasound", "hospital", "doctor"]
+
+  # ─────────────────────────────────────────────────────────────
+  # WATER
+  # ─────────────────────────────────────────────────────────────
+  - id: water_tests
+    name: "Water - Multiple Climates"
+    context: "No running water, no water infrastructure. Must find and purify water from natural sources."
+    questions:
+      - module: water
+        question: "I found a muddy pond. How do I make this water safe to drink?"
+        required_concepts: ["filter", "boil", "settle", "cloth"]
+        forbidden_concepts: ["buy", "tap water"]
+
+      - module: water
+        question: "How do I build a simple water filter from natural materials?"
+        required_concepts: ["sand", "gravel", "charcoal", "layer"]
+        forbidden_concepts: ["buy filter", "store"]
+
+      - module: water
+        question: "How can I collect rainwater for drinking?"
+        required_concepts: ["container", "roof", "clean", "store"]
+        forbidden_concepts: ["buy", "plumber"]
+
+      - module: water
+        question: "How do I dig a well by hand to reach groundwater?"
+        required_concepts: ["dig", "depth", "water table", "lining"]
+        forbidden_concepts: ["hire", "contractor", "drilling company"]
+
+      - module: water
+        question: "Can I drink salt water? How do I desalinate sea water?"
+        required_concepts: ["distill", "boil", "steam", "condense"]
+        forbidden_concepts: ["buy", "desalination plant"]
+
+      - module: water
+        question: "How do I store water safely for long periods without it going bad?"
+        required_concepts: ["clean", "sealed", "dark", "container"]
+        forbidden_concepts: ["buy", "store"]
+
+      - module: water
+        question: "What are the signs of waterborne illness and how do I prevent it?"
+        required_concepts: ["diarrhea", "boil", "filter", "clean"]
+        forbidden_concepts: ["hospital", "doctor"]
+
+  # ─────────────────────────────────────────────────────────────
+  # FOOD - FORAGING
+  # ─────────────────────────────────────────────────────────────
+  - id: food_foraging_tests
+    name: "Food Foraging - Multiple Regions"
+    context: "No food supplies, no stores. Must find food from nature."
+    questions:
+      - module: food_foraging
+        question: "I don't recognize any plants around me. How do I test if a plant is safe to eat?"
+        required_concepts: ["test", "skin", "lip", "small amount", "wait"]
+        forbidden_concepts: ["store", "grocery"]
+
+      - module: food_foraging
+        question: "What are the universal signs that a plant is poisonous?"
+        required_concepts: ["milky sap", "bitter", "almond smell"]
+        forbidden_concepts: ["poison control", "hospital"]
+
+      - module: food_foraging
+        question: "How do I trap small animals for food?"
+        required_concepts: ["snare", "wire", "trail", "bait"]
+        forbidden_concepts: ["buy trap", "store"]
+
+      - module: food_foraging
+        question: "What insects are safe to eat and how do I prepare them?"
+        required_concepts: ["cook", "cricket", "larvae", "avoid bright"]
+        forbidden_concepts: ["store", "restaurant"]
+
+      - module: food_foraging
+        question: "How do I catch fish without a fishing rod?"
+        required_concepts: ["trap", "spear", "net", "weir"]
+        forbidden_concepts: ["buy", "fishing store"]
+
+      - module: food_foraging
+        question: "What parts of common trees can I eat in an emergency?"
+        required_concepts: ["bark", "cambium", "pine", "nuts"]
+        forbidden_concepts: ["store", "grocery"]
+
+  # ─────────────────────────────────────────────────────────────
+  # FOOD - FARMING
+  # ─────────────────────────────────────────────────────────────
+  - id: food_farming_tests
+    name: "Food Farming - Long Term Food Production"
+    context: "Need to establish sustainable food production for a community. No supply chain, no modern agricultural inputs."
+    questions:
+      - module: food_farming
+        question: "How do I start a garden from scratch with no seeds from a store?"
+        required_concepts: ["wild", "seed", "propagate", "cutting"]
+        forbidden_concepts: ["garden center", "buy seeds", "online"]
+
+      - module: food_farming
+        question: "How do I make compost to fertilize soil?"
+        required_concepts: ["decompose", "green", "brown", "turn", "pile"]
+        forbidden_concepts: ["buy fertilizer", "store"]
+
+      - module: food_farming
+        question: "How do I save seeds from this year's harvest for next year?"
+        required_concepts: ["dry", "store", "select", "mature"]
+        forbidden_concepts: ["buy", "seed company"]
+
+      - module: food_farming
+        question: "How do I preserve food for winter without refrigeration?"
+        required_concepts: ["smoke", "salt", "dry", "ferment"]
+        forbidden_concepts: ["freezer", "refrigerator", "store"]
+
+      - module: food_farming
+        question: "What crops grow fastest and provide the most calories?"
+        required_concepts: ["potato", "corn", "bean", "squash"]
+        forbidden_concepts: ["grocery", "supermarket"]
+
+  # ─────────────────────────────────────────────────────────────
+  # SHELTER & CONSTRUCTION
+  # ─────────────────────────────────────────────────────────────
+  - id: shelter_construction_tests
+    name: "Shelter Construction - Permanent Structures"
+    context: "Need to build permanent structures for a community. Only natural materials and basic hand tools available."
+    questions:
+      - module: shelter_construction
+        question: "How do I build a log cabin with hand tools only?"
+        required_concepts: ["notch", "foundation", "log", "chinking"]
+        forbidden_concepts: ["contractor", "hardware store", "power tools"]
+
+      - module: shelter_construction
+        question: "How do I make mortar and cement from natural materials?"
+        required_concepts: ["lime", "calcium", "heat", "calcium"]
+        forbidden_concepts: ["buy", "hardware store"]
+
+      - module: shelter_construction
+        question: "How do I waterproof a roof using only natural materials?"
+        required_concepts: ["thatch", "overlap", "pitch", "bark"]
+        forbidden_concepts: ["buy", "roofing company"]
+
+      - module: shelter_construction
+        question: "How do I build a basic bridge across a stream?"
+        required_concepts: ["log", "span", "support", "secure"]
+        forbidden_concepts: ["engineer", "contractor"]
+
+      - module: shelter_construction
+        question: "How do I make adobe bricks for building walls?"
+        required_concepts: ["clay", "straw", "water", "sun", "dry"]
+        forbidden_concepts: ["buy bricks", "hardware"]
+
+  # ─────────────────────────────────────────────────────────────
+  # ENERGY
+  # ─────────────────────────────────────────────────────────────
+  - id: energy_tests
+    name: "Energy Generation - From Scratch"
+    context: "No power grid, no fuel supplies. Must generate electricity and power from natural resources."
+    questions:
+      - module: energy
+        question: "How do I build a waterwheel to generate mechanical power?"
+        required_concepts: ["wheel", "blades", "water", "axle", "shaft"]
+        forbidden_concepts: ["buy", "power company"]
+
+      - module: energy
+        question: "How do I build a wind turbine from scrap materials?"
+        required_concepts: ["blade", "generator", "tower", "wind"]
+        forbidden_concepts: ["buy", "order online"]
+
+      - module: energy
+        question: "How do I produce biogas from animal waste?"
+        required_concepts: ["digester", "manure", "sealed", "methane"]
+        forbidden_concepts: ["buy", "gas company"]
+
+      - module: energy
+        question: "How do I make a simple battery from scratch?"
+        required_concepts: ["copper", "zinc", "acid", "electrolyte"]
+        forbidden_concepts: ["buy batteries", "store"]
+
+      - module: energy
+        question: "How can I run an engine on wood instead of gasoline?"
+        required_concepts: ["gasifier", "wood gas", "filter", "combustion"]
+        forbidden_concepts: ["gas station", "buy fuel"]
+
+  # ─────────────────────────────────────────────────────────────
+  # MATERIALS & MANUFACTURING
+  # ─────────────────────────────────────────────────────────────
+  - id: materials_tests
+    name: "Materials - Primitive Manufacturing"
+    context: "No factories, no supply chains. Must create materials and tools from raw natural resources."
+    questions:
+      - module: materials
+        question: "How do I smelt iron from ore using primitive methods?"
+        required_concepts: ["furnace", "charcoal", "bellows", "ore"]
+        forbidden_concepts: ["factory", "buy", "order"]
+
+      - module: materials
+        question: "How do I make rope from plant fibers?"
+        required_concepts: ["fiber", "twist", "braid", "plant"]
+        forbidden_concepts: ["buy rope", "store"]
+
+      - module: materials
+        question: "How do I tan animal hides into usable leather?"
+        required_concepts: ["scrape", "brain", "soak", "stretch"]
+        forbidden_concepts: ["buy leather", "store"]
+
+      - module: materials
+        question: "How do I make charcoal for metalworking?"
+        required_concepts: ["wood", "burn", "oxygen", "cover"]
+        forbidden_concepts: ["buy charcoal", "store"]
+
+      - module: materials
+        question: "How do I make basic pottery for cooking and storage?"
+        required_concepts: ["clay", "shape", "fire", "kiln"]
+        forbidden_concepts: ["buy", "pottery store"]
+
+  # ─────────────────────────────────────────────────────────────
+  # CHEMISTRY
+  # ─────────────────────────────────────────────────────────────
+  - id: chemistry_tests
+    name: "Chemistry - Basic Industrial Processes"
+    context: "No chemical supplies, no stores. Must produce essential chemicals from raw materials."
+    questions:
+      - module: chemistry
+        question: "How do I make soap from animal fat and wood ash?"
+        required_concepts: ["lye", "fat", "ash", "boil"]
+        forbidden_concepts: ["buy soap", "store"]
+
+      - module: chemistry
+        question: "How do I make vinegar for food preservation?"
+        required_concepts: ["ferment", "alcohol", "bacteria", "time"]
+        forbidden_concepts: ["buy vinegar", "store"]
+
+      - module: chemistry
+        question: "How do I produce lime for mortar and construction?"
+        required_concepts: ["limestone", "heat", "calcium", "kiln"]
+        forbidden_concepts: ["buy", "hardware store"]
+
+      - module: chemistry
+        question: "How do I distill alcohol for fuel or antiseptic?"
+        required_concepts: ["ferment", "heat", "vapor", "condense", "collect"]
+        forbidden_concepts: ["buy", "liquor store"]
+
+      - module: chemistry
+        question: "How do I extract salt from sea water?"
+        required_concepts: ["evaporate", "boil", "sun", "collect"]
+        forbidden_concepts: ["buy salt", "grocery"]
+
+  # ─────────────────────────────────────────────────────────────
+  # ELECTRONICS
+  # ─────────────────────────────────────────────────────────────
+  - id: electronics_tests
+    name: "Electronics - Rebuilding Communication"
+    context: "No power grid, no internet, no cell towers. Must build communication systems from scratch or salvage."
+    questions:
+      - module: electronics
+        question: "How do I build a simple crystal radio receiver from salvaged parts?"
+        required_concepts: ["coil", "wire", "crystal", "antenna", "earpiece"]
+        forbidden_concepts: ["buy", "electronics store", "amazon"]
+
+      - module: electronics
+        question: "How do I generate electricity using a hand-cranked generator?"
+        required_concepts: ["motor", "magnet", "coil", "crank", "wire"]
+        forbidden_concepts: ["buy generator", "power company"]
+
+      - module: electronics
+        question: "How does Morse code work and how do I use it?"
+        required_concepts: ["dot", "dash", "letter", "signal"]
+        forbidden_concepts: ["app", "download"]
+
+      - module: electronics
+        question: "How do I build a basic telegraph system between two locations?"
+        required_concepts: ["wire", "battery", "key", "sounder"]
+        forbidden_concepts: ["buy", "phone company"]
+
+      - module: electronics
+        question: "How do I build a simple antenna for radio communication?"
+        required_concepts: ["wire", "length", "height", "ground"]
+        forbidden_concepts: ["buy antenna", "store"]
+
+  # ─────────────────────────────────────────────────────────────
+  # GOVERNANCE
+  # ─────────────────────────────────────────────────────────────
+  - id: governance_tests
+    name: "Governance - Rebuilding Society"
+    context: "No government, no police, no courts. A community of 50-200 people must organize themselves."
+    questions:
+      - module: governance
+        question: "How do we organize fair decision-making for our community of 50 people?"
+        required_concepts: ["vote", "council", "consensus", "meeting"]
+        forbidden_concepts: ["lawyer", "government", "police"]
+
+      - module: governance
+        question: "Two families are in a dispute over resources. How do we resolve it fairly?"
+        required_concepts: ["mediation", "neutral", "agreement", "fair"]
+        forbidden_concepts: ["court", "lawyer", "police"]
+
+      - module: governance
+        question: "How do we set up a barter and trade system without money?"
+        required_concepts: ["exchange", "value", "goods", "trade"]
+        forbidden_concepts: ["bank", "credit card", "ATM"]
+
+      - module: governance
+        question: "How do we teach children with no schools or books?"
+        required_concepts: ["oral", "practice", "apprentice", "skill"]
+        forbidden_concepts: ["school", "buy textbooks", "online"]
+
+      - module: governance
+        question: "How do we navigate at sea or over land without GPS or maps?"
+        required_concepts: ["star", "sun", "compass", "landmark"]
+        forbidden_concepts: ["GPS", "phone", "Google Maps"]
+
+  # ─────────────────────────────────────────────────────────────
+  # CROSS-SCENARIO: Real-world composite situations
+  # ─────────────────────────────────────────────────────────────
+  - id: composite_urban_europe
+    name: "Composite - Urban Europe Winter"
+    context: "War has destroyed infrastructure in a European city. It is January, -5°C. A group of 30 survivors in a partially destroyed apartment building. No electricity, no water, no gas, no shops."
+    questions:
+      - module: water
+        question: "We have 30 people and no water. There is snow on the ground and a river 2km away. What's our water strategy?"
+        required_concepts: ["melt", "boil", "filter", "container", "river"]
+        forbidden_concepts: ["tap water", "buy"]
+
+      - module: survival_fire_shelter
+        question: "Half our building is destroyed but half still has walls and a partial roof. How do we make it livable in winter?"
+        required_concepts: ["insulate", "seal", "fire", "ventilation"]
+        forbidden_concepts: ["contractor", "heating company"]
+
+      - module: medicine_infection
+        question: "Several people have infected cuts and we have no antibiotics. What natural alternatives exist?"
+        required_concepts: ["honey", "garlic", "clean", "boil"]
+        forbidden_concepts: ["pharmacy", "doctor", "hospital"]
+
+      - module: food_foraging
+        question: "It's winter in Europe with snow. Where do we find food for 30 people?"
+        required_concepts: ["trap", "hunt", "bark", "stored"]
+        forbidden_concepts: ["grocery", "delivery"]
+
+  - id: composite_tropical
+    name: "Composite - Tropical Island After Tsunami"
+    context: "A tsunami has devastated a small tropical island. 100 survivors on a Pacific island with dense jungle, reef, and beaches. All structures destroyed. Temperature 30°C, very humid."
+    questions:
+      - module: water
+        question: "We're on a tropical island after a tsunami. Fresh water sources are contaminated with salt water. What do we do?"
+        required_concepts: ["rain", "distill", "coconut", "dig"]
+        forbidden_concepts: ["buy", "tap"]
+
+      - module: food_foraging
+        question: "We're on a tropical island with reef and jungle. How do we feed 100 people?"
+        required_concepts: ["fish", "coconut", "shellfish", "fruit"]
+        forbidden_concepts: ["grocery", "restaurant"]
+
+      - module: shelter_construction
+        question: "All buildings destroyed by tsunami. How do we quickly shelter 100 people using jungle materials?"
+        required_concepts: ["bamboo", "palm", "frame", "elevated"]
+        forbidden_concepts: ["contractor", "buy"]
+
+      - module: medicine_trauma
+        question: "Many people have coral cuts and saltwater wounds that are getting infected. How do we treat them?"
+        required_concepts: ["clean", "fresh water", "honey", "bandage"]
+        forbidden_concepts: ["hospital", "ambulance"]

@@ -1,0 +1,2475 @@
+{
+  "run_at": "2026-05-16T20:33:27.484540",
+  "model": "mistral",
+  "top_k": 8,
+  "total_questions": 94,
+  "passed": 59,
+  "failed": 35,
+  "average_score": 0.656,
+  "missing_modules": [],
+  "results": [
+    {
+      "scenario": "survival_general_tests",
+      "scenario_name": "Survival General - Mixed Scenarios",
+      "module": "survival_general",
+      "question": "I just survived a disaster and I'm panicking. How do I calm down and think clearly?",
+      "answer": " To calm down and think clearly, follow these steps from the provided context:\n\n1. Prepare yourself psychologically for survival by understanding your strengths and weaknesses through training, family, and friends.\n2. Anticipate fears and train in those areas of concern to you. The goal is not to eliminate fear but to build confidence in your ability to function despite it.\n3. Learn stress management techniques to control your response to circumstances and manage potential panic.\n4. Be realistic",
+      "sources": [
+        "Wilderness survival",
+        "Survival skills",
+        "US Army FM 21-76 Survival Manual",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "stress",
+          "calm"
+        ],
+        "required_misses": [
+          "plan",
+          "priorities"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "survival_general_tests",
+      "scenario_name": "Survival General - Mixed Scenarios",
+      "module": "survival_general",
+      "question": "What should my first priorities be in the first 24 hours after a collapse?",
+      "answer": " In the first 24 hours after a collapse with no infrastructure, no equipment, and alone:\n\n1. Assess Your Surroundings: Use all your senses to size up your situation, surroundings, and physical condition.\n\n2. Identify Immediate Dangers: Protect yourself against bites from malaria-carrying mosquitoes and other insects. Take shelter from tropical rain, sun, and extreme temperatures.\n\n3. Prioritize Basic Needs: Focus on meeting your basic physical needs--water, food, and shelter. In a cold or wet cl",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "score": {
+        "required_hits": [
+          "water",
+          "shelter"
+        ],
+        "required_misses": [
+          "fire"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6666666666666666,
+        "forbidden_score": 1.0,
+        "total_score": 0.7666666666666666
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "survival_general_tests",
+      "scenario_name": "Survival General - Mixed Scenarios",
+      "module": "survival_general",
+      "question": "How do I signal for rescue if I'm stranded?",
+      "answer": " To signal for rescue when stranded without any equipment, follow these steps according to the provided context:\n\n1. Group Signaling: If you spot an aircraft, gather all your belongings and place them together in a geometric pattern that is easily visible from the air, such as straight lines, circles, triangles, or Xs. This will help the aircrew locate you more easily.\n\n2. Attention-Getter: Create a large fire or use flash of light to attract attention if possible. If you have reflective materia",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "US Army FM 21-76 Survival Manual",
+        "Wilderness survival",
+        "Survival skills"
+      ],
+      "score": {
+        "required_hits": [
+          "fire",
+          "signal"
+        ],
+        "required_misses": [
+          "smoke",
+          "mirror"
+        ],
+        "forbidden_hits": [
+          "call"
+        ],
+        "required_score": 0.5,
+        "forbidden_score": 0.8,
+        "total_score": 0.59
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "survival_general_tests",
+      "scenario_name": "Survival General - Mixed Scenarios",
+      "module": "survival_general",
+      "question": "I'm trapped in a building after an earthquake. What do I do?",
+      "answer": " In a situation where you are trapped in a building after an earthquake, follow these steps:\n\n1. DROP down on your hands and knees to protect yourself from falling but remain mobile.\n2. COVER your head and neck (or your entire body if possible) under a sturdy table or desk if it is within a few steps of you. If there is no shelter nearby, cover your head and neck with your arms and hands.\n3. HOLD on to your shelter (or your position to protect your head and neck) until the shaking stops. If the ",
+      "sources": [
+        "Wilderness survival",
+        "Survival skills",
+        "US Army FM 21-76 Survival Manual",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "cover"
+        ],
+        "required_misses": [
+          "debris",
+          "breathe",
+          "signal"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "survival_general_tests",
+      "scenario_name": "Survival General - Mixed Scenarios",
+      "module": "survival_general",
+      "question": "How do I prioritize survival needs? What kills first?",
+      "answer": " In a complete infrastructure collapse scenario, your priorities should be:\n\n1. Shelter: Find a place to protect yourself from the elements and extreme temperatures. This could be a natural shelter like a cave or beneath large trees, or you can create one using available materials.\n\n2. Fire: Building a fire is crucial for warmth, cooking food, purifying water, and signaling for help. Gather dry wood, dry leaves, or other flammable materials and use the methods described in the survival manuals t",
+      "sources": [
+        "US Army FM 21-76 Survival Manual",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "water",
+          "food",
+          "shelter"
+        ],
+        "required_misses": [
+          "exposure"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "scenario_name": "Fire & Shelter - Mixed Climates",
+      "module": "survival_fire_shelter",
+      "question": "How do I start a fire with no matches, lighter, or modern tools?",
+      "answer": " To start a fire without matches or modern tools, you can use one of the following methods:\n\n1. Percussion Fire Making: Find a hard, glassy stone such as quartz, jasper, agate or flint and a high carbon, non-alloyed, and hardened steel fire striker or firesteel. Strike the steel with the stone to create sparks that can ignite your tinder.\n\n2. Friction Fire Making: Rapidly grind pieces of solid combustible material (such as wood) against each other (or a hard surface) to create an ember. This req",
+      "sources": [
+        "Fire making",
+        "Tinder"
+      ],
+      "score": {
+        "required_hits": [
+          "friction",
+          "tinder"
+        ],
+        "required_misses": [
+          "bow drill"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6666666666666666,
+        "forbidden_score": 1.0,
+        "total_score": 0.7666666666666666
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "scenario_name": "Fire & Shelter - Mixed Climates",
+      "module": "survival_fire_shelter",
+      "question": "It's raining heavily. How do I build a waterproof shelter quickly?",
+      "answer": " Given the situation where modern tools and supplies are unavailable, you can build a quick and waterproof shelter by improvising with natural materials. Here's one method using a makeshift bivouac sack:\n\n1. Find two large, sturdy branches that can act as poles for your shelter. They should be long enough to span the distance between two trees or strong upright objects.\n\n2. Tie one end of each branch to the appropriate tree or object, forming an A-frame structure with the branches meeting at the",
+      "sources": [
+        "Bivouac shelter",
+        "Snow cave"
+      ],
+      "score": {
+        "required_hits": [
+          "branches"
+        ],
+        "required_misses": [
+          "lean-to",
+          "leaves",
+          "angle"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "scenario_name": "Fire & Shelter - Mixed Climates",
+      "module": "survival_fire_shelter",
+      "question": "How do I keep a fire going overnight without constantly feeding it?",
+      "answer": " To keep a fire going overnight without constantly feeding it, you can follow these steps using natural materials and improvisation as mentioned in your context:\n\n1. Collect dry tinder (finely divided flammable material) such as dried leaves, moss, or shaved wood. The best tinder is the driest wood available that hasn't yet fallen to the ground.\n\n2. Gather small sticks and twigs for kindling. These should be easily broken by hand.\n\n3. Build a teepee structure over your tinder using your kindling",
+      "sources": [
+        "Fire making",
+        "Tinder"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "log",
+          "bank",
+          "coal",
+          "slow"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "scenario_name": "Fire & Shelter - Mixed Climates",
+      "module": "survival_fire_shelter",
+      "question": "What are the best natural materials for insulating a shelter?",
+      "answer": " The best natural materials for insulating a shelter would be dry leaves, grass, birch bark, dead standing goldenrod, duff (leaf litter), cotton \"fluff\" from plants like milkweed, dandelions, Cottonwood, and some types of fungus such as chaga, Daldinia concentrica (king alfred cakes) and amadou (or horse's hoof fungus). These materials can be used to fill the gaps in a shelter made from branches or leaves, providing additional insulation.",
+      "sources": [
+        "Bivouac shelter",
+        "Tinder"
+      ],
+      "score": {
+        "required_hits": [
+          "leaves",
+          "grass"
+        ],
+        "required_misses": [
+          "debris",
+          "thick"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "scenario_name": "Fire & Shelter - Mixed Climates",
+      "module": "survival_fire_shelter",
+      "question": "How do I build a shelter that protects from both rain and cold wind?",
+      "answer": " To build a shelter that protects from both rain and cold wind, you can create a bivouac shelter using natural materials. Here's a simple guide based on the provided context:\n\n1. Find two suitable trees that are a distance apart to serve as your ridge line for the roof.\n\n2. Gather large, waterproof leaves or bark from trees (like oak or maple) to create your bivouac sheet. If you can't find enough large leaves, multiple layers of smaller ones may be used.\n\n3. Fashion a cord or strong vine to ser",
+      "sources": [
+        "Bivouac shelter",
+        "Snow cave"
+      ],
+      "score": {
+        "required_hits": [
+          "wind",
+          "waterproof",
+          "insulation"
+        ],
+        "required_misses": [
+          "wall"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "scenario_name": "Fire & Shelter - Mixed Climates",
+      "module": "survival_fire_shelter",
+      "question": "What mistakes do people make when building fires that waste energy?",
+      "answer": " Mistakes that may cause energy waste in fire-building include:\n\n1. Not preparing and using the right tinder: Using wet or poorly-prepared tinder can make it difficult to ignite and maintain a fire. It's essential to use dry, fine materials like char cloth, punkwood, or down for starting fires.\n\n2. Adding too much fuel at once: Overloading the fire with large logs or pieces of wood can smother the flame, reducing air flow and slowing down combustion. Instead, add fuel gradually in small quantiti",
+      "sources": [
+        "Fire making",
+        "Tinder"
+      ],
+      "score": {
+        "required_hits": [
+          "wet wood",
+          "tinder",
+          "wind"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "scenario_name": "Desert Survival - Hot Arid Regions",
+      "module": "survival_desert",
+      "question": "It's 45\u00b0C and I have no water. How do I find water in the desert?",
+      "answer": " In the given context, here are some ways to find water in the desert:\n\n1. Look for green plants or dry lake beds as they can indicate possible water sources. Dig down until the soil becomes moist and then wait for water to seep into the hole.\n\n2. Follow trails that converge, as they may lead to water sources. Signs of camps, campfire ashes, animal droppings, and trampled terrain may mark trails.\n\n3. In valleys, low areas, at the foot of concave banks of dry rivers, at the foot of cliffs or rock",
+      "sources": [
+        "US Army FM 90-3 Desert Operations",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "dig",
+          "vegetation"
+        ],
+        "required_misses": [
+          "solar still",
+          "dew"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "scenario_name": "Desert Survival - Hot Arid Regions",
+      "module": "survival_desert",
+      "question": "Should I travel during the day or night in the desert?",
+      "answer": " According to the provided context, it is recommended to travel at night in the desert due to lower temperatures and reduced heat exposure. During the day, temperatures can reach up to 50\u00b0C (122\u00b0F), and there's a higher risk of dehydration and sunstroke. At night, temperatures drop significantly, and visibility is excellent, making it easier to navigate and lessen water usage. Additionally, travel during the day should be avoided due to intense sunlight that can malfunction radios and sensitive ",
+      "sources": [
+        "US Army FM 90-3 Desert Operations",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "night",
+          "heat"
+        ],
+        "required_misses": [
+          "conserve",
+          "shade"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "scenario_name": "Desert Survival - Hot Arid Regions",
+      "module": "survival_desert",
+      "question": "How do I build a solar still to collect water?",
+      "answer": " To build a solar still, you would need the following materials and steps according to the context provided:\n\n1. Materials:\n   - A transparent container (plastic, glass, or similar)\n   - Two smaller containers (can be made of any heat-resistant material like metal)\n   - Soil or sand\n   - Impure water (such as seawater, contaminated freshwater, etc.)\n   - A heat source (sunlight)\n\n2. Steps:\n   - Fill one of the smaller containers with impure water and place it in the larger transparent container ",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Solar still"
+      ],
+      "score": {
+        "required_hits": [
+          "hole",
+          "plastic",
+          "container",
+          "condensation"
+        ],
+        "required_misses": [
+          "sun"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.8,
+        "forbidden_score": 1.0,
+        "total_score": 0.8599999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "scenario_name": "Desert Survival - Hot Arid Regions",
+      "module": "survival_desert",
+      "question": "How do I protect myself from heat stroke in extreme heat?",
+      "answer": " To protect yourself from heat stroke in extreme heat, follow these steps:\n1. Keep your head covered to minimize heat loss.\n2. Protect your neck, wrist, and ankles as they are good radiators of heat with little insulating fat.\n3. Wear your complete uniform, including a T-shirt, rolled down sleeves, and a covered head.\n4. Find shade whenever possible to get out of the sun. If shade is not available, use tarps or camouflage nets to create shade during the day.\n5. Limit movements as much as possibl",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "US Army FM 90-3 Desert Operations"
+      ],
+      "score": {
+        "required_hits": [
+          "shade",
+          "rest",
+          "water"
+        ],
+        "required_misses": [
+          "cover"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "scenario_name": "Desert Survival - Hot Arid Regions",
+      "module": "survival_desert",
+      "question": "What can I eat in a desert environment?",
+      "answer": " In a desert environment, you can eat edible plants such as Acacia (Acacia farnesiana), Cactus (various species), Date palm (Phoenix dactylifera), and Desert amaranth (Amaranths palmer). Be aware that not all plants are safe to consume, so you should only eat those that you can positively identify. Additionally, the edible parts of these plants may include seeds, flowers, and succulent stem tips. It is also important to note that animals cannot be used as a guide for what is safe to eat in a des",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "US Army FM 90-3 Desert Operations"
+      ],
+      "score": {
+        "required_hits": [
+          "cactus"
+        ],
+        "required_misses": [
+          "insects",
+          "reptile"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.3333333333333333,
+        "forbidden_score": 1.0,
+        "total_score": 0.5333333333333333
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "desert_tests",
+      "scenario_name": "Desert Survival - Hot Arid Regions",
+      "module": "survival_desert",
+      "question": "How do I navigate in a desert with no landmarks?",
+      "answer": " To navigate in a desert with no landmarks, you should focus on these key points from the provided context:\n\n1. Observe and remember the terrain features such as mountains, hills, dunes, and wadis. These can help you orient yourself and remember your location.\n\n2. Study prevailing winds, as they can provide valuable information about direction and potentially help guide you if it's a consistent wind.\n\n3. Learn to navigate using the sun and stars for orientation during day and night respectively.",
+      "sources": [
+        "US Army FM 90-3 Desert Operations",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "sun",
+          "direction"
+        ],
+        "required_misses": [
+          "star",
+          "shadow"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "scenario_name": "Desert Survival - Hot Arid Regions",
+      "module": "survival_desert",
+      "question": "A sandstorm is approaching. What do I do?",
+      "answer": " In a sandstorm, seek natural shelter or make your own by lying flat on the ground and covering yourself with clothing to protect against dust and wind-blown sand. If visibility is too low for navigation, mark your direction of travel before the storm begins. Be aware that radio transmissions may be affected, so have alternate means of signaling like pyrotechnics, signal mirrors, or marker panels ready. Once the storm passes, move cautiously to avoid getting lost in a swirling wall of sand. Stay",
+      "sources": [
+        "Sandstorm",
+        "US Army FM 90-3 Desert Operations",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "shelter"
+        ],
+        "required_misses": [
+          "cover",
+          "face",
+          "breathe"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "cold_tests",
+      "scenario_name": "Cold Weather Survival - Sub-zero",
+      "module": "survival_cold",
+      "question": "I'm soaking wet and it's -15\u00b0C. How do I avoid hypothermia?",
+      "answer": " 1. Move to the best available shelter away from wind, rain, and cold.\n2. Remove all wet clothes and put on dry clothing if available.\n3. Warm the victim using skin-to-skin contact with another person in a sleeping bag, or use rectal rehydration if the victim is unable to drink warm fluids.\n4. Replace lost fluids with warm fluids, but avoid alcohol and caffeinated drinks.\n5. Prevent dehydration by drinking water to replace body moisture loss due to heavy clothing in cold weather.\n6. If dry socks",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Hypothermia",
+        "Frostbite"
+      ],
+      "score": {
+        "required_hits": [
+          "dry",
+          "wind"
+        ],
+        "required_misses": [
+          "insulation",
+          "fire"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "cold_tests",
+      "scenario_name": "Cold Weather Survival - Sub-zero",
+      "module": "survival_cold",
+      "question": "How do I build a snow shelter to survive the night?",
+      "answer": " To build a snow shelter for survival in sub-zero conditions, follow these steps:\n\n1. Find a drift about 3 meters (10 feet) deep. Dig into it to create a snow trench shelter.\n\n2. Build an arched roof for strength and to allow melted snow to drain down the sides.\n\n3. Make the sleeping platform higher than the entrance to prevent melting snow from wetting you and your equipment.\n\n4. Separate the sleeping platform from the snow cave's walls or dig a small trench between them.\n\n5. Keep the entrance ",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "snow",
+          "dig",
+          "ventilation"
+        ],
+        "required_misses": [
+          "insulation"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "cold_tests",
+      "scenario_name": "Cold Weather Survival - Sub-zero",
+      "module": "survival_cold",
+      "question": "My fingers and toes are numb and white. Is this frostbite? What do I do?",
+      "answer": " Yes, your symptoms (numbness and white appearance) suggest that you might have frostbite. Follow the guidelines from the US Army FM 3-05.70 Survival manual to treat it:\n\n1. Do not rub the injury with snow.\n2. Rewarm light frostbite by using your hands or mittens to warm your face and ears, placing your hands under your armpits, and placing your feet next to your buddy\u2019s stomach.\n3. Keep injured areas from refreezing.\n4. Avoid smoking.\n5. If you have a deep frostbite injury, try not to thaw it o",
+      "sources": [
+        "Frostbite",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "warm",
+          "skin"
+        ],
+        "required_misses": [
+          "gradual"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6666666666666666,
+        "forbidden_score": 1.0,
+        "total_score": 0.7666666666666666
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "cold_tests",
+      "scenario_name": "Cold Weather Survival - Sub-zero",
+      "module": "survival_cold",
+      "question": "How do I find food in a frozen winter landscape?",
+      "answer": " In a frozen winter landscape, you can find food by:\n\n1. Fishing during the winter months from ice holes or using techniques described in Chapter 8 of FM 3-05.70 (from coastal waters, streams, rivers, and lakes).\n2. Hunting mammals such as seals, birds like owls, ducks, geese, swans, sea birds (gulls, auks, murres, cormorants) in appropriate seasons on steep rocky coasts or tundra areas near ponds, rivers, or lakes.\n3. Foraging for edible plants such as the leaves, stems, and flowers of certain ",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Ice fishing",
+        "Snowshoe"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "trap",
+          "ice fishing",
+          "bark",
+          "hunt"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "cold_tests",
+      "scenario_name": "Cold Weather Survival - Sub-zero",
+      "module": "survival_cold",
+      "question": "How do I melt snow for drinking water safely?",
+      "answer": " To melt snow for drinking water safely in sub-zero conditions, follow these steps:\n\n1. Find a sheltered location where the snow is undisturbed and untouched by pollutants.\n2. Dig down 15 centimeters (6 inches) to gather snow that is safe from fallout contamination.\n3. Place the snow in a water bag, MRE ration bag, tin can, or improvised container.\n4. If you don't have any containers, create a porous bag made from fabric or clothing and place the snow inside. Suspend the bag near a fire, making ",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Igloo"
+      ],
+      "score": {
+        "required_hits": [
+          "fire",
+          "melt",
+          "container"
+        ],
+        "required_misses": [
+          "boil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "scenario_name": "Medicine Trauma - No Hospital Available",
+      "module": "medicine_trauma",
+      "question": "Someone is bleeding heavily from a leg wound. How do I stop the bleeding?",
+      "answer": " 1. Raise the injured leg.\n2. Clean your hands with soap and water, or use gloves if available.\n3. Use a clean thick cloth (or your hand if there's no cloth) to press directly on the wound. Keep pressing until the bleeding stops. This may take 20 minutes or more.\n4. If direct pressure doesn't control the bleeding, keep pressing on the wound and keep the wounded leg as high as possible.\n5. If the wound is deep, give an antibiotic such as cloxacillin or clindamycin.\n6. Never close the wound with s",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Hemorrhage"
+      ],
+      "score": {
+        "required_hits": [
+          "pressure",
+          "cloth"
+        ],
+        "required_misses": [
+          "elevate",
+          "tourniquet"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "scenario_name": "Medicine Trauma - No Hospital Available",
+      "module": "medicine_trauma",
+      "question": "I think someone has a broken arm. How do I splint it with no medical supplies?",
+      "answer": " To splint a broken arm without medical supplies, you can use materials like sticks, bark, cloth, or cardboard. Follow these steps:\n\n1. Find long, sturdy sticks that can serve as the main support for your makeshift splint.\n2. Wrap the limb with soft material such as clothing or large leaves to create a padding between the skin and the splint.\n3. Arrange the sticks so they hold the bones in position and immobilize the joints above and below the fracture, following the directions provided earlier ",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Bone fracture",
+        "Splint (medicine)"
+      ],
+      "score": {
+        "required_hits": [
+          "splint",
+          "immobilize",
+          "padding"
+        ],
+        "required_misses": [
+          "straight"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "scenario_name": "Medicine Trauma - No Hospital Available",
+      "module": "medicine_trauma",
+      "question": "Someone has a severe burn from a fire. How do I treat it?",
+      "answer": " In a situation where there are no hospitals or doctors, you can follow the guidelines from \"Where There Is No Doctor (2025)\" to treat someone with a severe burn:\n\n1. Comfort and reassure the person.\n2. Apply honey in a thin layer or pour granulated sugar to cover the burn. Throw away any sugar that does not stick to the burn. Then gently cover the burn with sterile gauze or sterilized cloth and hold in place with tape or bandages.\n3. Keep the limb elevated to lessen swelling if the burn is on a",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Burn"
+      ],
+      "score": {
+        "required_hits": [
+          "cool",
+          "water",
+          "clean",
+          "cover"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "scenario_name": "Medicine Trauma - No Hospital Available",
+      "module": "medicine_trauma",
+      "question": "How do I close a deep wound when I have no stitches or medical tape?",
+      "answer": " If you don't have any stitches or medical tape, you can use butterfly bandages or adhesive tape as a method to close a deep wound. Here are the steps to follow according to the \"Where There Is No Doctor\" guide (2025):\n\n1. Wash your hands thoroughly with boiled water and soap.\n2. Clean the wound using cool, boiled water and soap if it's dirty. If possible, use a syringe or suction bulb to remove any debris.\n3. Cut 4 pieces of adhesive tape approximately 1 inch long.\n4. Fold each piece in half, c",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "clean",
+          "close",
+          "bandage"
+        ],
+        "required_misses": [
+          "strip"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "scenario_name": "Medicine Trauma - No Hospital Available",
+      "module": "medicine_trauma",
+      "question": "Someone fell and hit their head hard. They're confused. What do I watch for?",
+      "answer": " Check for signs of shock (pale skin, heavy use of drugs or alcohol, a hit on the head, fainting, seizures, poisoning, heat stroke, stroke, heart attack), look for wounds or broken bones but move the person as little as possible. If they are conscious, observe their speech and ability to walk for signs of numbness, weakness, or loss of control in part of their body. Check for any drooping or weakness on one side of their face. If the person is unconscious, lay them on their side with their head ",
+      "sources": [
+        "First aid",
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "conscious"
+        ],
+        "required_misses": [
+          "pupil",
+          "vomit",
+          "sleep"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "scenario_name": "Medicine Infection - No Pharmacy Available",
+      "module": "medicine_infection",
+      "question": "How do I know if a wound is infected and what do I do?",
+      "answer": " To determine if a wound might be infected, observe the following signs and symptoms:\n\n1. Increased pain around the wound, as this can indicate an infection (likelihood ratio range, 11\u201320). However, the absence of pain does not rule out infection (summary LR 0.64\u20130.88).\n\n2. Examine the wound for any signs of inflammation such as redness, swelling, or pus. If you notice any of these symptoms, it may indicate an infection.\n\n3. Look for other signs and symptoms of infection, such as fatigue, loss o",
+      "sources": [
+        "Infection",
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "pus",
+          "clean"
+        ],
+        "required_misses": [
+          "red",
+          "swollen",
+          "hot"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.4,
+        "forbidden_score": 1.0,
+        "total_score": 0.58
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "scenario_name": "Medicine Infection - No Pharmacy Available",
+      "module": "medicine_infection",
+      "question": "Multiple people have diarrhea from bad water. How do I treat them?",
+      "answer": " Boil or filter the contaminated water used for drinking or preparing foods, especially for babies and small children. For adults with diarrhea, encourage them to drink lots of liquids such as Rehydration Drink (made from 6 level teaspoons of sugar, 1 level teaspoon of salt, and half a liter of boiled water) to prevent or treat dehydration. If milk seems to make the diarrhea worse, provide other protein sources like mashed chicken, eggs, lean meat, or skinned mashed beans mixed with sugar or wel",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "rehydration",
+          "salt",
+          "sugar",
+          "water",
+          "boil"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "scenario_name": "Medicine Infection - No Pharmacy Available",
+      "module": "medicine_infection",
+      "question": "How do I make oral rehydration solution with no medical supplies?",
+      "answer": " You can prepare an oral rehydration solution without medical supplies by following the homemade recipe mentioned in the \"Cholera\" context: Boil 1 liter of water, add 1/2 tsp (3 mL) of salt, 6 tsp (30 mL) of sugar, and mashed banana for potassium and taste improvement. If bananas are not available, you can omit them from the recipe.",
+      "sources": [
+        "Oral rehydration therapy",
+        "Cholera",
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "water",
+          "salt",
+          "sugar",
+          "liter"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "scenario_name": "Medicine Infection - No Pharmacy Available",
+      "module": "medicine_infection",
+      "question": "How do I prevent disease from spreading in a group with no sanitation?",
+      "answer": " In a situation where there is no access to modern sanitation, the following measures can be taken to help prevent the spread of diseases:\n\n1. Promote personal hygiene: Encourage individuals to wash their hands regularly using available water and soil if necessary. If soap isn't available, they can use ash or salt as a substitute. Emphasize the importance of avoiding contact with feces and ensuring proper disposal of waste.\n\n2. Maintain cleanliness around living areas: Keep surfaces clean by swe",
+      "sources": [
+        "Sanitation",
+        "Cholera",
+        "Where There Is No Doctor (2025)",
+        "Waterborne diseases"
+      ],
+      "score": {
+        "required_hits": [
+          "wash",
+          "hands",
+          "boil"
+        ],
+        "required_misses": [
+          "latrine",
+          "separate"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6,
+        "forbidden_score": 1.0,
+        "total_score": 0.72
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "scenario_name": "Medicine Infection - No Pharmacy Available",
+      "module": "medicine_infection",
+      "question": "Someone has a high fever for 3 days. What can I do without medicine?",
+      "answer": " To manage a high fever for 3 days without access to modern medicine, follow these steps:\n1. Lower the fever using cool water baths (submerging the sick person's forehead and another healthy person's forehead together).\n2. Monitor the fever pattern closely. Determine when and how it started, how long it lasts, and how it subsides to help identify the possible disease causing the fever.\n3. Maintain cleanliness, rest, a balanced diet, and hydration for the sick person to boost their immune system ",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "cool",
+          "water",
+          "rest"
+        ],
+        "required_misses": [
+          "fluids"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "scenario_name": "Childbirth - No Hospital Available",
+      "module": "medicine_childbirth",
+      "question": "A woman is in labor. What are the basic steps for a safe home delivery?",
+      "answer": " In the absence of modern medical facilities, here are the basic steps for a safe home delivery according to \"Where There Is No Doctor (2025)\":\n\n1. Preparation: Ensure a clean and well-lit place for delivery. Wash the mother's belly, genitals, buttocks, and legs with soap and warm water. Spread clean sheets, towels, or newspapers on the bed and change them whenever they get wet or dirty. Have a new, unopened razor blade or sterilized scissors ready for cutting the umbilical cord.\n\n2. Monitoring:",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Childbirth"
+      ],
+      "score": {
+        "required_hits": [
+          "clean",
+          "push",
+          "cord"
+        ],
+        "required_misses": [
+          "position"
+        ],
+        "forbidden_hits": [
+          "hospital"
+        ],
+        "required_score": 0.75,
+        "forbidden_score": 0.8,
+        "total_score": 0.7649999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "scenario_name": "Childbirth - No Hospital Available",
+      "module": "medicine_childbirth",
+      "question": "How do I cut and tie the umbilical cord safely?",
+      "answer": " To cut and tie the umbilical cord safely in a situation where there's no hospital or doctor:\n\n1. Wash your hands thoroughly before the process.\n2. Ensure you have a clean, unused razor blade or sterilized scissors ready (sterilize them if using scissors).\n3. After the baby is born and the cord stops pulsating, tie it in 2 places with very clean, dry strips of cloth, string, or ribbon that have been recently ironed or heated in an oven.\n4. Cut the cord close to the body of the newborn baby using",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Childbirth"
+      ],
+      "score": {
+        "required_hits": [
+          "tie",
+          "cut",
+          "clean"
+        ],
+        "required_misses": [
+          "sterile"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "scenario_name": "Childbirth - No Hospital Available",
+      "module": "medicine_childbirth",
+      "question": "The mother is bleeding heavily after delivery. What do I do?",
+      "answer": " Massage the womb firmly, squeezing it between two hands to make it contract and push out any remaining placenta. Rub harder until it feels hard. Have the mother drink a lot of liquids like water, fruit juices, tea, soup or broth to prevent dehydration. Let the baby suck the mother's breast or have someone else suck or gently pull and massage her nipples to help control bleeding. If the bleeding continues after these measures, seek medical help as soon as possible.",
+      "sources": [
+        "Breastfeeding",
+        "Childbirth",
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "massage"
+        ],
+        "required_misses": [
+          "uterus",
+          "breastfeed",
+          "pressure"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "scenario_name": "Childbirth - No Hospital Available",
+      "module": "medicine_childbirth",
+      "question": "The baby isn't breathing after birth. What do I do immediately?",
+      "answer": " Immediately start mouth-to-mouth breathing (as described on page 80 in Where There Is No Doctor 2025). Make sure the baby's head is lower than its body to help empty the mouth and nose, and use a suction bulb if necessary. After resuscitating the baby, keep the baby warm, dry, and place it skin-to-skin on the mother's chest. Put cloths or a blanket around them so the baby stays warm.",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "clear",
+          "airway",
+          "stimulate",
+          "breathe"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "scenario_name": "Childbirth - No Hospital Available",
+      "module": "medicine_childbirth",
+      "question": "How can I tell if a pregnancy is high-risk before labor begins?",
+      "answer": " A pregnancy may be high-risk if the woman falls under any of these categories before labor begins:\n\n1. She is under 15 or over 40, or if it is her first pregnancy and she is over 35.\n2. If she has had more than 5 or 6 babies.\n3. If she is especially short or has narrow hips.\n4. If she has had serious trouble or severe bleeding with other births.\n5. If she has diabetes or heart trouble.\n6. If she has a hernia.\n7. If it looks like she will have twins.\n8. If the baby is not in a good position (hea",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Childbirth"
+      ],
+      "score": {
+        "required_hits": [
+          "bleeding",
+          "position"
+        ],
+        "required_misses": [
+          "swelling",
+          "previous"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "scenario_name": "Water - Multiple Climates",
+      "module": "water",
+      "question": "I found a muddy pond. How do I make this water safe to drink?",
+      "answer": " To make the muddy pond water safe for drinking, follow these steps:\n\n1. Filter the water: You can let it stand in a container for 12 hours or pour it through a filtering system to clear it and make it more palatable.\n\n2. Purify the water: After filtration, you will need to purify it to ensure it's safe to drink. Boiling is one method of purification; bring the water to a rolling boil for at least 1 minute. Another option is to use iodine or chlorine for purifying the water, but these supplies m",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Water purification"
+      ],
+      "score": {
+        "required_hits": [
+          "filter",
+          "boil"
+        ],
+        "required_misses": [
+          "settle",
+          "cloth"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "scenario_name": "Water - Multiple Climates",
+      "module": "water",
+      "question": "How do I build a simple water filter from natural materials?",
+      "answer": " To build a simple water filter using natural materials based on the provided context, you can create a makeshift version of the Biosand filter. Here's how:\n\n1. Gather your materials: sand, crushed rock, charcoal, and some container or containers to hold these layers (e.g., empty plastic bottles). You may also need a container for water collection at the bottom.\n\n2. Layer your materials: Start with a layer of large stones or gravel at the bottom, then add a layer of sand, followed by a layer of ",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Biosand filter",
+        "Slow sand filter"
+      ],
+      "score": {
+        "required_hits": [
+          "sand",
+          "gravel",
+          "charcoal",
+          "layer"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "scenario_name": "Water - Multiple Climates",
+      "module": "water",
+      "question": "How can I collect rainwater for drinking?",
+      "answer": " To collect rainwater for drinking purposes, you can implement a rainwater harvesting system by following these steps:\n\n1. Identify a clean and dust-free roof surface (preferably galvanized steel, copper, or Zinc) to collect the rainwater.\n\n2. Construct a gutter system on the roof to direct the rainwater into a storage tank or container. You can use materials like plastic pipes, metal pipes, or even old barrels for this purpose.\n\n3. Ensure that the first flush (initial rainwater) does not enter ",
+      "sources": [
+        "Rainwater harvesting",
+        "US Army FM 3-05.70 Survival (2002)",
+        "Water purification"
+      ],
+      "score": {
+        "required_hits": [
+          "container",
+          "roof",
+          "clean"
+        ],
+        "required_misses": [
+          "store"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "scenario_name": "Water - Multiple Climates",
+      "module": "water",
+      "question": "How do I dig a well by hand to reach groundwater?",
+      "answer": " To dig a well by hand to reach groundwater, follow these steps:\n\n1. Choose an appropriate location: Select a spot that is slightly higher than the surrounding area and free from trees or large plants, as their roots can interfere with the well.\n\n2. Prepare the site: Clear the chosen area of any debris, rocks, or vegetation. Mark the center point for excavation.\n\n3. Start digging: Begin digging the well using shovels, starting from the marked center point. The well should be large enough to acco",
+      "sources": [
+        "Well",
+        "Water purification"
+      ],
+      "score": {
+        "required_hits": [
+          "dig",
+          "lining"
+        ],
+        "required_misses": [
+          "depth",
+          "water table"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "scenario_name": "Water - Multiple Climates",
+      "module": "water",
+      "question": "Can I drink salt water? How do I desalinate sea water?",
+      "answer": " No, you cannot drink seawater directly as it contains high levels of salt that are harmful to the human body. To desalinate sea water, you can use distillation or reverse osmosis methods. In a survival situation, catching rainwater and using a Manual Reverse Osmosis Desalinator (MROD) if available, would be the most effective ways to purify seawater. If an MROD is not available, you can build a solar still using a tarpaulin or similar material to collect seawater and capture the distilled water",
+      "sources": [
+        "Water purification",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "distill",
+          "boil",
+          "steam",
+          "condense"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "water_tests",
+      "scenario_name": "Water - Multiple Climates",
+      "module": "water",
+      "question": "How do I store water safely for long periods without it going bad?",
+      "answer": " To store water safely for long periods without it going bad, consider the following methods from the provided context:\n\n1. Natural biological purification: Store water in bankside reservoirs or similar natural containers for several days to weeks to allow natural biological processes to purify the water.\n\n2. Pre-chlorination: Add a disinfecting agent like chlorine to the water before storing it. This helps kill harmful bacteria and viruses that may contaminate the water source. Note that you do",
+      "sources": [
+        "Water purification",
+        "US Army FM 3-05.70 Survival (2002)",
+        "Rainwater harvesting",
+        "Solar water disinfection"
+      ],
+      "score": {
+        "required_hits": [
+          "clean",
+          "sealed"
+        ],
+        "required_misses": [
+          "dark",
+          "container"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "scenario_name": "Water - Multiple Climates",
+      "module": "water",
+      "question": "What are the signs of waterborne illness and how do I prevent it?",
+      "answer": " Waterborne illnesses such as Giardiasis, Cryptosporidiosis, Cholera, Typhoid, Hepatitis A, and infections from flukes and leeches can be prevalent in contaminated water sources. Signs of these illnesses include diarrhea, abdominal pain, vomiting, jaundice, dark urine, fever, headache, loss of appetite, constipation, and leg cramps.\n\nTo prevent waterborne illness, it is crucial to purify any natural water sources you come across. You can clarify the water by letting it stand for 12 hours or pour",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Well",
+        "Water treatment",
+        "Water purification"
+      ],
+      "score": {
+        "required_hits": [
+          "diarrhea",
+          "clean"
+        ],
+        "required_misses": [
+          "boil",
+          "filter"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "scenario_name": "Food Foraging - Multiple Regions",
+      "module": "food_foraging",
+      "question": "I don't recognize any plants around me. How do I test if a plant is safe to eat?",
+      "answer": " Follow the Universal Edibility Test as outlined in FM 3-05.70:\n1. Test only one part of a potential food plant at a time (leaves, stems, roots, buds, flowers).\n2. Separate the plant into its basic components.\n3. Smell the food for strong or acid odors.\n4. Do not eat for 8 hours before starting the test.\n5. During the 8 hours you abstain from eating, test for contact poisoning by placing a piece of the plant part on the inside of your elbow or wrist. Wait for 15 minutes to check for any reaction",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "test",
+          "small amount",
+          "wait"
+        ],
+        "required_misses": [
+          "skin",
+          "lip"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6,
+        "forbidden_score": 1.0,
+        "total_score": 0.72
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "scenario_name": "Food Foraging - Multiple Regions",
+      "module": "food_foraging",
+      "question": "What are the universal signs that a plant is poisonous?",
+      "answer": " Based on the provided context, here are some universal signs that a plant might be poisonous:\n\n1. Milky or discolored sap: Many poisonous plants have milky or discolored sap.\n2. Beans, bulbs, or seeds inside pods: Avoid plants with beans, bulbs, or seeds inside pods as they can be poisonous.\n3. A bitter or soapy taste: If a plant has a bitter or soapy taste, it might be poisonous.\n4. Spines, fine hairs, or thorns: Plants with spines, fine hairs, or thorns should be avoided as they can cause irr",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "bitter"
+        ],
+        "required_misses": [
+          "milky sap",
+          "almond smell"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.3333333333333333,
+        "forbidden_score": 1.0,
+        "total_score": 0.5333333333333333
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "scenario_name": "Food Foraging - Multiple Regions",
+      "module": "food_foraging",
+      "question": "How do I trap small animals for food?",
+      "answer": " To trap small animals for food, follow these steps:\n\n1. Identify suitable small animals in your location based on their tracks, droppings, chewed or rubbed vegetation, nesting or roosting sites, feeding and watering areas, and trails. Some examples could be squirrels, rats, mice, or moles.\n\n2. Set up a trap designed for small animals, such as a snap trap, box trap, or deadfall trap. You can make these traps using materials found in nature like sticks, twigs, and stones. Avoid using freshly cut ",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Trapping"
+      ],
+      "score": {
+        "required_hits": [
+          "bait"
+        ],
+        "required_misses": [
+          "snare",
+          "wire",
+          "trail"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "scenario_name": "Food Foraging - Multiple Regions",
+      "module": "food_foraging",
+      "question": "What insects are safe to eat and how do I prepare them?",
+      "answer": " In your situation, the safe insects to eat are those that are not adults that sting or bite, hairy or brightly colored, caterpillars, insects with a pungent odor, spiders, common disease carriers such as ticks, flies, and mosquitoes. Edible insects can provide a significant amount of protein.\n\nGrasshoppers, wood grubs, and many other species can be found in nature. To prepare grasshoppers, remove their wings and barbed legs, cook them thoroughly to avoid parasites, and consume them either raw o",
+      "sources": [
+        "Entomophagy",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "cook"
+        ],
+        "required_misses": [
+          "cricket",
+          "larvae",
+          "avoid bright"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "scenario_name": "Food Foraging - Multiple Regions",
+      "module": "food_foraging",
+      "question": "How do I catch fish without a fishing rod?",
+      "answer": " To catch fish without a fishing rod, you can follow these methods provided in the US Army FM 3-05.70 Survival (2002):\n\n1. Fish at night using a light to attract fish. This method requires no equipment.\n2. In the daytime, shade might attract some fish. You may find them under your raft or any other suitable shelter.\n3. Improvise a spear by tying a knife to an oar blade. This spear can help you catch larger fish, but make sure to secure it well so you don't lose the knife.\n4. Make field-expedient",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Fishing"
+      ],
+      "score": {
+        "required_hits": [
+          "spear"
+        ],
+        "required_misses": [
+          "trap",
+          "net",
+          "weir"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "scenario_name": "Food Foraging - Multiple Regions",
+      "module": "food_foraging",
+      "question": "What parts of common trees can I eat in an emergency?",
+      "answer": " In subtropical regions, you can eat the oil nut kernels from trees after parching them over coals. In thorn forests, you can eat the oil nut kernels as well. In Africa, the Middle East, Europe, and some places in Asia, you can eat the seeds of all pine tree species. In seasonal hardwood or mixed hardwood-coniferous forests, you can boil and eat the rootstock. Additionally, in flower gardens in the United States, you can find edible starch in the large and much-branched rootstocks of dandelions.",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "score": {
+        "required_hits": [
+          "pine"
+        ],
+        "required_misses": [
+          "bark",
+          "cambium",
+          "nuts"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "scenario_name": "Food Farming - Long Term Food Production",
+      "module": "food_farming",
+      "question": "How do I start a garden from scratch with no seeds from a store?",
+      "answer": " To establish a sustainable food production for a community without any seeds from stores, you can rely on seed saving techniques and networks. Here's a step-by-step guide based on the provided context:\n\n1. Seek out existing seeds in your local area through seed saving organizations or networks such as Seed Savers Exchange, Grassroots Seed Network, Australian National - Seed Savers Network, South Australian Seed Savers Network, International Seed Saving Institute, Organic Seed Alliance (for US N",
+      "sources": [
+        "Seed saving",
+        "Composting"
+      ],
+      "score": {
+        "required_hits": [
+          "seed"
+        ],
+        "required_misses": [
+          "wild",
+          "propagate",
+          "cutting"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "scenario_name": "Food Farming - Long Term Food Production",
+      "module": "food_farming",
+      "question": "How do I make compost to fertilize soil?",
+      "answer": " To make compost for fertilizing soil, follow these steps:\n\n1. Gather a mix of green waste (nitrogen-rich materials like leaves, grass, and food scraps) and brown waste (woody materials rich in carbon, such as stalks, paper, and wood chips). The ideal ratio is 25 parts brown to 1 part green by volume.\n\n2. Create a compost pile with the appropriate materials and cover it with a layer of soil or straw to help retain moisture and prevent odors.\n\n3. Mix the pile regularly, at least once a week, to e",
+      "sources": [
+        "Composting",
+        "Permaculture"
+      ],
+      "score": {
+        "required_hits": [
+          "green",
+          "brown",
+          "pile"
+        ],
+        "required_misses": [
+          "decompose",
+          "turn"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6,
+        "forbidden_score": 1.0,
+        "total_score": 0.72
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "scenario_name": "Food Farming - Long Term Food Production",
+      "module": "food_farming",
+      "question": "How do I save seeds from this year's harvest for next year?",
+      "answer": " To save seeds from this year's harvest for next year, follow these steps:\n\n1. Choose open-pollinated or heirloom varieties of plants that produce seeds. These are the types of plants that can be saved and replanted.\n\n2. Ensure that the plants are isolated from other similar varieties to prevent cross-pollination. This typically means keeping them at least a city block away from other plants of the same species.\n\n3. Allow the fruits or vegetables to mature fully before harvesting. For example, l",
+      "sources": [
+        "Seed saving"
+      ],
+      "score": {
+        "required_hits": [
+          "dry",
+          "store",
+          "mature"
+        ],
+        "required_misses": [
+          "select"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "scenario_name": "Food Farming - Long Term Food Production",
+      "module": "food_farming",
+      "question": "How do I preserve food for winter without refrigeration?",
+      "answer": " To preserve food for winter without refrigeration, consider the following methods:\n\n1. Freezing: Store perishable foods in a deep pit or insulated area with layers of snow and straw to create an ice-box effect. Use cool dark places like underground cellars or caves if available.\n\n2. Cooling: Store fruits, vegetables, and dairy products in a well-ventilated area that is protected from direct sunlight. If possible, choose a location with good airflow near a cold water source (e.g., a river or spr",
+      "sources": [
+        "Food preservation"
+      ],
+      "score": {
+        "required_hits": [
+          "dry"
+        ],
+        "required_misses": [
+          "smoke",
+          "salt",
+          "ferment"
+        ],
+        "forbidden_hits": [
+          "freezer",
+          "refrigerator",
+          "store"
+        ],
+        "required_score": 0.25,
+        "forbidden_score": 0.3999999999999999,
+        "total_score": 0.29499999999999993
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "scenario_name": "Food Farming - Long Term Food Production",
+      "module": "food_farming",
+      "question": "What crops grow fastest and provide the most calories?",
+      "answer": " In the given context, the fastest-growing crops that provide a high number of calories are root crops such as potatoes, sweet potatoes, yams, carrots, beets, and turnips. These crops have a short growing season and can be harvested multiple times throughout the year, providing a steady food source for the community. Additionally, legumes like beans, peas, and lentils are high in protein and can also grow quickly.\n\nTo maximize productivity, it is essential to implement crop rotation practices. R",
+      "sources": [
+        "Crop rotation",
+        "Animal husbandry",
+        "Fermentation"
+      ],
+      "score": {
+        "required_hits": [
+          "corn"
+        ],
+        "required_misses": [
+          "potato",
+          "bean",
+          "squash"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "scenario_name": "Shelter Construction - Permanent Structures",
+      "module": "shelter_construction",
+      "question": "How do I build a log cabin with hand tools only?",
+      "answer": " To build a log cabin using hand tools, follow these steps:\n\n1. Select a suitable site: Choose a location that provides sunlight and good drainage for optimal living conditions.\n\n2. Gather logs: Look for tall, straight tree trunks (such as pine or spruce), ideally with few limbs or knots.\n\n3. Prepare the logs: Using broadaxes, adzes, and draw knives, hew the logs to fit well together. Make sure they are smooth on all sides for easy stacking and interlocking.\n\n4. Create notches: On each end of th",
+      "sources": [
+        "Log cabin",
+        "Timber framing"
+      ],
+      "score": {
+        "required_hits": [
+          "notch",
+          "foundation",
+          "log"
+        ],
+        "required_misses": [
+          "chinking"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "scenario_name": "Shelter Construction - Permanent Structures",
+      "module": "shelter_construction",
+      "question": "How do I make mortar and cement from natural materials?",
+      "answer": " To make a simple mortar suitable for permanent structures, you can follow the Roman method of using lime (calcium oxide) which can be obtained by burning limestone in a kiln or pit. After obtaining the lime, mix it with water to create slaked lime. Then, add an aggregate such as sand and a pozzolanic material like volcanic ash to create a hydraulic mortar. This mixture will harden over time, forming cement.\n\nIn terms of proportions, you can follow the traditional 1:3 ratio of lime to sand for m",
+      "sources": [
+        "Roman engineering",
+        "Lime mortar"
+      ],
+      "score": {
+        "required_hits": [
+          "lime",
+          "calcium",
+          "calcium"
+        ],
+        "required_misses": [
+          "heat"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "scenario_name": "Shelter Construction - Permanent Structures",
+      "module": "shelter_construction",
+      "question": "How do I waterproof a roof using only natural materials?",
+      "answer": " To waterproof a roof using natural materials, you can consider the traditional adobe roof method or thatching. For an adobe roof, apply 3 inches of adobe mud on top of your support structure, followed by 18 inches of dry adobe dirt contoured into a low slope towards a downspout (canal). When moisture is applied to the roof, the clay particles expand to create a waterproof membrane. For thatching, you can use materials like straw, reeds, or grasses and ensure the roof pitch is at least 50 degree",
+      "sources": [
+        "Adobe",
+        "Thatching",
+        "Timber framing",
+        "Log cabin"
+      ],
+      "score": {
+        "required_hits": [
+          "pitch"
+        ],
+        "required_misses": [
+          "thatch",
+          "overlap",
+          "bark"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "scenario_name": "Shelter Construction - Permanent Structures",
+      "module": "shelter_construction",
+      "question": "How do I build a basic bridge across a stream?",
+      "answer": " To build a basic bridge across a stream using only natural materials and basic hand tools, you can draw inspiration from Roman engineering techniques. Here's a simplified step-by-step process to construct an arch bridge:\n\n1. Choose a suitable location for your bridge. Ensure it is stable on both banks of the stream and has enough width to accommodate the structure.\n\n2. Gather materials such as stones, trees (for timber), and soil. The size and number of these will depend on the desired span of ",
+      "sources": [
+        "Roman engineering",
+        "Aqueduct",
+        "Arch"
+      ],
+      "score": {
+        "required_hits": [
+          "span",
+          "support"
+        ],
+        "required_misses": [
+          "log",
+          "secure"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "scenario_name": "Shelter Construction - Permanent Structures",
+      "module": "shelter_construction",
+      "question": "How do I make adobe bricks for building walls?",
+      "answer": " To make adobe bricks for building walls, follow these steps:\n\n1. Collect soil containing sand, silt, and clay (a desirable ratio is 15% clay, 10-30% silt, and 55-75% fine sand). Add an organic material like straw or dung to bind the brick together and help it dry evenly.\n\n2. Mix the soil with water in a large container until you achieve a consistency similar to wet clay.\n\n3. Prepare a timber frame for molding the adobe bricks. The frame should have openings of the desired size for your bricks (",
+      "sources": [
+        "Adobe"
+      ],
+      "score": {
+        "required_hits": [
+          "clay",
+          "straw",
+          "water",
+          "dry"
+        ],
+        "required_misses": [
+          "sun"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.8,
+        "forbidden_score": 1.0,
+        "total_score": 0.8599999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "energy_tests",
+      "scenario_name": "Energy Generation - From Scratch",
+      "module": "energy",
+      "question": "How do I build a waterwheel to generate mechanical power?",
+      "answer": " To build a waterwheel for generating mechanical power, follow these steps:\n\n1. Determine the water flow and head (height difference between the water source and the wheel) at your location. This information will help you choose the appropriate type of waterwheel (overshot, breastshot, or undershot) based on its efficiency at low heads.\n\n2. Collect materials:\n   - Wood or metal for constructing the wheel (you can use available local resources).\n   - Numerous blades or buckets attached to the out",
+      "sources": [
+        "Waterwheel"
+      ],
+      "score": {
+        "required_hits": [
+          "wheel",
+          "blades",
+          "water",
+          "axle"
+        ],
+        "required_misses": [
+          "shaft"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.8,
+        "forbidden_score": 1.0,
+        "total_score": 0.8599999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "energy_tests",
+      "scenario_name": "Energy Generation - From Scratch",
+      "module": "energy",
+      "question": "How do I build a wind turbine from scrap materials?",
+      "answer": " To build a wind turbine from scrap materials, you can focus on using steel parts for the rotor hub, gearbox, frame, and tower, as these components are already largely made of recycled steel. Smaller wind turbines might be more feasible due to their lighter weight and potential use of aluminum alloys in some components.\n\nHowever, the blades present a challenge since they are typically made of composite materials like fiberglass with carbon fibers in epoxy resin. Since remolding these materials f",
+      "sources": [
+        "Wind turbine"
+      ],
+      "score": {
+        "required_hits": [
+          "blade",
+          "tower",
+          "wind"
+        ],
+        "required_misses": [
+          "generator"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "energy_tests",
+      "scenario_name": "Energy Generation - From Scratch",
+      "module": "energy",
+      "question": "How do I produce biogas from animal waste?",
+      "answer": " To produce biogas from animal waste, you would need to set up a biogas digester plant. This involves constructing an anaerobic digester or bioreactor where anaerobic organisms or methanogens can break down the organic material (in this case, animal waste) into biogas.\n\nHere's a simple step-by-step guide:\n\n1. Collect and store the animal waste in a suitable container. The waste should be wet and not too compact to allow efficient breakdown by microorganisms.\n\n2. Construct an anaerobic digester. ",
+      "sources": [
+        "Biogas digester",
+        "Biogas"
+      ],
+      "score": {
+        "required_hits": [
+          "digester"
+        ],
+        "required_misses": [
+          "manure",
+          "sealed",
+          "methane"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "energy_tests",
+      "scenario_name": "Energy Generation - From Scratch",
+      "module": "energy",
+      "question": "How do I make a simple battery from scratch?",
+      "answer": " Creating a basic battery can be achieved using simple materials such as lemons, copper nails, and metal wires. Here's a simple instruction on how to create a lemon battery:\n\n1. Find two lemons.\n2. Insert a copper penny into one lemon halfway down (anode).\n3. Insert an uncoated galvanized nail (cathode) into the other lemon halfway down. Make sure not to let the nails touch each other or the lemon's flesh.\n4. Connect the copper penny and the galvanized nail with a wire, ensuring there is no cont",
+      "sources": [
+        "Micro hydro",
+        "Wind turbine",
+        "Steam engine",
+        "Alcohol fuel",
+        "Windmill",
+        "Solar thermal energy"
+      ],
+      "score": {
+        "required_hits": [
+          "copper"
+        ],
+        "required_misses": [
+          "zinc",
+          "acid",
+          "electrolyte"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "energy_tests",
+      "scenario_name": "Energy Generation - From Scratch",
+      "module": "energy",
+      "question": "How can I run an engine on wood instead of gasoline?",
+      "answer": " To run an engine on wood instead of gasoline, you would need to create wood gas. Here's a simplified step-by-step guide on how to do that:\n\n1. Gather materials: You will need wood chips, sawdust, charcoal, or similar carbon-containing materials.\n\n2. Build a wood gasifier: Construct a device that can incompletely burn these materials in a firebox, producing wood gas, solid ash, and soot. The design can be based on fixed bed updraft or downdraft gasifiers.\n\n3. Clean the wood gas: After production",
+      "sources": [
+        "Wood gas",
+        "Alcohol fuel"
+      ],
+      "score": {
+        "required_hits": [
+          "gasifier",
+          "wood gas"
+        ],
+        "required_misses": [
+          "filter",
+          "combustion"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "materials_tests",
+      "scenario_name": "Materials - Primitive Manufacturing",
+      "module": "materials",
+      "question": "How do I smelt iron from ore using primitive methods?",
+      "answer": " To smelt iron from ore using primitive methods, you'll need a suitable furnace, reducing substances (like charcoal), and iron ore. Here is a basic outline of the process based on historical practices:\n\n1. Collect iron ore, which can be found in various forms such as magnetite (Fe3O4) or hematite (Fe2O3).\n\n2. Gather charcoal as your reducing agent. You can make charcoal by heating wood in a low-oxygen environment, such as a covered pit filled with straw and soil.\n\n3. Construct a furnace suitable",
+      "sources": [
+        "Ironworking",
+        "Smelting",
+        "Blacksmithing"
+      ],
+      "score": {
+        "required_hits": [
+          "furnace",
+          "charcoal",
+          "bellows",
+          "ore"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "materials_tests",
+      "scenario_name": "Materials - Primitive Manufacturing",
+      "module": "materials",
+      "question": "How do I make rope from plant fibers?",
+      "answer": " To make rope from plant fibers, you can follow these steps:\n\n1. Gather suitable plant fibers such as Manila hemp, hemp, linen, cotton, coir, jute, sisal, or straw. Avoid using fibers like silk, wool, and hair for rope making since they are not readily available in your context.\n\n2. Clean the fibers thoroughly to remove any impurities.\n\n3. Twist the cleaned fibers by hand to create a single ply yarn, but note that this method may result in weaker rope compared to using specialized tools or incis",
+      "sources": [
+        "Rope"
+      ],
+      "score": {
+        "required_hits": [
+          "twist",
+          "braid",
+          "plant"
+        ],
+        "required_misses": [
+          "fiber"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "materials_tests",
+      "scenario_name": "Materials - Primitive Manufacturing",
+      "module": "materials",
+      "question": "How do I tan animal hides into usable leather?",
+      "answer": " To tan animal hides into usable leather in a post-apocalyptic scenario without factories or supply chains, you can use the tanning (leather) process. Here's a simplified step-by-step guide based on the context provided:\n\n1. Obtain fresh animal hides and remove any flesh, hair, and excess fat.\n2. Soak the hides in water for several days to soften them further.\n3. After soaking, you can create a tanning solution using the ashes from burnt wood (wood charcoal). The ashes contain potassium carbonat",
+      "sources": [
+        "Tanning",
+        "Charcoal",
+        "Pottery",
+        "Weaving",
+        "Woodworking",
+        "Casting (metalworking)"
+      ],
+      "score": {
+        "required_hits": [
+          "soak"
+        ],
+        "required_misses": [
+          "scrape",
+          "brain",
+          "stretch"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "materials_tests",
+      "scenario_name": "Materials - Primitive Manufacturing",
+      "module": "materials",
+      "question": "How do I make charcoal for metalworking?",
+      "answer": " To make charcoal for metalworking, you can use the following process:\n\n1. Gather wood (preferably hardwood) that is free of non-volatile compounds.\n2. Stack the wood in a conical shape, leaving spaces between the layers for air to circulate.\n3. Cover the top and sides with soil or green leaves, leaving an opening for air to enter.\n4. Ignite some dry wood at the bottom center of the stack and cover it completely to exclude oxygen.\n5. After a few days, the wood will transform into charcoal as it ",
+      "sources": [
+        "Charcoal",
+        "Blacksmithing"
+      ],
+      "score": {
+        "required_hits": [
+          "wood",
+          "oxygen",
+          "cover"
+        ],
+        "required_misses": [
+          "burn"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "materials_tests",
+      "scenario_name": "Materials - Primitive Manufacturing",
+      "module": "materials",
+      "question": "How do I make basic pottery for cooking and storage?",
+      "answer": " To create basic pottery for cooking and storage, follow these steps using raw natural resources:\n\n1. **Preparing the Clay Body:** Gather clay from riverbanks or clay deposits. Remove any large stones or debris by hand. Knead the clay to remove air bubbles and make it pliable. If necessary, add water to help with kneading but avoid making the clay too wet.\n\n2. **Shaping:** Using simple tools such as sticks or stones, shape the clay into objects of your desired form (e.g., bowls, pots, or contain",
+      "sources": [
+        "Pottery"
+      ],
+      "score": {
+        "required_hits": [
+          "clay",
+          "shape",
+          "fire"
+        ],
+        "required_misses": [
+          "kiln"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "scenario_name": "Chemistry - Basic Industrial Processes",
+      "module": "chemistry",
+      "question": "How do I make soap from animal fat and wood ash?",
+      "answer": " To make soap from animal fat and wood ash, follow these steps:\n\n1. Gather necessary materials: Animal fat (like tallow), wood ash (preferably from hardwoods like oak or beech), water, and a heat source.\n\n2. Prepare the animal fat by cutting it into small pieces and melting it over your heat source.\n\n3. While the fat is melting, let the wood ash cool down and then leach out the alkali (sodium carbonate) by soaking it in water for a day or two. The water will turn cloudy as the alkali dissolves. ",
+      "sources": [
+        "Soap"
+      ],
+      "score": {
+        "required_hits": [
+          "fat",
+          "ash"
+        ],
+        "required_misses": [
+          "lye",
+          "boil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "scenario_name": "Chemistry - Basic Industrial Processes",
+      "module": "chemistry",
+      "question": "How do I make vinegar for food preservation?",
+      "answer": " To make vinegar for food preservation, you can use the slow fermentation method which takes several months to a year. Here's a simple process:\n\n1. Choose a suitable source material such as fruits, grains, or alcoholic beverages that are available to you. For example, you could use overripe fruits like apples, pears, or grapes.\n\n2. Prepare the source material by cutting it into small pieces and placing them in a clean, airtight container (like a large jar).\n\n3. Cover the source material with a c",
+      "sources": [
+        "Vinegar"
+      ],
+      "score": {
+        "required_hits": [
+          "time"
+        ],
+        "required_misses": [
+          "ferment",
+          "alcohol",
+          "bacteria"
+        ],
+        "forbidden_hits": [
+          "store"
+        ],
+        "required_score": 0.25,
+        "forbidden_score": 0.8,
+        "total_score": 0.415
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "scenario_name": "Chemistry - Basic Industrial Processes",
+      "module": "chemistry",
+      "question": "How do I produce lime for mortar and construction?",
+      "answer": " To produce lime for mortar and construction, follow these steps:\n\n1. Find calcium carbonate-rich rocks or minerals like limestone or chalk. If available, volcanic ash can also be used.\n\n2. Heat the calcium carbonate in a kiln above 900\u00b0C (1650\u00b0F) to convert it into quicklime (calcium oxide). This process is called calcination.\n\n3. Once the quicklime is obtained, add water to it slowly. The quicklime will react with water and transform into slaked lime (calcium hydroxide). This process is called",
+      "sources": [
+        "Lime (material)",
+        "Portland cement"
+      ],
+      "score": {
+        "required_hits": [
+          "limestone",
+          "heat",
+          "calcium",
+          "kiln"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "scenario_name": "Chemistry - Basic Industrial Processes",
+      "module": "chemistry",
+      "question": "How do I distill alcohol for fuel or antiseptic?",
+      "answer": " To distill alcohol for fuel or antiseptic purposes, you can follow a basic method of alcohol distillation using fermented plant materials. Here's a step-by-step guide:\n\n1. Collect carbohydrate-containing plant materials like fruit, grains, sugarcane, potatoes, etc., and allow them to ferment naturally. This process will convert the starches into sugars, which will then be converted into ethanol through yeast fermentation.\n\n2. Once the fermentation process is complete, transfer the fermented mat",
+      "sources": [
+        "Distillation"
+      ],
+      "score": {
+        "required_hits": [
+          "ferment",
+          "heat",
+          "condense",
+          "collect"
+        ],
+        "required_misses": [
+          "vapor"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.8,
+        "forbidden_score": 1.0,
+        "total_score": 0.8599999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "scenario_name": "Chemistry - Basic Industrial Processes",
+      "module": "chemistry",
+      "question": "How do I extract salt from sea water?",
+      "answer": " To extract salt from seawater, you can follow a process similar to natural evaporation. Here's how:\n\n1. Find a shallow container or basin made of materials that can withstand heat and corrosion (like clay or metal).\n2. Fill the container with seawater.\n3. Place the container in direct sunlight for several days, allowing the water to slowly evaporate. As the water evaporates, salt will be left behind as a solid residue.\n4. Once enough water has evaporated, collect the remaining salt by scraping ",
+      "sources": [
+        "Distillation",
+        "Saltpeter",
+        "Lye"
+      ],
+      "score": {
+        "required_hits": [
+          "evaporate",
+          "collect"
+        ],
+        "required_misses": [
+          "boil",
+          "sun"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "electronics_tests",
+      "scenario_name": "Electronics - Rebuilding Communication",
+      "module": "electronics",
+      "question": "How do I build a simple crystal radio receiver from salvaged parts?",
+      "answer": " To build a simple crystal radio receiver from salvaged parts, you'll need the following components:\n1. A tuned radio frequency (TRF) receiver design.\n2. An antenna such as a wire or a metal rod.\n3. A crystal detector (cat whisker).\n4. Electrolytic capacitor (optional, for smoothing out the signal).\n5. Headphones (to listen to the radio broadcasts).\n6. Battery (for powering the circuit).\n\nHere's a step-by-step guide on how to assemble and operate your crystal radio:\n\n1. Strip and clean the wires",
+      "sources": [
+        "Radio receiver",
+        "Amateur radio"
+      ],
+      "score": {
+        "required_hits": [
+          "wire",
+          "crystal",
+          "antenna"
+        ],
+        "required_misses": [
+          "coil",
+          "earpiece"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6,
+        "forbidden_score": 1.0,
+        "total_score": 0.72
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "electronics_tests",
+      "scenario_name": "Electronics - Rebuilding Communication",
+      "module": "electronics",
+      "question": "How do I generate electricity using a hand-cranked generator?",
+      "answer": " To generate electricity using a hand-cranked generator, follow these steps:\n\n1. Find or build a hand-crank generator. This can be done by converting a bicycle trainer into a generator or constructing one from scratch using available materials like magnets, copper wire, and a rotating axle.\n\n2. Ensure the hand-crank generator has an armature, which is responsible for generating electric current. The armature consists of windings made of copper wire that create an electromagnetic field when spinn",
+      "sources": [
+        "Electrical generator"
+      ],
+      "score": {
+        "required_hits": [
+          "crank",
+          "wire"
+        ],
+        "required_misses": [
+          "motor",
+          "magnet",
+          "coil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.4,
+        "forbidden_score": 1.0,
+        "total_score": 0.58
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "electronics_tests",
+      "scenario_name": "Electronics - Rebuilding Communication",
+      "module": "electronics",
+      "question": "How does Morse code work and how do I use it?",
+      "answer": " Morse code works by encoding text characters as standardized sequences of two different signal durations, called dots (short) and dashes (long). Here's a simple guide to memorize the most common Morse code characters:\n\n- A .-\n- B -...\n- C -.-.\n- D -..\n- E .\n- F ..-\n- G --.\n- H ....\n- I ..\n- J.---\n- K -.-\n- L .-..\n- M --\n- N -.\n- O ---\n- P .--.\n- Q --.-\n- R .-.\n- S ...\n- T -\n- U ..-\n- V .--\n- W .--.\n- X -..-\n- Y -.--\n- Z --...\n- 0 ---...\n- 1 ---.\n- 2 --...\n- 3 --..\n- 4 ....\n- 5 .....\n- 6 ....-\n-",
+      "sources": [
+        "Morse code"
+      ],
+      "score": {
+        "required_hits": [
+          "dot",
+          "dash",
+          "signal"
+        ],
+        "required_misses": [
+          "letter"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "electronics_tests",
+      "scenario_name": "Electronics - Rebuilding Communication",
+      "module": "electronics",
+      "question": "How do I build a basic telegraph system between two locations?",
+      "answer": " To build a basic telegraph system between two locations, you can follow the steps below using the Morse code system:\n\n1. Gather materials: You will need two sets of telegraph key, battery (or any available power source), insulated wires, and some means to create a circuit such as a galvanometer or a small light bulb for visual indications.\n\n2. Set up the circuit: Connect one end of each wire to the negative terminal of the battery, then connect the other ends to your telegraph key (or Morse key",
+      "sources": [
+        "Telegraph",
+        "Morse code"
+      ],
+      "score": {
+        "required_hits": [
+          "wire",
+          "battery",
+          "key"
+        ],
+        "required_misses": [
+          "sounder"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "electronics_tests",
+      "scenario_name": "Electronics - Rebuilding Communication",
+      "module": "electronics",
+      "question": "How do I build a simple antenna for radio communication?",
+      "answer": " To build a simple antenna for radio communication, you can create a half-wave dipole antenna. Here's a step-by-step guide:\n\n1. Determine the frequency of operation (wavelength) and calculate the antenna length accordingly. For example, if your desired wavelength is 1m, the antenna would be approximately 50 cm from tip to tip.\n\n2. Choose wire or conductor with a high length-to-diameter ratio (ideally around 1000) for minimal signal reflection and impedance matching.\n\n3. Connect the two ends of t",
+      "sources": [
+        "Antenna (radio)",
+        "Radio receiver"
+      ],
+      "score": {
+        "required_hits": [
+          "wire",
+          "length"
+        ],
+        "required_misses": [
+          "height",
+          "ground"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "governance_tests",
+      "scenario_name": "Governance - Rebuilding Society",
+      "module": "governance",
+      "question": "How do we organize fair decision-making for our community of 50 people?",
+      "answer": " To organize fair decision-making in a community of 50 people, you can implement a form of direct democracy that respects the principles of participation, deliberation, and equality. Here's a proposed system:\n\n1. **Popular Assemblies**: Establish regular open assemblies where everyone in the community is invited to participate and voice their opinions. These assemblies will serve as the highest decision-making body in your community.\n\n2. **Deliberation**: Encourage rational discussions during th",
+      "sources": [
+        "Direct democracy",
+        "Common law"
+      ],
+      "score": {
+        "required_hits": [
+          "vote"
+        ],
+        "required_misses": [
+          "council",
+          "consensus",
+          "meeting"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "governance_tests",
+      "scenario_name": "Governance - Rebuilding Society",
+      "module": "governance",
+      "question": "Two families are in a dispute over resources. How do we resolve it fairly?",
+      "answer": " To resolve the dispute between the two families over resources, you can employ the cooperative conflict resolution style as recommended by literature on conflict resolution. This involves fostering open communication among disputants to understand their underlying needs and work towards a mutually satisfying (\"win-win\") solution.\n\nHere's a suggested approach:\n\n1. Encourage both families to meet and discuss their issues openly, focusing on understanding each other's perspectives rather than blam",
+      "sources": [
+        "Conflict resolution"
+      ],
+      "score": {
+        "required_hits": [
+          "agreement",
+          "fair"
+        ],
+        "required_misses": [
+          "mediation",
+          "neutral"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "governance_tests",
+      "scenario_name": "Governance - Rebuilding Society",
+      "module": "governance",
+      "question": "How do we set up a barter and trade system without money?",
+      "answer": " To set up a barter and trade system without money, the community of 50-200 people can organize themselves into a barter exchange. Here's a step-by-step guide on how to do that:\n\n1. Identify the needs and assets within the community: Each member should list their skills, goods, services, and resources they are willing to offer in exchange for others' goods or services.\n\n2. Establish a barter exchange: Designate individuals or groups responsible for managing the barter system, acting as a central",
+      "sources": [
+        "Barter"
+      ],
+      "score": {
+        "required_hits": [
+          "exchange",
+          "goods",
+          "trade"
+        ],
+        "required_misses": [
+          "value"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "governance_tests",
+      "scenario_name": "Governance - Rebuilding Society",
+      "module": "governance",
+      "question": "How do we teach children with no schools or books?",
+      "answer": " In a situation where there are no schools or books, you can still educate children using methods that emphasize practical learning and community-based education. Here's a suggested approach based on the provided context:\n\n1. **Community-Based Education**: Leverage the collective knowledge within the community. Encourage adults to share their skills and experiences with children. This could include farming, crafting, cooking, storytelling, etc.\n\n2. **Dialogic Learning**: Foster discussions and d",
+      "sources": [
+        "Pedagogy"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "oral",
+          "practice",
+          "apprentice",
+          "skill"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "governance_tests",
+      "scenario_name": "Governance - Rebuilding Society",
+      "module": "governance",
+      "question": "How do we navigate at sea or over land without GPS or maps?",
+      "answer": " Navigating at sea or over land without GPS or maps can be achieved through celestial navigation. This technique involves taking angular measurements, or \"sights,\" between celestial bodies (such as the Sun, Moon, planets, or stars) and the visible horizon to determine one's position on Earth.\n\nHere are a few steps to help you navigate using celestial navigation:\n\n1. Observe the celestial body of interest in relation to the horizon at specific times. This is usually done by measuring the angle be",
+      "sources": [
+        "Celestial navigation",
+        "Cartography"
+      ],
+      "score": {
+        "required_hits": [
+          "sun"
+        ],
+        "required_misses": [
+          "star",
+          "compass",
+          "landmark"
+        ],
+        "forbidden_hits": [
+          "GPS"
+        ],
+        "required_score": 0.25,
+        "forbidden_score": 0.8,
+        "total_score": 0.415
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_urban_europe",
+      "scenario_name": "Composite - Urban Europe Winter",
+      "module": "water",
+      "question": "We have 30 people and no water. There is snow on the ground and a river 2km away. What's our water strategy?",
+      "answer": " Given the situation, the group can follow these steps to secure water:\n\n1. Scout for high ground to get a good view of the river. This will help in identifying a safe and easy crossing point. Climbing trees could also be an option if no high ground is available.\n\n2. Look for a level stretch where the river breaks into several channels or a shallow bank or sandbar that can serve as a crossing point. A course across the river that leads downstream would be ideal, as it will help in being carried ",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Rainwater harvesting"
+      ],
+      "score": {
+        "required_hits": [
+          "melt",
+          "river"
+        ],
+        "required_misses": [
+          "boil",
+          "filter",
+          "container"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.4,
+        "forbidden_score": 1.0,
+        "total_score": 0.58
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_urban_europe",
+      "scenario_name": "Composite - Urban Europe Winter",
+      "module": "survival_fire_shelter",
+      "question": "Half our building is destroyed but half still has walls and a partial roof. How do we make it livable in winter?",
+      "answer": " To make the partially destroyed apartment building livable during winter, you can focus on insulating and sealing the remaining walls and roof to prevent heat loss. Here's a step-by-step plan based on the provided context:\n\n1. Clear debris from the walls and roof: Remove any fallen debris such as broken furniture, appliances, and construction materials that may be blocking the walls or roof.\n\n2. Insulate the walls and roof: Use available materials like blankets, clothing, mattresses, or other f",
+      "sources": [
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "score": {
+        "required_hits": [
+          "insulate",
+          "fire",
+          "ventilation"
+        ],
+        "required_misses": [
+          "seal"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "composite_urban_europe",
+      "scenario_name": "Composite - Urban Europe Winter",
+      "module": "medicine_infection",
+      "question": "Several people have infected cuts and we have no antibiotics. What natural alternatives exist?",
+      "answer": " In the absence of antibiotics, here are some natural alternatives to help treat infected cuts:\n\n1. Honey: Raw honey has natural antibacterial properties due to its low water content and high acidity. Applying raw honey directly to the infected cut can help to kill bacteria and promote healing.\n\n2. Turmeric: Turmeric has anti-inflammatory and antimicrobial properties, which can aid in wound healing and infection reduction. Make a paste by mixing turmeric powder with water or honey and apply it t",
+      "sources": [
+        "Infection",
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "honey",
+          "garlic",
+          "clean"
+        ],
+        "required_misses": [
+          "boil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "composite_urban_europe",
+      "scenario_name": "Composite - Urban Europe Winter",
+      "module": "food_foraging",
+      "question": "It's winter in Europe with snow. Where do we find food for 30 people?",
+      "answer": " Given the context, during winter in Europe, fish and animals can be sources of food. According to the provided manual, birds such as ducks, geese, swans, gulls, auks, murres, cormorants can be found near ponds, rivers, or lakes in tundra areas. Additionally, mammals like rodents and rabbits may also be potential food sources, but only in extreme emergencies due to the risk of biological agents.\n\nHowever, since it's winter, access to water bodies might be limited due to freezing. In such a case,",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Fishing"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "trap",
+          "hunt",
+          "bark",
+          "stored"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_tropical",
+      "scenario_name": "Composite - Tropical Island After Tsunami",
+      "module": "water",
+      "question": "We're on a tropical island after a tsunami. Fresh water sources are contaminated with salt water. What do we do?",
+      "answer": " Utilize any available manual reverse osmosis desalinator, such as the Survivor 35 or the Survivor 06, to remove salt particles from seawater and make it potable. If no desalinator is available, collect dew at night by securing a tarpaulin like a sunshade and turning up its edges, or using a sponge or cloth along the sides of the raft. Drink as much rainwater as possible when it rains, ensuring to decontaminate containers before opening. Additionally, try to locate underground water pipes and us",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Water purification",
+        "Well"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "rain",
+          "distill",
+          "coconut",
+          "dig"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_tropical",
+      "scenario_name": "Composite - Tropical Island After Tsunami",
+      "module": "food_foraging",
+      "question": "We're on a tropical island with reef and jungle. How do we feed 100 people?",
+      "answer": " In this scenario, the survivors can find food through foraging and fishing. Here are some steps they can take to ensure everyone is fed:\n\n1. Foraging: Focus on finding edible plants that grow in tropical regions. The Association of Foragers, Institute for the Study of Edible Wild Plants, and other resources mentioned provide lists of potentially edible plants. Remember to only eat food that can be positively identified as safe. Do not pick more food than necessary as it spoils rapidly in these ",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Foraging",
+        "Fishing"
+      ],
+      "score": {
+        "required_hits": [
+          "fish"
+        ],
+        "required_misses": [
+          "coconut",
+          "shellfish",
+          "fruit"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_tropical",
+      "scenario_name": "Composite - Tropical Island After Tsunami",
+      "module": "shelter_construction",
+      "question": "All buildings destroyed by tsunami. How do we quickly shelter 100 people using jungle materials?",
+      "answer": " To quickly shelter 100 people using jungle materials, consider constructing temporary thatched huts or hales (traditional Hawaiian shelters) using locally available materials like the ti leaves (Cordyline fruticosa), lauhala (Pandanus tectorius), or pili grass (Heteropogon contortus). Alternatively, you could attempt to build adobe structures using soil and fiber. If available, tires, cans, and bottles can be used in an Earthship-style construction for a more durable shelter. Ensure that these ",
+      "sources": [
+        "Timber framing",
+        "Adobe",
+        "Thatching",
+        "Earthship",
+        "Structural engineering"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "bamboo",
+          "palm",
+          "frame",
+          "elevated"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_tropical",
+      "scenario_name": "Composite - Tropical Island After Tsunami",
+      "module": "medicine_trauma",
+      "question": "Many people have coral cuts and saltwater wounds that are getting infected. How do we treat them?",
+      "answer": " To treat coral cuts and saltwater wounds that are getting infected, follow these steps:\n\n1. Wash your hands well with soap and water to prevent cross-contamination. If the wound is bleeding or oozing, wear gloves or plastic bags on your hands for protection.\n\n2. Clean the skin around the wound with soap and cool, boiled water.\n\n3. Wash the wound itself thoroughly with cool, boiled water to clean out all dirt and debris. Use tweezers, cloth, or gauze (first boiled to sterilize them) to remove an",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Wound healing",
+        "Burn"
+      ],
+      "score": {
+        "required_hits": [
+          "clean"
+        ],
+        "required_misses": [
+          "fresh water",
+          "honey",
+          "bandage"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    }
+  ]
+}

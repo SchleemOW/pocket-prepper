@@ -1,0 +1,1863 @@
+14:50:41  
+============================================================
+14:50:41    DOOMSDAY RAG PIPELINE
+14:50:41    Modules to process: 2
+14:50:41    Started: 2026-05-16 14:50:41
+14:50:41  ============================================================
+
+14:50:41  No device provided, using mps
+14:50:41  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+14:50:44    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+14:50:44  
+[1/2] Module: Immediate Survival
+14:50:44    Navigation, shelter, fire, water finding, signaling, wilderness hazards
+14:50:44    ----------------------------------------
+14:50:56    + wikipedia_articles: 7 documents
+14:51:12    + pdf: 233 documents
+14:51:12    Processing: 240 docs → 1415 chunks
+14:51:12    Embedding 1415 chunks...
+14:58:34  
+============================================================
+14:58:34    DOOMSDAY RAG PIPELINE
+14:58:34    Modules to process: 2
+14:58:34    Started: 2026-05-16 14:58:34
+14:58:34  ============================================================
+
+14:58:34  No device provided, using mps
+14:58:34  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+14:58:37    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+14:58:37  
+[1/2] Module: Immediate Survival
+14:58:37    Navigation, shelter, fire, water finding, signaling, wilderness hazards
+14:58:37    ----------------------------------------
+14:58:49    + wikipedia_articles: 7 documents
+14:59:05    + pdf: 233 documents
+14:59:05    Processing: 240 docs → 1415 chunks
+14:59:05    Embedding 1415 chunks...
+14:59:08    ✓ Written 1415 chunks to data/databases/survival.db (4.0 MB)
+14:59:08    ✓ Done — 240 docs, 1415 chunks, 31.7s
+14:59:08  
+[2/2] Module: Medicine & Health
+14:59:08    Trauma, infection, childbirth, dental, herbal medicine, sanitation
+14:59:08    ----------------------------------------
+14:59:27      Rate limited, waiting 8s... (attempt 1/4)
+14:59:35      Rate limited, waiting 16s... (attempt 2/4)
+14:59:51      Rate limited, waiting 24s... (attempt 3/4)
+15:00:19    + wikipedia_articles: 12 documents
+15:00:19    + pdf: 3 documents
+15:00:19    Processing: 15 docs → 980 chunks
+15:00:19    Embedding 980 chunks...
+15:00:22    ✓ Written 980 chunks to data/databases/medicine.db (2.0 MB)
+15:00:22    ✓ Done — 15 docs, 980 chunks, 73.4s
+15:00:22  
+============================================================
+15:00:22    PIPELINE COMPLETE
+15:00:22  ============================================================
+15:00:22    ✓ Immediate Survival              1415 chunks  4.0 MB
+15:00:22    ✓ Medicine & Health                980 chunks  2.0 MB
+15:00:22  
+  Total chunks : 2,395
+15:00:22    Total DB size: 6.0 MB
+15:00:22    Databases in : data/databases/
+
+15:00:22    Report saved: data/pipeline_report.json
+15:20:17  
+============================================================
+15:20:17    DOOMSDAY RAG PIPELINE
+15:20:17    Modules to process: 1
+15:20:17    Started: 2026-05-16 15:20:17
+15:20:17  ============================================================
+
+15:20:17  No device provided, using mps
+15:20:18  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+15:20:20    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+15:20:20  
+[1/1] Module: Medicine & Health
+15:20:20    Trauma, infection, childbirth, dental, herbal medicine, sanitation
+15:20:20    ----------------------------------------
+15:20:39      Rate limited, waiting 8s... (attempt 1/4)
+15:20:47      Rate limited, waiting 16s... (attempt 2/4)
+15:21:07    + wikipedia_articles: 12 documents
+15:21:07      Downloading 24 PDFs for 'Where There Is No Doctor (2025)'...
+15:21:07      [1/24] 3 pages
+15:21:09      [2/24] 16 pages
+15:21:11      [3/24] 11 pages
+15:21:12      [4/24] 10 pages
+15:21:13      [5/24] 6 pages
+15:21:15      [6/24] 4 pages
+15:21:16      [7/24] 6 pages
+15:21:17      [8/24] 4 pages
+15:21:18      [9/24] 6 pages
+15:21:19      [10/24] 10 pages
+15:21:21      [11/24] 32 pages
+15:21:23      [12/24] 24 pages
+15:21:24      [13/24] 20 pages
+15:21:25      [14/24] 28 pages
+15:21:27      [15/24] 14 pages
+15:21:27      [16/24] 24 pages
+15:21:29      [17/24] 12 pages
+15:21:30      [18/24] 4 pages
+15:21:32      [19/24] 12 pages
+15:21:33      [20/24] 38 pages
+15:21:35      [21/24] 12 pages
+15:21:37      [22/24] 26 pages
+15:21:38      [23/24] 8 pages
+15:21:39      [24/24] 8 pages
+15:21:40    + multi_pdf: 338 documents
+15:21:40    Processing: 350 docs → 2267 chunks
+15:21:40    Embedding 2267 chunks...
+15:21:45    ✓ Written 2267 chunks to data/databases/medicine.db (5.9 MB)
+15:21:45    ✓ Done — 350 docs, 2267 chunks, 84.9s
+15:21:45  
+============================================================
+15:21:45    PIPELINE COMPLETE
+15:21:45  ============================================================
+15:21:45    ✓ Medicine & Health               2267 chunks  5.9 MB
+15:21:45  
+  Total chunks : 2,267
+15:21:45    Total DB size: 5.9 MB
+15:21:45    Databases in : data/databases/
+
+15:21:45    Report saved: data/pipeline_report.json
+16:00:05  
+============================================================
+16:00:05    DOOMSDAY RAG PIPELINE
+16:00:05    Modules to process: 16
+16:00:05    Started: 2026-05-16 16:00:05
+16:00:05  ============================================================
+
+16:00:05  No device provided, using mps
+16:00:06  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+16:00:08    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+16:00:08  
+[1/16] Module: Survival - General
+16:00:08    Psychology of survival, planning, the will to survive, SURVIVAL acronym, stress management
+16:00:08    ----------------------------------------
+16:00:13    + wikipedia_articles: 3 documents
+16:00:26    + pdf: 233 documents
+16:00:26    Processing: 236 docs → 1208 chunks
+16:00:26    Embedding 1208 chunks...
+16:00:29    ✓ Written 1208 chunks to data/databases/survival_general.db (3.9 MB)
+16:00:29    ✓ Done — 236 docs, 1208 chunks, 21.5s
+16:00:29  
+[2/16] Module: Survival - Fire & Shelter
+16:00:29    Fire making techniques, shelter construction, insulation, cold weather protection
+16:00:29    ----------------------------------------
+16:00:39      Rate limited, waiting 8s... (attempt 1/4)
+16:00:47      Rate limited, waiting 16s... (attempt 2/4)
+16:01:05    + wikipedia_articles: 6 documents
+16:01:20    + pdf: 233 documents
+16:01:20    Processing: 239 docs → 1132 chunks
+16:01:20    Embedding 1132 chunks...
+16:01:23    ✓ Written 1132 chunks to data/databases/survival_fire_shelter.db (3.9 MB)
+16:01:23    ✓ Done — 239 docs, 1132 chunks, 53.8s
+16:01:23  
+[3/16] Module: Survival - Navigation
+16:01:23    Celestial navigation, compass use, map reading, natural navigation methods
+16:01:23    ----------------------------------------
+16:01:36    + wikipedia_articles: 7 documents
+16:01:36    Processing: 7 docs → 501 chunks
+16:01:36    Embedding 501 chunks...
+16:01:37    ✓ Written 501 chunks to data/databases/survival_navigation.db (1.8 MB)
+16:01:37    ✓ Done — 7 docs, 501 chunks, 14.3s
+16:01:37  
+[4/16] Module: Medicine - Trauma & Wounds
+16:01:37    Wound care, bleeding control, fractures, burns, splints, tourniquets
+16:01:37    ----------------------------------------
+16:01:39      Rate limited, waiting 8s... (attempt 1/4)
+16:01:48      Rate limited, waiting 16s... (attempt 2/4)
+16:02:14    + wikipedia_articles: 7 documents
+16:02:14      Downloading 3 PDFs for 'Where There Is No Doctor (2025)'...
+16:02:15      [1/3] 32 pages
+16:02:16      [2/3] 14 pages
+16:02:17      [3/3] 24 pages
+16:02:18    + multi_pdf: 70 documents
+16:02:18    Processing: 77 docs → 703 chunks
+16:02:18    Embedding 703 chunks...
+16:02:19    ✓ Written 703 chunks to data/databases/medicine_trauma.db (1.9 MB)
+16:02:19    ✓ Done — 77 docs, 703 chunks, 42.1s
+16:02:19  
+[5/16] Module: Medicine - Infection & Disease
+16:02:19    Infection signs, antibiotics, common diseases, prevention, sanitation
+16:02:19    ----------------------------------------
+16:02:27      Rate limited, waiting 8s... (attempt 1/4)
+16:02:35      Rate limited, waiting 16s... (attempt 2/4)
+16:02:52      Rate limited, waiting 24s... (attempt 3/4)
+16:03:21    + wikipedia_articles: 7 documents
+16:03:21      Downloading 3 PDFs for 'Where There Is No Doctor (2025)'...
+16:03:21      [1/3] 24 pages
+16:03:23      [2/3] 20 pages
+16:03:24      [3/3] 28 pages
+16:03:24    + multi_pdf: 72 documents
+16:03:24    Processing: 79 docs → 1028 chunks
+16:03:24    Embedding 1028 chunks...
+16:03:27    ✓ Written 1028 chunks to data/databases/medicine_infection.db (3.6 MB)
+16:03:27    ✓ Done — 79 docs, 1028 chunks, 67.2s
+16:03:27  
+[6/16] Module: Medicine - Childbirth & Pediatrics
+16:03:27    Pregnancy, safe delivery, newborn care, childhood illness, breastfeeding
+16:03:27    ----------------------------------------
+16:03:34    + wikipedia_articles: 4 documents
+16:03:34      Downloading 3 PDFs for 'Where There Is No Doctor (2025)'...
+16:03:35      [1/3] 38 pages
+16:03:35      [2/3] 12 pages
+16:03:36      [3/3] 26 pages
+16:03:37    + multi_pdf: 76 documents
+16:03:37    Processing: 80 docs → 890 chunks
+16:03:37    Embedding 890 chunks...
+16:03:39    ✓ Written 890 chunks to data/databases/medicine_childbirth.db (2.0 MB)
+16:03:39    ✓ Done — 80 docs, 890 chunks, 12.0s
+16:03:39  
+[7/16] Module: Medicine - Herbal & Plant Medicine
+16:03:39    Medicinal plants, herbal remedies, natural antibiotics, traditional cures
+16:03:39    ----------------------------------------
+16:03:45      Rate limited, waiting 8s... (attempt 1/4)
+16:03:53      Rate limited, waiting 16s... (attempt 2/4)
+16:04:20    + wikipedia_articles: 8 documents
+16:04:20      Downloading 2 PDFs for 'Where There Is No Doctor (2025)'...
+16:04:20      [1/2] 8 pages
+16:04:21      [2/2] 8 pages
+16:04:22    + multi_pdf: 16 documents
+16:04:22    Processing: 24 docs → 600 chunks
+16:04:22    Embedding 600 chunks...
+16:04:23    ✓ Written 600 chunks to data/databases/medicine_herbal.db (1.8 MB)
+16:04:23    ✓ Done — 24 docs, 600 chunks, 44.2s
+16:04:23  
+[8/16] Module: Water - Finding & Purification
+16:04:23    Water sources, purification methods, storage, well digging, rainwater collection
+16:04:23    ----------------------------------------
+16:04:31      Rate limited, waiting 8s... (attempt 1/4)
+16:04:39      Rate limited, waiting 16s... (attempt 2/4)
+16:04:55      Rate limited, waiting 24s... (attempt 3/4)
+16:05:24    + wikipedia_articles: 7 documents
+16:05:24    Processing: 7 docs → 435 chunks
+16:05:24    Embedding 435 chunks...
+16:05:25    ✓ Written 435 chunks to data/databases/water.db (1.8 MB)
+16:05:25    ✓ Done — 7 docs, 435 chunks, 62.5s
+16:05:25  
+[9/16] Module: Food - Foraging & Hunting
+16:05:25    Edible plants, mushrooms, hunting, trapping, fishing, insect consumption
+16:05:25    ----------------------------------------
+16:05:38    + wikipedia_articles: 7 documents
+16:05:38    Processing: 7 docs → 413 chunks
+16:05:38    Embedding 413 chunks...
+16:05:39    ✓ Written 413 chunks to data/databases/food_foraging.db (1.7 MB)
+16:05:39    ✓ Done — 7 docs, 413 chunks, 13.5s
+16:05:39  
+[10/16] Module: Food - Agriculture & Preservation
+16:05:39    Crop rotation, composting, seed saving, smoking, salting, fermentation
+16:05:39    ----------------------------------------
+16:05:39      Rate limited, waiting 8s... (attempt 1/4)
+16:05:47      Rate limited, waiting 16s... (attempt 2/4)
+16:06:21    + wikipedia_articles: 10 documents
+16:06:21    Processing: 10 docs → 584 chunks
+16:06:21    Embedding 584 chunks...
+16:06:23    ✓ Written 584 chunks to data/databases/food_farming.db (1.8 MB)
+16:06:23    ✓ Done — 10 docs, 584 chunks, 44.0s
+16:06:23  
+[11/16] Module: Shelter & Construction
+16:06:23    Log cabins, adobe, earthship, timber framing, roads, bridges, sanitation
+16:06:23    ----------------------------------------
+16:06:23      Rate limited, waiting 8s... (attempt 1/4)
+16:06:31      Rate limited, waiting 16s... (attempt 2/4)
+16:06:48      Rate limited, waiting 24s... (attempt 3/4)
+16:07:28      Rate limited, waiting 8s... (attempt 1/4)
+16:07:37      Rate limited, waiting 16s... (attempt 2/4)
+16:07:53      Rate limited, waiting 24s... (attempt 3/4)
+16:08:22    + wikipedia_articles: 12 documents
+16:08:22    Processing: 12 docs → 759 chunks
+16:08:22    Embedding 759 chunks...
+16:08:24    ✓ Written 759 chunks to data/databases/shelter_construction.db (1.9 MB)
+16:08:24    ✓ Done — 12 docs, 759 chunks, 120.9s
+16:08:24  
+[12/16] Module: Energy Generation
+16:08:24    Micro-hydro, wind, biogas, wood gasification, steam power
+16:08:24    ----------------------------------------
+16:08:37      Rate limited, waiting 8s... (attempt 1/4)
+16:08:45      Rate limited, waiting 16s... (attempt 2/4)
+16:09:10    + wikipedia_articles: 12 documents
+16:09:10    Processing: 12 docs → 936 chunks
+16:09:10    Embedding 936 chunks...
+16:09:12    ✓ Written 936 chunks to data/databases/energy.db (2.0 MB)
+16:09:12    ✓ Done — 12 docs, 936 chunks, 48.4s
+16:09:12  
+[13/16] Module: Materials & Manufacturing
+16:09:12    Metalworking, pottery, glassmaking, textiles, leather, tools
+16:09:12    ----------------------------------------
+16:09:21      Rate limited, waiting 8s... (attempt 1/4)
+16:09:30      Rate limited, waiting 16s... (attempt 2/4)
+16:09:46      Rate limited, waiting 24s... (attempt 3/4)
+16:10:26    + wikipedia_articles: 14 documents
+16:10:27    Processing: 14 docs → 976 chunks
+16:10:27    Embedding 976 chunks...
+16:10:29    ✓ Written 976 chunks to data/databases/materials.db (2.0 MB)
+16:10:29    ✓ Done — 14 docs, 976 chunks, 76.3s
+16:10:29  
+[14/16] Module: Chemistry & Industry
+16:10:29    Soap, fermentation, cement, dyes, basic organic chemistry
+16:10:29    ----------------------------------------
+16:10:31      Rate limited, waiting 8s... (attempt 1/4)
+16:10:39      Rate limited, waiting 16s... (attempt 2/4)
+16:10:55      Rate limited, waiting 24s... (attempt 3/4)
+16:11:39      Rate limited, waiting 8s... (attempt 1/4)
+16:11:47      Rate limited, waiting 16s... (attempt 2/4)
+16:12:05    + wikipedia_articles: 12 documents
+16:12:05    Processing: 12 docs → 785 chunks
+16:12:05    Embedding 785 chunks...
+16:12:06    ✓ Written 785 chunks to data/databases/chemistry.db (1.9 MB)
+16:12:06    ✓ Done — 12 docs, 785 chunks, 97.9s
+16:12:06  
+[15/16] Module: Electronics & Communication
+16:12:06    Radio, telegraph, vacuum tubes, basic electrical systems
+16:12:06    ----------------------------------------
+16:12:23      Rate limited, waiting 8s... (attempt 1/4)
+16:12:31      Rate limited, waiting 16s... (attempt 2/4)
+16:12:48      Rate limited, waiting 24s... (attempt 3/4)
+16:13:15    + wikipedia_articles: 11 documents
+16:13:16    Processing: 11 docs → 1166 chunks
+16:13:16    Embedding 1166 chunks...
+16:13:18    ✓ Written 1166 chunks to data/databases/electronics.db (3.6 MB)
+16:13:18    ✓ Done — 11 docs, 1166 chunks, 71.3s
+16:13:18  
+[16/16] Module: Governance & Society
+16:13:18    Governance, law, education, navigation, trade, conflict resolution
+16:13:18    ----------------------------------------
+16:13:33      Rate limited, waiting 8s... (attempt 1/4)
+16:13:41      Rate limited, waiting 16s... (attempt 2/4)
+16:13:57      Rate limited, waiting 24s... (attempt 3/4)
+16:14:29    + wikipedia_articles: 12 documents
+16:14:29    Processing: 12 docs → 1088 chunks
+16:14:29    Embedding 1088 chunks...
+16:14:31    ✓ Written 1088 chunks to data/databases/governance.db (3.6 MB)
+16:14:31    ✓ Done — 12 docs, 1088 chunks, 73.2s
+16:14:31  
+============================================================
+16:14:31    PIPELINE COMPLETE
+16:14:31  ============================================================
+16:14:31    ✓ Survival - General              1208 chunks  3.9 MB
+16:14:31    ✓ Survival - Fire & Shelter       1132 chunks  3.9 MB
+16:14:31    ✓ Survival - Navigation            501 chunks  1.8 MB
+16:14:31    ✓ Medicine - Trauma & Wounds       703 chunks  1.9 MB
+16:14:31    ✓ Medicine - Infection & Disease  1028 chunks  3.6 MB
+16:14:31    ✓ Medicine - Childbirth & Pediatrics   890 chunks  2.0 MB
+16:14:31    ✓ Medicine - Herbal & Plant Medicine   600 chunks  1.8 MB
+16:14:31    ✓ Water - Finding & Purification   435 chunks  1.8 MB
+16:14:31    ✓ Food - Foraging & Hunting        413 chunks  1.7 MB
+16:14:31    ✓ Food - Agriculture & Preservation   584 chunks  1.8 MB
+16:14:31    ✓ Shelter & Construction           759 chunks  1.9 MB
+16:14:31    ✓ Energy Generation                936 chunks  2.0 MB
+16:14:31    ✓ Materials & Manufacturing        976 chunks  2.0 MB
+16:14:31    ✓ Chemistry & Industry             785 chunks  1.9 MB
+16:14:31    ✓ Electronics & Communication     1166 chunks  3.6 MB
+16:14:31    ✓ Governance & Society            1088 chunks  3.6 MB
+16:14:31  
+  Total chunks : 13,204
+16:14:31    Total DB size: 39.1 MB
+16:14:31    Databases in : data/databases/
+
+16:14:31    Report saved: data/pipeline_report.json
+17:54:37  
+============================================================
+17:54:37    DOOMSDAY RAG PIPELINE
+17:54:37    Modules to process: 5
+17:54:37    Started: 2026-05-16 17:54:37
+17:54:37  ============================================================
+
+17:54:37  No device provided, using mps
+17:54:37  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+17:54:39    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+17:54:39  
+[1/5] Module: Survival - General
+17:54:39    Psychology of survival, planning, the will to survive, SURVIVAL acronym, stress management
+17:54:39    ----------------------------------------
+17:54:45    + wikipedia_articles: 3 documents
+17:55:00    + pdf: 233 documents
+17:55:00    + pdf: 0 documents
+17:55:01    Processing: 236 docs → 1208 chunks
+17:55:01    Embedding 1208 chunks...
+17:55:03    ✓ Written 1208 chunks to data/databases/survival_general.db (3.9 MB)
+17:55:03    ✓ Done — 236 docs, 1208 chunks, 24.0s
+17:55:03  
+[2/5] Module: Survival - Desert
+17:55:03    Desert water finding, heat management, solar stills, desert navigation, sand storms
+17:55:03    ----------------------------------------
+17:55:11    + wikipedia_articles: 4 documents
+17:55:11    + pdf: 0 documents
+17:55:14    + pdf: 192 documents
+17:55:14    Processing: 196 docs → 1055 chunks
+17:55:14    Embedding 1055 chunks...
+17:55:16    ✓ Written 1055 chunks to data/databases/survival_desert.db (3.8 MB)
+17:55:16    ✓ Done — 196 docs, 1055 chunks, 13.0s
+17:55:16  
+[3/5] Module: Survival - Cold Weather
+17:55:16    Cold weather shelter, frostbite, hypothermia, ice fishing, snow travel, Arctic survival
+17:55:16    ----------------------------------------
+17:55:25      Rate limited, waiting 8s... (attempt 1/4)
+17:55:36    + wikipedia_articles: 6 documents
+17:55:36    + pdf: 0 documents
+17:55:36    Processing: 6 docs → 265 chunks
+17:55:36    Embedding 265 chunks...
+17:55:37    ✓ Written 265 chunks to data/databases/survival_cold.db (1.7 MB)
+17:55:37    ✓ Done — 6 docs, 265 chunks, 20.2s
+17:55:37  
+[4/5] Module: Water - Finding & Purification
+17:55:37    Water sources, purification methods, storage, well digging, rainwater collection
+17:55:37    ----------------------------------------
+17:55:37      Rate limited, waiting 8s... (attempt 1/4)
+17:55:45      Rate limited, waiting 16s... (attempt 2/4)
+17:56:14    + wikipedia_articles: 7 documents
+17:56:14    + pdf: 0 documents
+17:56:14    Processing: 7 docs → 435 chunks
+17:56:14    Embedding 435 chunks...
+17:56:15    ✓ Written 435 chunks to data/databases/water.db (1.8 MB)
+17:56:15    ✓ Done — 7 docs, 435 chunks, 38.5s
+17:56:15  
+[5/5] Module: Food - Foraging & Hunting
+17:56:15    Edible plants, mushrooms, hunting, trapping, fishing, insect consumption
+17:56:15    ----------------------------------------
+17:56:20      Rate limited, waiting 8s... (attempt 1/4)
+17:56:31      Rate limited, waiting 8s... (attempt 1/4)
+17:56:40      Rate limited, waiting 16s... (attempt 2/4)
+17:56:56      Rate limited, waiting 24s... (attempt 3/4)
+17:57:25    + wikipedia_articles: 7 documents
+17:57:25    + pdf: 0 documents
+17:57:25    Processing: 7 docs → 413 chunks
+17:57:25    Embedding 413 chunks...
+17:57:26    ✓ Written 413 chunks to data/databases/food_foraging.db (1.7 MB)
+17:57:26    ✓ Done — 7 docs, 413 chunks, 71.0s
+17:57:26  
+============================================================
+17:57:26    PIPELINE COMPLETE
+17:57:26  ============================================================
+17:57:26    ✓ Survival - General              1208 chunks  3.9 MB
+17:57:26    ✓ Survival - Desert               1055 chunks  3.8 MB
+17:57:26    ✓ Survival - Cold Weather          265 chunks  1.7 MB
+17:57:26    ✓ Water - Finding & Purification   435 chunks  1.8 MB
+17:57:26    ✓ Food - Foraging & Hunting        413 chunks  1.7 MB
+17:57:26  
+  Total chunks : 3,376
+17:57:26    Total DB size: 12.8 MB
+17:57:26    Databases in : data/databases/
+
+17:57:26    Report saved: data/pipeline_report.json
+18:03:53  
+============================================================
+18:03:53    DOOMSDAY RAG PIPELINE
+18:03:53    Modules to process: 7
+18:03:53    Started: 2026-05-16 18:03:53
+18:03:53  ============================================================
+
+18:03:53  No device provided, using mps
+18:03:53  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+18:03:55    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+18:03:55  
+[1/7] Module: Survival - General
+18:03:55    Psychology of survival, planning, the will to survive, SURVIVAL acronym, stress management
+18:03:55    ----------------------------------------
+18:04:00    + wikipedia_articles: 3 documents
+18:04:20    + pdf: 233 documents
+18:04:24      Read 612 pages from fm3-05-70.pdf
+18:04:24    + local_pdf: 612 documents
+18:04:24    Processing: 848 docs → 2848 chunks
+18:04:24    Embedding 2848 chunks...
+18:04:31    ✓ Written 2848 chunks to data/databases/survival_general.db (6.4 MB)
+18:04:31    ✓ Done — 848 docs, 2848 chunks, 36.4s
+18:04:31  
+[2/7] Module: Survival - Fire & Shelter
+18:04:31    Fire making techniques, shelter construction, insulation, cold weather protection
+18:04:31    ----------------------------------------
+18:04:43    + wikipedia_articles: 6 documents
+18:05:03    + pdf: 233 documents
+18:05:07      Read 612 pages from fm3-05-70.pdf
+18:05:07    + local_pdf: 612 documents
+18:05:07    Processing: 851 docs → 2772 chunks
+18:05:07    Embedding 2772 chunks...
+18:05:13    ✓ Written 2772 chunks to data/databases/survival_fire_shelter.db (6.4 MB)
+18:05:13    ✓ Done — 851 docs, 2772 chunks, 41.9s
+18:05:13  
+[3/7] Module: Survival - Navigation
+18:05:13    Celestial navigation, compass use, map reading, natural navigation methods
+18:05:13    ----------------------------------------
+18:05:26    + wikipedia_articles: 7 documents
+18:05:30      Read 612 pages from fm3-05-70.pdf
+18:05:30    + local_pdf: 612 documents
+18:05:30    Processing: 619 docs → 2141 chunks
+18:05:30    Embedding 2141 chunks...
+18:05:35    ✓ Written 2141 chunks to data/databases/survival_navigation.db (5.8 MB)
+18:05:35    ✓ Done — 619 docs, 2141 chunks, 21.5s
+18:05:35  
+[4/7] Module: Survival - Desert
+18:05:35    Desert water finding, heat management, solar stills, desert navigation, sand storms
+18:05:35    ----------------------------------------
+18:05:37      Rate limited, waiting 8s... (attempt 1/4)
+18:05:45      Rate limited, waiting 16s... (attempt 2/4)
+18:06:07    + wikipedia_articles: 4 documents
+18:06:10      Read 612 pages from fm3-05-70.pdf
+18:06:10    + local_pdf: 612 documents
+18:06:11      Read 192 pages from FM-90-3-Desert-Operations-24-August-1993.pdf
+18:06:11    + local_pdf: 192 documents
+18:06:11    Processing: 808 docs → 2695 chunks
+18:06:11    Embedding 2695 chunks...
+18:06:17    ✓ Written 2695 chunks to data/databases/survival_desert.db (6.2 MB)
+18:06:17    ✓ Done — 808 docs, 2695 chunks, 42.3s
+18:06:17  
+[5/7] Module: Survival - Cold Weather
+18:06:17    Cold weather shelter, frostbite, hypothermia, ice fishing, snow travel, Arctic survival
+18:06:17    ----------------------------------------
+18:06:28    + wikipedia_articles: 6 documents
+18:06:32      Read 612 pages from fm3-05-70.pdf
+18:06:32    + local_pdf: 612 documents
+18:06:32    Processing: 618 docs → 1905 chunks
+18:06:32    Embedding 1905 chunks...
+18:06:36    ✓ Written 1905 chunks to data/databases/survival_cold.db (4.2 MB)
+18:06:36    ✓ Done — 618 docs, 1905 chunks, 18.6s
+18:06:36  
+[6/7] Module: Water - Finding & Purification
+18:06:36    Water sources, purification methods, storage, well digging, rainwater collection
+18:06:36    ----------------------------------------
+18:06:38      Rate limited, waiting 8s... (attempt 1/4)
+18:06:46      Rate limited, waiting 16s... (attempt 2/4)
+18:07:13    + wikipedia_articles: 7 documents
+18:07:17      Read 612 pages from fm3-05-70.pdf
+18:07:17    + local_pdf: 612 documents
+18:07:17    Processing: 619 docs → 2075 chunks
+18:07:17    Embedding 2075 chunks...
+18:07:21    ✓ Written 2075 chunks to data/databases/water.db (5.8 MB)
+18:07:21    ✓ Done — 619 docs, 2075 chunks, 45.3s
+18:07:21  
+[7/7] Module: Food - Foraging & Hunting
+18:07:21    Edible plants, mushrooms, hunting, trapping, fishing, insect consumption
+18:07:21    ----------------------------------------
+18:07:28      Rate limited, waiting 8s... (attempt 1/4)
+18:07:37      Rate limited, waiting 16s... (attempt 2/4)
+18:07:53      Rate limited, waiting 24s... (attempt 3/4)
+18:08:22    + wikipedia_articles: 7 documents
+18:08:26      Read 612 pages from fm3-05-70.pdf
+18:08:26    + local_pdf: 612 documents
+18:08:26    Processing: 619 docs → 2053 chunks
+18:08:26    Embedding 2053 chunks...
+18:08:30    ✓ Written 2053 chunks to data/databases/food_foraging.db (5.8 MB)
+18:08:30    ✓ Done — 619 docs, 2053 chunks, 69.1s
+18:08:30  
+============================================================
+18:08:30    PIPELINE COMPLETE
+18:08:30  ============================================================
+18:08:30    ✓ Survival - General              2848 chunks  6.4 MB
+18:08:30    ✓ Survival - Fire & Shelter       2772 chunks  6.4 MB
+18:08:30    ✓ Survival - Navigation           2141 chunks  5.8 MB
+18:08:30    ✓ Survival - Desert               2695 chunks  6.2 MB
+18:08:30    ✓ Survival - Cold Weather         1905 chunks  4.2 MB
+18:08:30    ✓ Water - Finding & Purification  2075 chunks  5.8 MB
+18:08:30    ✓ Food - Foraging & Hunting       2053 chunks  5.8 MB
+18:08:30  
+  Total chunks : 16,489
+18:08:30    Total DB size: 40.5 MB
+18:08:30    Databases in : data/databases/
+
+18:08:30    Report saved: data/pipeline_report.json
+19:48:08  
+============================================================
+19:48:08    DOOMSDAY RAG PIPELINE
+19:48:08    Modules to process: 5
+19:48:08    Started: 2026-05-16 19:48:08
+19:48:08  ============================================================
+
+19:48:08  No device provided, using mps
+19:48:08  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+19:48:10    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+19:48:10  
+[1/5] Module: Survival - Fire & Shelter
+19:48:10    Fire making techniques, shelter construction, insulation, cold weather protection
+19:48:10    ----------------------------------------
+19:48:24    + wikipedia_articles: 6 documents
+19:48:25    + pdf: 0 documents
+19:48:25    Processing: 6 docs → 75 chunks
+19:48:25    Embedding 75 chunks...
+19:48:25    ✓ Written 75 chunks to data/databases/survival_fire_shelter.db (1.6 MB)
+19:48:25    ✓ Done — 6 docs, 75 chunks, 14.9s
+19:48:25  
+[2/5] Module: Medicine - Trauma & Wounds
+19:48:25    Wound care, bleeding control, fractures, burns, splints, tourniquets
+19:48:25    ----------------------------------------
+19:48:29      Rate limited, waiting 8s... (attempt 1/4)
+19:48:38      Rate limited, waiting 16s... (attempt 2/4)
+19:48:54      Rate limited, waiting 24s... (attempt 3/4)
+19:49:27    + wikipedia_articles: 7 documents
+19:49:27      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+19:49:28      [1/5] 10 pages
+19:49:29      [2/5] 6 pages
+19:49:31      [3/5] 32 pages
+19:49:32      [4/5] 14 pages
+19:49:34      [5/5] 24 pages
+19:49:34    + multi_pdf: 86 documents
+19:49:35    Processing: 93 docs → 765 chunks
+19:49:35    Embedding 765 chunks...
+19:49:36    ✓ Written 765 chunks to data/databases/medicine_trauma.db (2.0 MB)
+19:49:36    ✓ Done — 93 docs, 765 chunks, 70.9s
+19:49:36  
+[3/5] Module: Medicine - Infection & Disease
+19:49:36    Infection signs, antibiotics, common diseases, prevention, sanitation
+19:49:36    ----------------------------------------
+19:49:46      Rate limited, waiting 8s... (attempt 1/4)
+19:49:54      Rate limited, waiting 16s... (attempt 2/4)
+19:50:14    + wikipedia_articles: 7 documents
+19:50:14      Downloading 7 PDFs for 'Where There Is No Doctor (2025)'...
+19:50:15      [1/7] 11 pages
+19:50:15      [2/7] 10 pages
+19:50:17      [3/7] 4 pages
+19:50:18      [4/7] 4 pages
+19:50:20      [5/7] 24 pages
+19:50:21      [6/7] 20 pages
+19:50:23      [7/7] 28 pages
+19:50:23    + multi_pdf: 101 documents
+19:50:23    Processing: 108 docs → 1137 chunks
+19:50:23    Embedding 1137 chunks...
+19:50:25    ✓ Written 1137 chunks to data/databases/medicine_infection.db (3.7 MB)
+19:50:25    ✓ Done — 108 docs, 1137 chunks, 49.0s
+19:50:25  
+[4/5] Module: Medicine - Childbirth & Pediatrics
+19:50:25    Pregnancy, safe delivery, newborn care, childhood illness, breastfeeding
+19:50:25    ----------------------------------------
+19:50:33    + wikipedia_articles: 4 documents
+19:50:33      Downloading 4 PDFs for 'Where There Is No Doctor (2025)'...
+19:50:34      [1/4] 6 pages
+19:50:35      [2/4] 38 pages
+19:50:37      [3/4] 12 pages
+19:50:38      [4/4] 26 pages
+19:50:39    + multi_pdf: 82 documents
+19:50:39    Processing: 86 docs → 915 chunks
+19:50:39    Embedding 915 chunks...
+19:50:41    ✓ Written 915 chunks to data/databases/medicine_childbirth.db (2.0 MB)
+19:50:41    ✓ Done — 86 docs, 915 chunks, 15.7s
+19:50:41  
+[5/5] Module: Medicine - Herbal & Plant Medicine
+19:50:41    Medicinal plants, herbal remedies, natural antibiotics, traditional cures
+19:50:41    ----------------------------------------
+19:50:47      Rate limited, waiting 8s... (attempt 1/4)
+19:50:55      Rate limited, waiting 16s... (attempt 2/4)
+19:51:20    + wikipedia_articles: 8 documents
+19:51:20      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+19:51:21      [1/5] 16 pages
+19:51:22      [2/5] 4 pages
+19:51:23      [3/5] 6 pages
+19:51:25      [4/5] 8 pages
+19:51:26      [5/5] 8 pages
+19:51:26    + multi_pdf: 42 documents
+19:51:26    Processing: 50 docs → 691 chunks
+19:51:26    Embedding 691 chunks...
+19:51:28    ✓ Written 691 chunks to data/databases/medicine_herbal.db (1.9 MB)
+19:51:28    ✓ Done — 50 docs, 691 chunks, 46.8s
+19:51:28  
+============================================================
+19:51:28    PIPELINE COMPLETE
+19:51:28  ============================================================
+19:51:28    ✓ Survival - Fire & Shelter         75 chunks  1.6 MB
+19:51:28    ✓ Medicine - Trauma & Wounds       765 chunks  2.0 MB
+19:51:28    ✓ Medicine - Infection & Disease  1137 chunks  3.7 MB
+19:51:28    ✓ Medicine - Childbirth & Pediatrics   915 chunks  2.0 MB
+19:51:28    ✓ Medicine - Herbal & Plant Medicine   691 chunks  1.9 MB
+19:51:28  
+  Total chunks : 3,583
+19:51:28    Total DB size: 11.2 MB
+19:51:28    Databases in : data/databases/
+
+19:51:28    Report saved: data/pipeline_report.json
+19:58:59  
+============================================================
+19:58:59    DOOMSDAY RAG PIPELINE
+19:58:59    Modules to process: 1
+19:58:59    Started: 2026-05-16 19:58:59
+19:58:59  ============================================================
+
+19:58:59  No device provided, using mps
+19:58:59  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+19:59:01    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+19:59:01  
+[1/1] Module: Survival - Fire & Shelter
+19:59:01    Fire making techniques, shelter construction, insulation, cold weather protection
+19:59:01    ----------------------------------------
+19:59:18  
+============================================================
+19:59:18    DOOMSDAY RAG PIPELINE
+19:59:18    Modules to process: 1
+19:59:18    Started: 2026-05-16 19:59:18
+19:59:18  ============================================================
+
+19:59:18  No device provided, using mps
+19:59:18  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+19:59:20    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+19:59:20  
+[1/1] Module: Survival - Fire & Shelter
+19:59:20    Fire making techniques, shelter construction, insulation, cold weather protection
+19:59:20    ----------------------------------------
+19:59:31    + wikipedia_articles: 6 documents
+19:59:43      Read 233 pages from FM21-76_SurvivalManual.pdf
+19:59:43    + local_pdf: 233 documents
+19:59:43    Processing: 239 docs → 1132 chunks
+19:59:43    Embedding 1132 chunks...
+19:59:51    ✓ Written 1132 chunks to data/databases/survival_fire_shelter.db (3.8 MB)
+19:59:51    ✓ Done — 239 docs, 1132 chunks, 31.0s
+19:59:51  
+============================================================
+19:59:51    PIPELINE COMPLETE
+19:59:51  ============================================================
+19:59:51    ✓ Survival - Fire & Shelter       1132 chunks  3.8 MB
+19:59:51  
+  Total chunks : 1,132
+19:59:51    Total DB size: 3.8 MB
+19:59:51    Databases in : data/databases/
+
+19:59:51    Report saved: data/pipeline_report.json
+20:45:24  
+============================================================
+20:45:24    DOOMSDAY RAG PIPELINE
+20:45:24    Modules to process: 18
+20:45:24    Started: 2026-05-16 20:45:24
+20:45:24  ============================================================
+
+20:45:24  No device provided, using mps
+20:45:24  Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+20:45:30    ✓ Loaded SentenceTransformer: BAAI/bge-small-en-v1.5
+20:45:30  
+[1/18] Module: Survival - General
+20:45:30    Psychology of survival, planning, the will to survive, SURVIVAL acronym, stress management
+20:45:30    ----------------------------------------
+20:45:36    + wikipedia_articles: 3 documents
+20:45:47      Read 233 pages from FM21-76_SurvivalManual.pdf
+20:45:47    + local_pdf: 233 documents
+20:45:50      Read 612 pages from fm3-05-70.pdf
+20:45:50    + local_pdf: 612 documents
+20:45:51    Processing: 848 docs → 2848 chunks
+20:45:51    Embedding 2848 chunks...
+20:46:10    ✓ Written 2848 chunks to data/databases/survival_general.db (6.3 MB)
+20:46:10    ✓ Done — 848 docs, 2848 chunks, 39.9s
+20:46:10  
+[2/18] Module: Survival - Fire & Shelter
+20:46:10    Fire making techniques, shelter construction, insulation, cold weather protection
+20:46:10    ----------------------------------------
+20:46:21    + wikipedia_articles: 6 documents
+20:46:31      Read 233 pages from FM21-76_SurvivalManual.pdf
+20:46:31    + local_pdf: 233 documents
+20:46:31    Processing: 239 docs → 1132 chunks
+20:46:31    Embedding 1132 chunks...
+20:46:39    ✓ Written 1132 chunks to data/databases/survival_fire_shelter.db (3.8 MB)
+20:46:39    ✓ Done — 239 docs, 1132 chunks, 28.8s
+20:46:39  
+[3/18] Module: Survival - Navigation
+20:46:39    Celestial navigation, compass use, map reading, natural navigation methods
+20:46:39    ----------------------------------------
+20:46:43      Rate limited, waiting 8s... (attempt 1/4)
+20:46:51      Rate limited, waiting 16s... (attempt 2/4)
+20:47:16    + wikipedia_articles: 7 documents
+20:47:20      Read 612 pages from fm3-05-70.pdf
+20:47:20    + local_pdf: 612 documents
+20:47:20    Processing: 619 docs → 2141 chunks
+20:47:20    Embedding 2141 chunks...
+20:47:32    ✓ Written 2141 chunks to data/databases/survival_navigation.db (5.8 MB)
+20:47:32    ✓ Done — 619 docs, 2141 chunks, 53.5s
+20:47:32  
+[4/18] Module: Survival - Desert
+20:47:32    Desert water finding, heat management, solar stills, desert navigation, sand storms
+20:47:32    ----------------------------------------
+20:47:38      Rate limited, waiting 8s... (attempt 1/4)
+20:47:46      Rate limited, waiting 16s... (attempt 2/4)
+20:48:04    + wikipedia_articles: 4 documents
+20:48:08      Read 612 pages from fm3-05-70.pdf
+20:48:08    + local_pdf: 612 documents
+20:48:09      Read 192 pages from FM-90-3-Desert-Operations-24-August-1993.pdf
+20:48:09    + local_pdf: 192 documents
+20:48:09    Processing: 808 docs → 2695 chunks
+20:48:09    Embedding 2695 chunks...
+20:48:23    ✓ Written 2695 chunks to data/databases/survival_desert.db (6.2 MB)
+20:48:23    ✓ Done — 808 docs, 2695 chunks, 51.0s
+20:48:23  
+[5/18] Module: Survival - Cold Weather
+20:48:23    Cold weather shelter, frostbite, hypothermia, ice fishing, snow travel, Arctic survival
+20:48:23    ----------------------------------------
+20:48:34    + wikipedia_articles: 6 documents
+20:48:38      Read 612 pages from fm3-05-70.pdf
+20:48:38    + local_pdf: 612 documents
+20:48:38    Processing: 618 docs → 1905 chunks
+20:48:38    Embedding 1905 chunks...
+20:48:48    ✓ Written 1905 chunks to data/databases/survival_cold.db (4.2 MB)
+20:48:48    ✓ Done — 618 docs, 1905 chunks, 24.9s
+20:48:48  
+[6/18] Module: Medicine - Trauma & Wounds
+20:48:48    Wound care, bleeding control, fractures, burns, splints, tourniquets
+20:48:48    ----------------------------------------
+20:48:54      Rate limited, waiting 8s... (attempt 1/4)
+20:49:09    + wikipedia_articles: 7 documents
+20:49:09      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+20:49:09      [1/5] 10 pages
+20:49:10      [2/5] 6 pages
+20:49:11      [3/5] 32 pages
+20:49:12      [4/5] 14 pages
+20:49:13      [5/5] 24 pages
+20:49:13    + multi_pdf: 86 documents
+20:49:13    Processing: 93 docs → 765 chunks
+20:49:13    Embedding 765 chunks...
+20:49:17    ✓ Written 765 chunks to data/databases/medicine_trauma.db (2.0 MB)
+20:49:17    ✓ Done — 93 docs, 765 chunks, 29.0s
+20:49:17  
+[7/18] Module: Medicine - Infection & Disease
+20:49:17    Infection signs, antibiotics, common diseases, prevention, sanitation
+20:49:17    ----------------------------------------
+20:49:28      Rate limited, waiting 8s... (attempt 1/4)
+20:49:37      Rate limited, waiting 16s... (attempt 2/4)
+20:49:53      Rate limited, waiting 24s... (attempt 3/4)
+20:50:19    + wikipedia_articles: 7 documents
+20:50:19      Downloading 7 PDFs for 'Where There Is No Doctor (2025)'...
+20:50:19      [1/7] 11 pages
+20:50:20      [2/7] 10 pages
+20:50:20      [3/7] 4 pages
+20:50:21      [4/7] 4 pages
+20:50:22      [5/7] 24 pages
+20:50:23      [6/7] 20 pages
+20:50:24      [7/7] 28 pages
+20:50:24    + multi_pdf: 101 documents
+20:50:24    Processing: 108 docs → 1137 chunks
+20:50:24    Embedding 1137 chunks...
+20:50:28    ✓ Written 1137 chunks to data/databases/medicine_infection.db (3.7 MB)
+20:50:28    ✓ Done — 108 docs, 1137 chunks, 70.5s
+20:50:28  
+[8/18] Module: Medicine - Childbirth & Pediatrics
+20:50:28    Pregnancy, safe delivery, newborn care, childhood illness, breastfeeding
+20:50:28    ----------------------------------------
+20:50:35    + wikipedia_articles: 4 documents
+20:50:35      Downloading 4 PDFs for 'Where There Is No Doctor (2025)'...
+20:50:35      [1/4] 6 pages
+20:50:36      [2/4] 38 pages
+20:50:37      [3/4] 12 pages
+20:50:38      [4/4] 26 pages
+20:50:38    + multi_pdf: 82 documents
+20:50:38    Processing: 86 docs → 915 chunks
+20:50:38    Embedding 915 chunks...
+20:50:43    ✓ Written 915 chunks to data/databases/medicine_childbirth.db (2.0 MB)
+20:50:43    ✓ Done — 86 docs, 915 chunks, 15.0s
+20:50:43  
+[9/18] Module: Medicine - Herbal & Plant Medicine
+20:50:43    Medicinal plants, herbal remedies, natural antibiotics, traditional cures
+20:50:43    ----------------------------------------
+20:50:50      Rate limited, waiting 8s... (attempt 1/4)
+20:50:58      Rate limited, waiting 16s... (attempt 2/4)
+20:51:22    + wikipedia_articles: 8 documents
+20:51:22      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+20:51:22      [1/5] 16 pages
+20:51:22      [2/5] 4 pages
+20:51:23      [3/5] 6 pages
+20:51:24      [4/5] 8 pages
+20:51:24      [5/5] 8 pages
+20:51:25    + multi_pdf: 42 documents
+20:51:25    Processing: 50 docs → 691 chunks
+20:51:25    Embedding 691 chunks...
+20:51:27    ✓ Written 691 chunks to data/databases/medicine_herbal.db (1.9 MB)
+20:51:27    ✓ Done — 50 docs, 691 chunks, 44.5s
+20:51:27  
+[10/18] Module: Water - Finding & Purification
+20:51:27    Water sources, purification methods, storage, well digging, rainwater collection
+20:51:27    ----------------------------------------
+20:51:38      Rate limited, waiting 8s... (attempt 1/4)
+20:51:46      Rate limited, waiting 16s... (attempt 2/4)
+20:52:04    + wikipedia_articles: 7 documents
+20:52:08      Read 612 pages from fm3-05-70.pdf
+20:52:08    + local_pdf: 612 documents
+20:52:08    Processing: 619 docs → 2075 chunks
+20:52:08    Embedding 2075 chunks...
+20:52:19    ✓ Written 2075 chunks to data/databases/water.db (5.8 MB)
+20:52:19    ✓ Done — 619 docs, 2075 chunks, 51.8s
+20:52:19  
+[11/18] Module: Food - Foraging & Hunting
+20:52:19    Edible plants, mushrooms, hunting, trapping, fishing, insect consumption
+20:52:19    ----------------------------------------
+20:52:32    + wikipedia_articles: 7 documents
+20:52:35      Read 612 pages from fm3-05-70.pdf
+20:52:35    + local_pdf: 612 documents
+20:52:35    Processing: 619 docs → 2053 chunks
+20:52:35    Embedding 2053 chunks...
+20:52:46    ✓ Written 2053 chunks to data/databases/food_foraging.db (5.8 MB)
+20:52:46    ✓ Done — 619 docs, 2053 chunks, 27.3s
+20:52:46  
+[12/18] Module: Food - Agriculture & Preservation
+20:52:46    Crop rotation, composting, seed saving, smoking, salting, fermentation
+20:52:46    ----------------------------------------
+20:52:50      Rate limited, waiting 8s... (attempt 1/4)
+20:52:58      Rate limited, waiting 16s... (attempt 2/4)
+20:53:29    + wikipedia_articles: 10 documents
+20:53:29    Processing: 10 docs → 584 chunks
+20:53:29    Embedding 584 chunks...
+20:53:30    ✓ Written 584 chunks to data/databases/food_farming.db (1.8 MB)
+20:53:30    ✓ Done — 10 docs, 584 chunks, 44.4s
+20:53:30  
+[13/18] Module: Shelter & Construction
+20:53:30    Log cabins, adobe, earthship, timber framing, roads, bridges, sanitation
+20:53:30    ----------------------------------------
+20:53:34      Rate limited, waiting 8s... (attempt 1/4)
+20:53:42      Rate limited, waiting 16s... (attempt 2/4)
+20:53:59      Rate limited, waiting 24s... (attempt 3/4)
+20:54:40      Rate limited, waiting 8s... (attempt 1/4)
+20:54:48      Rate limited, waiting 16s... (attempt 2/4)
+20:55:06    + wikipedia_articles: 12 documents
+20:55:06    Processing: 12 docs → 759 chunks
+20:55:06    Embedding 759 chunks...
+20:55:08    ✓ Written 759 chunks to data/databases/shelter_construction.db (1.9 MB)
+20:55:08    ✓ Done — 12 docs, 759 chunks, 97.8s
+20:55:08  
+[14/18] Module: Energy Generation
+20:55:08    Micro-hydro, wind, biogas, wood gasification, steam power
+20:55:08    ----------------------------------------
+20:55:25      Rate limited, waiting 8s... (attempt 1/4)
+20:55:33      Rate limited, waiting 16s... (attempt 2/4)
+20:55:49      Rate limited, waiting 24s... (attempt 3/4)
+20:56:19    + wikipedia_articles: 12 documents
+20:56:19    Processing: 12 docs → 936 chunks
+20:56:19    Embedding 936 chunks...
+20:56:21    ✓ Written 936 chunks to data/databases/energy.db (2.0 MB)
+20:56:21    ✓ Done — 12 docs, 936 chunks, 73.2s
+20:56:21  
+[15/18] Module: Materials & Manufacturing
+20:56:21    Metalworking, pottery, glassmaking, textiles, leather, tools
+20:56:21    ----------------------------------------
+20:56:34      Rate limited, waiting 8s... (attempt 1/4)
+20:56:43      Rate limited, waiting 16s... (attempt 2/4)
+20:56:59      Rate limited, waiting 24s... (attempt 3/4)
+20:57:35    + wikipedia_articles: 14 documents
+20:57:36    Processing: 14 docs → 976 chunks
+20:57:36    Embedding 976 chunks...
+20:57:38    ✓ Written 976 chunks to data/databases/materials.db (2.0 MB)
+20:57:38    ✓ Done — 14 docs, 976 chunks, 76.9s
+20:57:38  
+[16/18] Module: Chemistry & Industry
+20:57:38    Soap, fermentation, cement, dyes, basic organic chemistry
+20:57:38    ----------------------------------------
+20:57:44      Rate limited, waiting 8s... (attempt 1/4)
+20:57:53      Rate limited, waiting 16s... (attempt 2/4)
+20:58:25    + wikipedia_articles: 12 documents
+20:58:25    Processing: 12 docs → 786 chunks
+20:58:25    Embedding 786 chunks...
+20:58:27    ✓ Written 786 chunks to data/databases/chemistry.db (1.9 MB)
+20:58:27    ✓ Done — 12 docs, 786 chunks, 48.6s
+20:58:27  
+[17/18] Module: Electronics & Communication
+20:58:27    Radio, telegraph, vacuum tubes, basic electrical systems
+20:58:27    ----------------------------------------
+20:58:29      Rate limited, waiting 8s... (attempt 1/4)
+20:58:37      Rate limited, waiting 16s... (attempt 2/4)
+20:58:53      Rate limited, waiting 24s... (attempt 3/4)
+20:59:36    + wikipedia_articles: 11 documents
+20:59:36    Processing: 11 docs → 1166 chunks
+20:59:36    Embedding 1166 chunks...
+20:59:40    ✓ Written 1166 chunks to data/databases/electronics.db (3.6 MB)
+20:59:40    ✓ Done — 11 docs, 1166 chunks, 72.7s
+20:59:40  
+[18/18] Module: Governance & Society
+20:59:40    Governance, law, education, navigation, trade, conflict resolution
+20:59:40    ----------------------------------------
+20:59:40      Rate limited, waiting 8s... (attempt 1/4)
+20:59:48      Rate limited, waiting 16s... (attempt 2/4)
+21:00:23      Rate limited, waiting 8s... (attempt 1/4)
+21:00:31      Rate limited, waiting 16s... (attempt 2/4)
+21:00:47      Rate limited, waiting 24s... (attempt 3/4)
+21:01:15    + wikipedia_articles: 12 documents
+21:01:15    Processing: 12 docs → 1088 chunks
+21:01:15    Embedding 1088 chunks...
+21:01:18    ✓ Written 1088 chunks to data/databases/governance.db (3.6 MB)
+21:01:18    ✓ Done — 12 docs, 1088 chunks, 98.5s
+21:01:18  
+============================================================
+21:01:18    PIPELINE COMPLETE
+21:01:18  ============================================================
+21:01:18    ✓ Survival - General              2848 chunks  6.3 MB
+21:01:18    ✓ Survival - Fire & Shelter       1132 chunks  3.8 MB
+21:01:18    ✓ Survival - Navigation           2141 chunks  5.8 MB
+21:01:18    ✓ Survival - Desert               2695 chunks  6.2 MB
+21:01:18    ✓ Survival - Cold Weather         1905 chunks  4.2 MB
+21:01:18    ✓ Medicine - Trauma & Wounds       765 chunks  2.0 MB
+21:01:18    ✓ Medicine - Infection & Disease  1137 chunks  3.7 MB
+21:01:18    ✓ Medicine - Childbirth & Pediatrics   915 chunks  2.0 MB
+21:01:18    ✓ Medicine - Herbal & Plant Medicine   691 chunks  1.9 MB
+21:01:18    ✓ Water - Finding & Purification  2075 chunks  5.8 MB
+21:01:18    ✓ Food - Foraging & Hunting       2053 chunks  5.8 MB
+21:01:18    ✓ Food - Agriculture & Preservation   584 chunks  1.8 MB
+21:01:18    ✓ Shelter & Construction           759 chunks  1.9 MB
+21:01:18    ✓ Energy Generation                936 chunks  2.0 MB
+21:01:18    ✓ Materials & Manufacturing        976 chunks  2.0 MB
+21:01:18    ✓ Chemistry & Industry             786 chunks  1.9 MB
+21:01:18    ✓ Electronics & Communication     1166 chunks  3.6 MB
+21:01:18    ✓ Governance & Society            1088 chunks  3.6 MB
+21:01:18  
+  Total chunks : 24,652
+21:01:18    Total DB size: 64.1 MB
+21:01:18    Databases in : data/databases/
+
+21:01:18    Report saved: data/pipeline_report.json
+21:29:42  
+============================================================
+21:29:42    DOOMSDAY RAG PIPELINE
+21:29:42    Modules to process: 18
+21:29:42    Started: 2026-05-16 21:29:42
+21:29:42  ============================================================
+
+21:29:42  No device provided, using mps
+21:29:43  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+21:29:45    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+21:29:45  
+[1/18] Module: Survival - General
+21:29:45    Psychology of survival, planning, the will to survive, SURVIVAL acronym, stress management
+21:29:45    ----------------------------------------
+21:29:50    + wikipedia_articles: 3 documents
+21:30:01      Read 233 pages from FM21-76_SurvivalManual.pdf
+21:30:01    + local_pdf: 233 documents
+21:30:04      Read 612 pages from fm3-05-70.pdf
+21:30:04    + local_pdf: 612 documents
+21:30:05    Processing: 848 docs → 2848 chunks
+21:30:05    Embedding 2848 chunks...
+21:30:12    ✓ Written 2848 chunks to data/databases/survival_general.db (6.3 MB)
+21:30:12    ✓ Done — 848 docs, 2848 chunks, 27.1s
+21:30:12  
+[2/18] Module: Survival - Fire & Shelter
+21:30:12    Fire making techniques, shelter construction, insulation, cold weather protection
+21:30:12    ----------------------------------------
+21:30:23    + wikipedia_articles: 6 documents
+21:30:33      Read 233 pages from FM21-76_SurvivalManual.pdf
+21:30:33    + local_pdf: 233 documents
+21:30:33    Processing: 239 docs → 1132 chunks
+21:30:33    Embedding 1132 chunks...
+21:30:36    ✓ Written 1132 chunks to data/databases/survival_fire_shelter.db (3.8 MB)
+21:30:36    ✓ Done — 239 docs, 1132 chunks, 23.7s
+21:30:36  
+[3/18] Module: Survival - Navigation
+21:30:36    Celestial navigation, compass use, map reading, natural navigation methods
+21:30:36    ----------------------------------------
+21:30:39      Rate limited, waiting 8s... (attempt 1/4)
+21:30:48      Rate limited, waiting 16s... (attempt 2/4)
+21:31:13    + wikipedia_articles: 7 documents
+21:31:17      Read 612 pages from fm3-05-70.pdf
+21:31:17    + local_pdf: 612 documents
+21:31:17    Processing: 619 docs → 2141 chunks
+21:31:17    Embedding 2141 chunks...
+21:31:22    ✓ Written 2141 chunks to data/databases/survival_navigation.db (5.8 MB)
+21:31:22    ✓ Done — 619 docs, 2141 chunks, 46.0s
+21:31:22  
+[4/18] Module: Survival - Desert
+21:31:22    Desert water finding, heat management, solar stills, desert navigation, sand storms
+21:31:22    ----------------------------------------
+21:31:27      Rate limited, waiting 8s... (attempt 1/4)
+21:31:35      Rate limited, waiting 16s... (attempt 2/4)
+21:31:52      Rate limited, waiting 24s... (attempt 3/4)
+21:32:17    + wikipedia_articles: 4 documents
+21:32:21      Read 612 pages from fm3-05-70.pdf
+21:32:21    + local_pdf: 612 documents
+21:32:22      Read 192 pages from FM-90-3-Desert-Operations-24-August-1993.pdf
+21:32:22    + local_pdf: 192 documents
+21:32:22    Processing: 808 docs → 2695 chunks
+21:32:22    Embedding 2695 chunks...
+21:32:28    ✓ Written 2695 chunks to data/databases/survival_desert.db (6.2 MB)
+21:32:28    ✓ Done — 808 docs, 2695 chunks, 66.1s
+21:32:28  
+[5/18] Module: Survival - Cold Weather
+21:32:28    Cold weather shelter, frostbite, hypothermia, ice fishing, snow travel, Arctic survival
+21:32:28    ----------------------------------------
+21:32:38    + wikipedia_articles: 6 documents
+21:32:42      Read 612 pages from fm3-05-70.pdf
+21:32:42    + local_pdf: 612 documents
+21:32:42    Processing: 618 docs → 1905 chunks
+21:32:42    Embedding 1905 chunks...
+21:32:46    ✓ Written 1905 chunks to data/databases/survival_cold.db (4.2 MB)
+21:32:46    ✓ Done — 618 docs, 1905 chunks, 18.3s
+21:32:46  
+[6/18] Module: Medicine - Trauma & Wounds
+21:32:46    Wound care, bleeding control, fractures, burns, splints, tourniquets
+21:32:46    ----------------------------------------
+21:32:51      Rate limited, waiting 8s... (attempt 1/4)
+21:33:07    + wikipedia_articles: 7 documents
+21:33:07      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+21:33:07      [1/5] 10 pages
+21:33:08      [2/5] 6 pages
+21:33:09      [3/5] 32 pages
+21:33:09      [4/5] 14 pages
+21:33:10      [5/5] 24 pages
+21:33:11    + multi_pdf: 86 documents
+21:33:11    Processing: 93 docs → 765 chunks
+21:33:11    Embedding 765 chunks...
+21:33:12    ✓ Written 765 chunks to data/databases/medicine_trauma.db (2.0 MB)
+21:33:12    ✓ Done — 93 docs, 765 chunks, 26.4s
+21:33:12  
+[7/18] Module: Medicine - Infection & Disease
+21:33:12    Infection signs, antibiotics, common diseases, prevention, sanitation
+21:33:12    ----------------------------------------
+21:33:24      Rate limited, waiting 8s... (attempt 1/4)
+21:33:33      Rate limited, waiting 16s... (attempt 2/4)
+21:33:49      Rate limited, waiting 24s... (attempt 3/4)
+21:34:15    + wikipedia_articles: 7 documents
+21:34:15      Downloading 7 PDFs for 'Where There Is No Doctor (2025)'...
+21:34:15      [1/7] 11 pages
+21:34:15      [2/7] 10 pages
+21:34:16      [3/7] 4 pages
+21:34:17      [4/7] 4 pages
+21:34:18      [5/7] 24 pages
+21:34:18      [6/7] 20 pages
+21:34:19      [7/7] 28 pages
+21:34:20    + multi_pdf: 101 documents
+21:34:20    Processing: 108 docs → 1137 chunks
+21:34:20    Embedding 1137 chunks...
+21:34:22    ✓ Written 1137 chunks to data/databases/medicine_infection.db (3.7 MB)
+21:34:22    ✓ Done — 108 docs, 1137 chunks, 69.4s
+21:34:22  
+[8/18] Module: Medicine - Childbirth & Pediatrics
+21:34:22    Pregnancy, safe delivery, newborn care, childhood illness, breastfeeding
+21:34:22    ----------------------------------------
+21:34:30    + wikipedia_articles: 4 documents
+21:34:30      Downloading 4 PDFs for 'Where There Is No Doctor (2025)'...
+21:34:30      [1/4] 6 pages
+21:34:31      [2/4] 38 pages
+21:34:31      [3/4] 12 pages
+21:34:32      [4/4] 26 pages
+21:34:33    + multi_pdf: 82 documents
+21:34:33    Processing: 86 docs → 915 chunks
+21:34:33    Embedding 915 chunks...
+21:34:34    ✓ Written 915 chunks to data/databases/medicine_childbirth.db (2.0 MB)
+21:34:34    ✓ Done — 86 docs, 915 chunks, 12.7s
+21:34:34  
+[9/18] Module: Medicine - Herbal & Plant Medicine
+21:34:34    Medicinal plants, herbal remedies, natural antibiotics, traditional cures
+21:34:34    ----------------------------------------
+21:34:42      Rate limited, waiting 8s... (attempt 1/4)
+21:34:50      Rate limited, waiting 16s... (attempt 2/4)
+21:35:13    + wikipedia_articles: 8 documents
+21:35:13      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+21:35:13      [1/5] 16 pages
+21:35:14      [2/5] 4 pages
+21:35:15      [3/5] 6 pages
+21:35:15      [4/5] 8 pages
+21:35:16      [5/5] 8 pages
+21:35:17    + multi_pdf: 42 documents
+21:35:17    Processing: 50 docs → 691 chunks
+21:35:17    Embedding 691 chunks...
+21:35:18    ✓ Written 691 chunks to data/databases/medicine_herbal.db (1.9 MB)
+21:35:18    ✓ Done — 50 docs, 691 chunks, 43.6s
+21:35:18  
+[10/18] Module: Water - Finding & Purification
+21:35:18    Water sources, purification methods, storage, well digging, rainwater collection
+21:35:18    ----------------------------------------
+21:35:29      Rate limited, waiting 8s... (attempt 1/4)
+21:35:37      Rate limited, waiting 16s... (attempt 2/4)
+21:35:54      Rate limited, waiting 24s... (attempt 3/4)
+21:36:19    + wikipedia_articles: 7 documents
+21:36:23      Read 612 pages from fm3-05-70.pdf
+21:36:23    + local_pdf: 612 documents
+21:36:23    Processing: 619 docs → 2075 chunks
+21:36:23    Embedding 2075 chunks...
+21:36:27    ✓ Written 2075 chunks to data/databases/water.db (5.8 MB)
+21:36:27    ✓ Done — 619 docs, 2075 chunks, 69.0s
+21:36:27  
+[11/18] Module: Food - Foraging & Hunting
+21:36:27    Edible plants, mushrooms, hunting, trapping, fishing, insect consumption
+21:36:27    ----------------------------------------
+21:36:42    + wikipedia_articles: 7 documents
+21:36:45      Read 612 pages from fm3-05-70.pdf
+21:36:45    + local_pdf: 612 documents
+21:36:45    Processing: 619 docs → 2053 chunks
+21:36:45    Embedding 2053 chunks...
+21:36:50    ✓ Written 2053 chunks to data/databases/food_foraging.db (5.8 MB)
+21:36:50    ✓ Done — 619 docs, 2053 chunks, 22.8s
+21:36:50  
+[12/18] Module: Food - Agriculture & Preservation
+21:36:50    Crop rotation, composting, seed saving, smoking, salting, fermentation
+21:36:50    ----------------------------------------
+21:36:54      Rate limited, waiting 8s... (attempt 1/4)
+21:37:16    + wikipedia_articles: 10 documents
+21:37:16    Processing: 10 docs → 584 chunks
+21:37:16    Embedding 584 chunks...
+21:37:17    ✓ Written 584 chunks to data/databases/food_farming.db (1.8 MB)
+21:37:17    ✓ Done — 10 docs, 584 chunks, 27.1s
+21:37:17  
+[13/18] Module: Shelter & Construction
+21:37:17    Log cabins, adobe, earthship, timber framing, roads, bridges, sanitation
+21:37:17    ----------------------------------------
+21:37:21      Rate limited, waiting 8s... (attempt 1/4)
+21:37:29      Rate limited, waiting 16s... (attempt 2/4)
+21:37:45      Rate limited, waiting 24s... (attempt 3/4)
+21:38:26      Rate limited, waiting 8s... (attempt 1/4)
+21:38:34      Rate limited, waiting 16s... (attempt 2/4)
+21:38:50      Rate limited, waiting 24s... (attempt 3/4)
+21:39:16    + wikipedia_articles: 12 documents
+21:39:16    Processing: 12 docs → 759 chunks
+21:39:16    Embedding 759 chunks...
+21:39:18    ✓ Written 759 chunks to data/databases/shelter_construction.db (1.9 MB)
+21:39:18    ✓ Done — 12 docs, 759 chunks, 120.5s
+21:39:18  
+[14/18] Module: Energy Generation
+21:39:18    Micro-hydro, wind, biogas, wood gasification, steam power
+21:39:18    ----------------------------------------
+21:39:34      Rate limited, waiting 8s... (attempt 1/4)
+21:39:42      Rate limited, waiting 16s... (attempt 2/4)
+21:39:58      Rate limited, waiting 24s... (attempt 3/4)
+21:40:28    + wikipedia_articles: 12 documents
+21:40:28    Processing: 12 docs → 936 chunks
+21:40:28    Embedding 936 chunks...
+21:40:30    ✓ Written 936 chunks to data/databases/energy.db (2.0 MB)
+21:40:30    ✓ Done — 12 docs, 936 chunks, 71.9s
+21:40:30  
+[15/18] Module: Materials & Manufacturing
+21:40:30    Metalworking, pottery, glassmaking, textiles, leather, tools
+21:40:30    ----------------------------------------
+21:40:42      Rate limited, waiting 8s... (attempt 1/4)
+21:40:50      Rate limited, waiting 16s... (attempt 2/4)
+21:41:20    + wikipedia_articles: 14 documents
+21:41:20    Processing: 14 docs → 976 chunks
+21:41:20    Embedding 976 chunks...
+21:41:21    ✓ Written 976 chunks to data/databases/materials.db (2.0 MB)
+21:41:21    ✓ Done — 14 docs, 976 chunks, 51.7s
+21:41:21  
+[16/18] Module: Chemistry & Industry
+21:41:21    Soap, fermentation, cement, dyes, basic organic chemistry
+21:41:21    ----------------------------------------
+21:41:27      Rate limited, waiting 8s... (attempt 1/4)
+21:41:35      Rate limited, waiting 16s... (attempt 2/4)
+21:41:51      Rate limited, waiting 24s... (attempt 3/4)
+21:42:31    + wikipedia_articles: 12 documents
+21:42:31    Processing: 12 docs → 786 chunks
+21:42:31    Embedding 786 chunks...
+21:42:33    ✓ Written 786 chunks to data/databases/chemistry.db (1.9 MB)
+21:42:33    ✓ Done — 12 docs, 786 chunks, 71.6s
+21:42:33  
+[17/18] Module: Electronics & Communication
+21:42:33    Radio, telegraph, vacuum tubes, basic electrical systems
+21:42:33    ----------------------------------------
+21:42:35      Rate limited, waiting 8s... (attempt 1/4)
+21:42:43      Rate limited, waiting 16s... (attempt 2/4)
+21:42:59      Rate limited, waiting 24s... (attempt 3/4)
+21:43:42    + wikipedia_articles: 11 documents
+21:43:42    Processing: 11 docs → 1166 chunks
+21:43:42    Embedding 1166 chunks...
+21:43:44    ✓ Written 1166 chunks to data/databases/electronics.db (3.6 MB)
+21:43:44    ✓ Done — 11 docs, 1166 chunks, 71.2s
+21:43:44  
+[18/18] Module: Governance & Society
+21:43:44    Governance, law, education, navigation, trade, conflict resolution
+21:43:44    ----------------------------------------
+21:43:44      Rate limited, waiting 8s... (attempt 1/4)
+21:43:52      Rate limited, waiting 16s... (attempt 2/4)
+21:44:27      Rate limited, waiting 8s... (attempt 1/4)
+21:44:35      Rate limited, waiting 16s... (attempt 2/4)
+21:44:51      Rate limited, waiting 24s... (attempt 3/4)
+21:45:19    + wikipedia_articles: 12 documents
+21:45:19    Processing: 12 docs → 1088 chunks
+21:45:19    Embedding 1088 chunks...
+21:45:21    ✓ Written 1088 chunks to data/databases/governance.db (3.6 MB)
+21:45:21    ✓ Done — 12 docs, 1088 chunks, 97.1s
+21:45:21  
+============================================================
+21:45:21    PIPELINE COMPLETE
+21:45:21  ============================================================
+21:45:21    ✓ Survival - General              2848 chunks  6.3 MB
+21:45:21    ✓ Survival - Fire & Shelter       1132 chunks  3.8 MB
+21:45:21    ✓ Survival - Navigation           2141 chunks  5.8 MB
+21:45:21    ✓ Survival - Desert               2695 chunks  6.2 MB
+21:45:21    ✓ Survival - Cold Weather         1905 chunks  4.2 MB
+21:45:21    ✓ Medicine - Trauma & Wounds       765 chunks  2.0 MB
+21:45:21    ✓ Medicine - Infection & Disease  1137 chunks  3.7 MB
+21:45:21    ✓ Medicine - Childbirth & Pediatrics   915 chunks  2.0 MB
+21:45:21    ✓ Medicine - Herbal & Plant Medicine   691 chunks  1.9 MB
+21:45:21    ✓ Water - Finding & Purification  2075 chunks  5.8 MB
+21:45:21    ✓ Food - Foraging & Hunting       2053 chunks  5.8 MB
+21:45:21    ✓ Food - Agriculture & Preservation   584 chunks  1.8 MB
+21:45:21    ✓ Shelter & Construction           759 chunks  1.9 MB
+21:45:21    ✓ Energy Generation                936 chunks  2.0 MB
+21:45:21    ✓ Materials & Manufacturing        976 chunks  2.0 MB
+21:45:21    ✓ Chemistry & Industry             786 chunks  1.9 MB
+21:45:21    ✓ Electronics & Communication     1166 chunks  3.6 MB
+21:45:21    ✓ Governance & Society            1088 chunks  3.6 MB
+21:45:21  
+  Total chunks : 24,652
+21:45:21    Total DB size: 64.1 MB
+21:45:21    Databases in : data/databases/
+
+21:45:21    Report saved: data/pipeline_report.json
+08:19:36  
+============================================================
+08:19:36    DOOMSDAY RAG PIPELINE
+08:19:36    Modules to process: 18
+08:19:36    Started: 2026-05-17 08:19:36
+08:19:36  ============================================================
+
+08:19:36  No device provided, using mps
+08:19:36  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+08:19:39    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+08:19:39  
+[1/18] Module: Survival - General
+08:19:39    Psychology of survival, planning, the will to survive, SURVIVAL acronym, stress management
+08:19:39    ----------------------------------------
+08:19:44    + wikipedia_articles: 3 documents
+08:19:55      Read 233 pages from FM21-76_SurvivalManual.pdf
+08:19:55    + local_pdf: 233 documents
+08:19:58      Read 612 pages from fm3-05-70.pdf
+08:19:58    + local_pdf: 612 documents
+08:19:59    Processing: 848 docs → 2848 chunks
+08:19:59    Embedding 2848 chunks...
+08:20:07    Written 2848 chunks to data/databases/survival_general.db (9.8 MB)
+08:20:07    ✓ Done — 848 docs, 2848 chunks, 28.4s
+08:20:07  
+[2/18] Module: Survival - Fire & Shelter
+08:20:07    Fire making techniques, shelter construction, insulation, cold weather protection
+08:20:07    ----------------------------------------
+08:20:18    + wikipedia_articles: 6 documents
+08:20:28      Read 233 pages from FM21-76_SurvivalManual.pdf
+08:20:28    + local_pdf: 233 documents
+08:20:28    Processing: 239 docs → 1132 chunks
+08:20:28    Embedding 1132 chunks...
+08:20:31    Written 1132 chunks to data/databases/survival_fire_shelter.db (4.0 MB)
+08:20:31    ✓ Done — 239 docs, 1132 chunks, 23.6s
+08:20:31  
+[3/18] Module: Survival - Navigation
+08:20:31    Celestial navigation, compass use, map reading, natural navigation methods
+08:20:31    ----------------------------------------
+08:20:35      Rate limited, waiting 8s... (attempt 1/4)
+08:20:43      Rate limited, waiting 16s... (attempt 2/4)
+08:20:59      Rate limited, waiting 24s... (attempt 3/4)
+08:21:32    + wikipedia_articles: 7 documents
+08:21:36      Read 612 pages from fm3-05-70.pdf
+08:21:36    + local_pdf: 612 documents
+08:21:36    Processing: 619 docs → 2141 chunks
+08:21:36    Embedding 2141 chunks...
+08:21:41    Written 2141 chunks to data/databases/survival_navigation.db (6.9 MB)
+08:21:41    ✓ Done — 619 docs, 2141 chunks, 70.1s
+08:21:41  
+[4/18] Module: Survival - Desert
+08:21:41    Desert water finding, heat management, solar stills, desert navigation, sand storms
+08:21:41    ----------------------------------------
+08:21:46      Rate limited, waiting 8s... (attempt 1/4)
+08:21:55      Rate limited, waiting 16s... (attempt 2/4)
+08:22:12    + wikipedia_articles: 4 documents
+08:22:16      Read 612 pages from fm3-05-70.pdf
+08:22:16    + local_pdf: 612 documents
+08:22:17      Read 192 pages from FM-90-3-Desert-Operations-24-August-1993.pdf
+08:22:17    + local_pdf: 192 documents
+08:22:17    Processing: 808 docs → 2695 chunks
+08:22:17    Embedding 2695 chunks...
+08:22:23    Written 2695 chunks to data/databases/survival_desert.db (9.1 MB)
+08:22:23    ✓ Done — 808 docs, 2695 chunks, 42.1s
+08:22:23  
+[5/18] Module: Survival - Cold Weather
+08:22:23    Cold weather shelter, frostbite, hypothermia, ice fishing, snow travel, Arctic survival
+08:22:23    ----------------------------------------
+08:22:33    + wikipedia_articles: 6 documents
+08:22:37      Read 612 pages from fm3-05-70.pdf
+08:22:37    + local_pdf: 612 documents
+08:22:37    Processing: 618 docs → 1905 chunks
+08:22:37    Embedding 1905 chunks...
+08:22:41    Written 1905 chunks to data/databases/survival_cold.db (6.2 MB)
+08:22:41    ✓ Done — 618 docs, 1905 chunks, 18.1s
+08:22:41  
+[6/18] Module: Medicine - Trauma & Wounds
+08:22:41    Wound care, bleeding control, fractures, burns, splints, tourniquets
+08:22:41    ----------------------------------------
+08:22:47      Rate limited, waiting 8s... (attempt 1/4)
+08:22:55      Rate limited, waiting 16s... (attempt 2/4)
+08:23:18    + wikipedia_articles: 7 documents
+08:23:18      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+08:23:19      [1/5] 10 pages
+08:23:20      [2/5] 6 pages
+08:23:22      [3/5] 32 pages
+08:23:24      [4/5] 14 pages
+08:23:25      [5/5] 24 pages
+08:23:26    + multi_pdf: 86 documents
+08:23:26    Processing: 93 docs → 765 chunks
+08:23:26    Embedding 765 chunks...
+08:23:27    Written 765 chunks to data/databases/medicine_trauma.db (2.3 MB)
+08:23:27    ✓ Done — 93 docs, 765 chunks, 46.5s
+08:23:27  
+[7/18] Module: Medicine - Infection & Disease
+08:23:27    Infection signs, antibiotics, common diseases, prevention, sanitation
+08:23:27    ----------------------------------------
+08:23:39      Rate limited, waiting 8s... (attempt 1/4)
+08:23:47      Rate limited, waiting 16s... (attempt 2/4)
+08:24:05    + wikipedia_articles: 7 documents
+08:24:05      Downloading 7 PDFs for 'Where There Is No Doctor (2025)'...
+08:24:06      [1/7] 11 pages
+08:24:06      [2/7] 10 pages
+08:24:07      [3/7] 4 pages
+08:24:09      [4/7] 4 pages
+08:24:10      [5/7] 24 pages
+08:24:12      [6/7] 20 pages
+08:24:13      [7/7] 28 pages
+08:24:14    + multi_pdf: 101 documents
+08:24:14    Processing: 108 docs → 1137 chunks
+08:24:14    Embedding 1137 chunks...
+08:24:16    Written 1137 chunks to data/databases/medicine_infection.db (3.3 MB)
+08:24:16    ✓ Done — 108 docs, 1137 chunks, 48.4s
+08:24:16  
+[8/18] Module: Medicine - Childbirth & Pediatrics
+08:24:16    Pregnancy, safe delivery, newborn care, childhood illness, breastfeeding
+08:24:16    ----------------------------------------
+08:24:24    + wikipedia_articles: 4 documents
+08:24:24      Downloading 4 PDFs for 'Where There Is No Doctor (2025)'...
+08:24:24      [1/4] 6 pages
+08:24:26      [2/4] 38 pages
+08:24:27      [3/4] 12 pages
+08:24:29      [4/4] 26 pages
+08:24:29    + multi_pdf: 82 documents
+08:24:29    Processing: 86 docs → 915 chunks
+08:24:29    Embedding 915 chunks...
+08:24:31    Written 915 chunks to data/databases/medicine_childbirth.db (2.5 MB)
+08:24:31    ✓ Done — 86 docs, 915 chunks, 15.4s
+08:24:31  
+[9/18] Module: Medicine - Herbal & Plant Medicine
+08:24:31    Medicinal plants, herbal remedies, natural antibiotics, traditional cures
+08:24:31    ----------------------------------------
+08:24:39      Rate limited, waiting 8s... (attempt 1/4)
+08:24:47      Rate limited, waiting 16s... (attempt 2/4)
+08:25:10    + wikipedia_articles: 8 documents
+08:25:10      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+08:25:11      [1/5] 16 pages
+08:25:12      [2/5] 4 pages
+08:25:13      [3/5] 6 pages
+08:25:14      [4/5] 8 pages
+08:25:16      [5/5] 8 pages
+08:25:16    + multi_pdf: 42 documents
+08:25:16    Processing: 50 docs → 694 chunks
+08:25:16    Embedding 694 chunks...
+08:25:17    Written 694 chunks to data/databases/medicine_herbal.db (1.8 MB)
+08:25:17    ✓ Done — 50 docs, 694 chunks, 46.1s
+08:25:17  
+[10/18] Module: Water - Finding & Purification
+08:25:17    Water sources, purification methods, storage, well digging, rainwater collection
+08:25:17    ----------------------------------------
+08:25:29      Rate limited, waiting 8s... (attempt 1/4)
+08:25:37      Rate limited, waiting 16s... (attempt 2/4)
+08:25:53      Rate limited, waiting 24s... (attempt 3/4)
+08:26:19    + wikipedia_articles: 7 documents
+08:26:22      Read 612 pages from fm3-05-70.pdf
+08:26:22    + local_pdf: 612 documents
+08:26:22    Processing: 619 docs → 2075 chunks
+08:26:22    Embedding 2075 chunks...
+08:26:27    Written 2075 chunks to data/databases/water.db (6.6 MB)
+08:26:27    ✓ Done — 619 docs, 2075 chunks, 69.3s
+08:26:27  
+[11/18] Module: Food - Foraging & Hunting
+08:26:27    Edible plants, mushrooms, hunting, trapping, fishing, insect consumption
+08:26:27    ----------------------------------------
+08:26:39    + wikipedia_articles: 7 documents
+08:26:43      Read 612 pages from fm3-05-70.pdf
+08:26:43    + local_pdf: 612 documents
+08:26:43    Processing: 619 docs → 2053 chunks
+08:26:43    Embedding 2053 chunks...
+08:26:47    Written 2053 chunks to data/databases/food_foraging.db (6.5 MB)
+08:26:47    ✓ Done — 619 docs, 2053 chunks, 20.6s
+08:26:47  
+[12/18] Module: Food - Agriculture & Preservation
+08:26:47    Crop rotation, composting, seed saving, smoking, salting, fermentation
+08:26:47    ----------------------------------------
+08:26:51      Rate limited, waiting 8s... (attempt 1/4)
+08:27:14    + wikipedia_articles: 10 documents
+08:27:14    Processing: 10 docs → 584 chunks
+08:27:14    Embedding 584 chunks...
+08:27:15    Written 584 chunks to data/databases/food_farming.db (1.4 MB)
+08:27:15    ✓ Done — 10 docs, 584 chunks, 27.3s
+08:27:15  
+[13/18] Module: Shelter & Construction
+08:27:15    Log cabins, adobe, earthship, timber framing, roads, bridges, sanitation
+08:27:15    ----------------------------------------
+08:27:18      Rate limited, waiting 8s... (attempt 1/4)
+08:27:27      Rate limited, waiting 16s... (attempt 2/4)
+08:27:43      Rate limited, waiting 24s... (attempt 3/4)
+08:28:24      Rate limited, waiting 8s... (attempt 1/4)
+08:28:32      Rate limited, waiting 16s... (attempt 2/4)
+08:28:48      Rate limited, waiting 24s... (attempt 3/4)
+08:29:14    + wikipedia_articles: 12 documents
+08:29:14    Processing: 12 docs → 759 chunks
+08:29:14    Embedding 759 chunks...
+08:29:15    Written 759 chunks to data/databases/shelter_construction.db (1.8 MB)
+08:29:15    ✓ Done — 12 docs, 759 chunks, 120.4s
+08:29:15  
+[14/18] Module: Energy Generation
+08:29:15    Micro-hydro, wind, biogas, wood gasification, steam power
+08:29:15    ----------------------------------------
+08:29:32      Rate limited, waiting 8s... (attempt 1/4)
+08:29:40      Rate limited, waiting 16s... (attempt 2/4)
+08:29:56      Rate limited, waiting 24s... (attempt 3/4)
+08:30:26    + wikipedia_articles: 12 documents
+08:30:26    Processing: 12 docs → 936 chunks
+08:30:26    Embedding 936 chunks...
+08:30:27    Written 936 chunks to data/databases/energy.db (2.2 MB)
+08:30:27    ✓ Done — 12 docs, 936 chunks, 72.2s
+08:30:27  
+[15/18] Module: Materials & Manufacturing
+08:30:27    Metalworking, pottery, glassmaking, textiles, leather, tools
+08:30:27    ----------------------------------------
+08:30:40      Rate limited, waiting 8s... (attempt 1/4)
+08:30:48      Rate limited, waiting 16s... (attempt 2/4)
+08:31:17    + wikipedia_articles: 14 documents
+08:31:17    Processing: 14 docs → 976 chunks
+08:31:17    Embedding 976 chunks...
+08:31:19    Written 976 chunks to data/databases/materials.db (2.3 MB)
+08:31:19    ✓ Done — 14 docs, 976 chunks, 51.4s
+08:31:19  
+[16/18] Module: Chemistry & Industry
+08:31:19    Soap, fermentation, cement, dyes, basic organic chemistry
+08:31:19    ----------------------------------------
+08:31:24      Rate limited, waiting 8s... (attempt 1/4)
+08:31:32      Rate limited, waiting 16s... (attempt 2/4)
+08:31:49      Rate limited, waiting 24s... (attempt 3/4)
+08:32:29    + wikipedia_articles: 12 documents
+08:32:29    Processing: 12 docs → 786 chunks
+08:32:29    Embedding 786 chunks...
+08:32:30    Written 786 chunks to data/databases/chemistry.db (1.8 MB)
+08:32:30    ✓ Done — 12 docs, 786 chunks, 71.5s
+08:32:30  
+[17/18] Module: Electronics & Communication
+08:32:30    Radio, telegraph, vacuum tubes, basic electrical systems
+08:32:30    ----------------------------------------
+08:32:32      Rate limited, waiting 8s... (attempt 1/4)
+08:32:40      Rate limited, waiting 16s... (attempt 2/4)
+08:32:57      Rate limited, waiting 24s... (attempt 3/4)
+08:33:39    + wikipedia_articles: 11 documents
+08:33:39    Processing: 11 docs → 1166 chunks
+08:33:39    Embedding 1166 chunks...
+08:33:42    Written 1166 chunks to data/databases/electronics.db (2.8 MB)
+08:33:42    ✓ Done — 11 docs, 1166 chunks, 71.3s
+08:33:42  
+[18/18] Module: Governance & Society
+08:33:42    Governance, law, education, navigation, trade, conflict resolution
+08:33:42    ----------------------------------------
+08:33:42      Rate limited, waiting 8s... (attempt 1/4)
+08:33:50      Rate limited, waiting 16s... (attempt 2/4)
+08:34:25      Rate limited, waiting 8s... (attempt 1/4)
+08:34:33      Rate limited, waiting 16s... (attempt 2/4)
+08:34:49      Rate limited, waiting 24s... (attempt 3/4)
+08:35:17    + wikipedia_articles: 12 documents
+08:35:17    Processing: 12 docs → 1088 chunks
+08:35:17    Embedding 1088 chunks...
+08:35:19    Written 1088 chunks to data/databases/governance.db (2.6 MB)
+08:35:19    ✓ Done — 12 docs, 1088 chunks, 97.1s
+08:35:19  
+============================================================
+08:35:19    PIPELINE COMPLETE
+08:35:19  ============================================================
+08:35:19    ✓ Survival - General              2848 chunks  9.8 MB
+08:35:19    ✓ Survival - Fire & Shelter       1132 chunks  4.0 MB
+08:35:19    ✓ Survival - Navigation           2141 chunks  6.9 MB
+08:35:19    ✓ Survival - Desert               2695 chunks  9.1 MB
+08:35:19    ✓ Survival - Cold Weather         1905 chunks  6.2 MB
+08:35:19    ✓ Medicine - Trauma & Wounds       765 chunks  2.3 MB
+08:35:19    ✓ Medicine - Infection & Disease  1137 chunks  3.3 MB
+08:35:19    ✓ Medicine - Childbirth & Pediatrics   915 chunks  2.5 MB
+08:35:19    ✓ Medicine - Herbal & Plant Medicine   694 chunks  1.8 MB
+08:35:19    ✓ Water - Finding & Purification  2075 chunks  6.6 MB
+08:35:19    ✓ Food - Foraging & Hunting       2053 chunks  6.5 MB
+08:35:19    ✓ Food - Agriculture & Preservation   584 chunks  1.4 MB
+08:35:19    ✓ Shelter & Construction           759 chunks  1.8 MB
+08:35:19    ✓ Energy Generation                936 chunks  2.2 MB
+08:35:19    ✓ Materials & Manufacturing        976 chunks  2.3 MB
+08:35:19    ✓ Chemistry & Industry             786 chunks  1.8 MB
+08:35:19    ✓ Electronics & Communication     1166 chunks  2.8 MB
+08:35:19    ✓ Governance & Society            1088 chunks  2.6 MB
+08:35:19  
+  Total chunks : 24,655
+08:35:19    Total DB size: 73.9 MB
+08:35:19    Databases in : data/databases/
+
+08:35:19    Report saved: data/pipeline_report.json
+09:20:06  
+============================================================
+09:20:06    DOOMSDAY RAG PIPELINE
+09:20:06    Modules to process: 18
+09:20:06    Started: 2026-05-17 09:20:06
+09:20:06  ============================================================
+
+09:20:06  No device provided, using mps
+09:20:07  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+09:20:09    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+09:20:09  
+[1/18] Module: Survival - General
+09:20:09    Psychology of survival, planning, priorities, stress management
+09:20:09    ----------------------------------------
+09:20:15    + wikipedia_articles: 3 documents
+09:20:25      Read 233 pages from FM21-76_SurvivalManual.pdf
+09:20:25    + local_pdf: 233 documents
+09:20:29      Read 612 pages from fm3-05-70.pdf
+09:20:29    + local_pdf: 612 documents
+09:20:29    Processing: 848 docs → 2848 chunks
+09:20:29    Embedding 2848 chunks...
+09:20:36    Written 2848 chunks to data/databases/survival_general.db (9.8 MB)
+09:20:36    ✓ Done — 848 docs, 2848 chunks, 27.0s
+09:20:36  
+[2/18] Module: Survival - Fire & Shelter
+09:20:36    Fire making, shelter construction, insulation, cold weather protection
+09:20:36    ----------------------------------------
+09:20:47    + wikipedia_articles: 6 documents
+09:20:57      Read 233 pages from FM21-76_SurvivalManual.pdf
+09:20:57    + local_pdf: 233 documents
+09:20:57    Processing: 239 docs → 1132 chunks
+09:20:57    Embedding 1132 chunks...
+09:21:00    Written 1132 chunks to data/databases/survival_fire_shelter.db (4.0 MB)
+09:21:00    ✓ Done — 239 docs, 1132 chunks, 23.8s
+09:21:00  
+[3/18] Module: Survival - Navigation
+09:21:00    Celestial navigation, compass, map reading, natural navigation
+09:21:00    ----------------------------------------
+09:21:11    + wikipedia_articles: 6 documents
+09:21:15      Read 612 pages from fm3-05-70.pdf
+09:21:15    + local_pdf: 612 documents
+09:21:15    Processing: 618 docs → 2085 chunks
+09:21:15    Embedding 2085 chunks...
+09:21:19    Written 2085 chunks to data/databases/survival_navigation.db (6.7 MB)
+09:21:19    ✓ Done — 618 docs, 2085 chunks, 19.2s
+09:21:19  
+[4/18] Module: Survival - Desert
+09:21:19    Desert water, heat management, solar stills, desert navigation
+09:21:19    ----------------------------------------
+09:21:23      Rate limited, waiting 8s... (attempt 1/4)
+09:21:31      Rate limited, waiting 16s... (attempt 2/4)
+09:21:47      Rate limited, waiting 24s... (attempt 3/4)
+09:22:15    + wikipedia_articles: 4 documents
+09:22:19      Read 612 pages from fm3-05-70.pdf
+09:22:19    + local_pdf: 612 documents
+09:22:19      Read 192 pages from FM-90-3-Desert-Operations-24-August-1993.pdf
+09:22:19    + local_pdf: 192 documents
+09:22:19    Processing: 808 docs → 2695 chunks
+09:22:19    Embedding 2695 chunks...
+09:22:25    Written 2695 chunks to data/databases/survival_desert.db (9.1 MB)
+09:22:25    ✓ Done — 808 docs, 2695 chunks, 66.2s
+09:22:25  
+[5/18] Module: Survival - Cold Weather
+09:22:25    Hypothermia, frostbite, snow shelters, Arctic survival
+09:22:25    ----------------------------------------
+09:22:36    + wikipedia_articles: 6 documents
+09:22:40      Read 612 pages from fm3-05-70.pdf
+09:22:40    + local_pdf: 612 documents
+09:22:40    Processing: 618 docs → 1905 chunks
+09:22:40    Embedding 1905 chunks...
+09:22:44    Written 1905 chunks to data/databases/survival_cold.db (6.2 MB)
+09:22:44    ✓ Done — 618 docs, 1905 chunks, 18.7s
+09:22:44  
+[6/18] Module: Medicine - Trauma & Wounds
+09:22:44    Wound care, bleeding, fractures, burns, splints, tourniquets
+09:22:44    ----------------------------------------
+09:22:48      Rate limited, waiting 8s... (attempt 1/4)
+09:22:56      Rate limited, waiting 16s... (attempt 2/4)
+09:23:21    + wikipedia_articles: 7 documents
+09:23:21      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+09:23:21      [1/5] 10 pages
+09:23:22      [2/5] 6 pages
+09:23:23      [3/5] 32 pages
+09:23:24      [4/5] 14 pages
+09:23:24      [5/5] 24 pages
+09:23:25    + multi_pdf: 86 documents
+09:23:25    Processing: 93 docs → 765 chunks
+09:23:25    Embedding 765 chunks...
+09:23:27    Written 765 chunks to data/databases/medicine_trauma.db (2.3 MB)
+09:23:27    ✓ Done — 93 docs, 765 chunks, 42.8s
+09:23:27  
+[7/18] Module: Medicine - Infection & Disease
+09:23:27    Infection signs, common diseases, antibiotics, prevention, sanitation
+09:23:27    ----------------------------------------
+09:23:36      Rate limited, waiting 8s... (attempt 1/4)
+09:23:44      Rate limited, waiting 16s... (attempt 2/4)
+09:24:06    + wikipedia_articles: 8 documents
+09:24:06      Downloading 8 PDFs for 'Where There Is No Doctor (2025)'...
+09:24:06      [1/8] 16 pages
+09:24:07      [2/8] 11 pages
+09:24:07      [3/8] 10 pages
+09:24:08      [4/8] 4 pages
+09:24:09      [5/8] 4 pages
+09:24:10      [6/8] 24 pages
+09:24:10      [7/8] 20 pages
+09:24:11      [8/8] 28 pages
+09:24:12    + multi_pdf: 117 documents
+09:24:12    Processing: 125 docs → 1209 chunks
+09:24:12    Embedding 1209 chunks...
+09:24:14    Written 1209 chunks to data/databases/medicine_infection.db (3.5 MB)
+09:24:14    ✓ Done — 125 docs, 1209 chunks, 47.2s
+09:24:14  
+[8/18] Module: Medicine - Childbirth & Pediatrics
+09:24:14    Pregnancy, safe delivery, newborn care, breastfeeding
+09:24:14    ----------------------------------------
+09:24:23    + wikipedia_articles: 5 documents
+09:24:23      Downloading 4 PDFs for 'Where There Is No Doctor (2025)'...
+09:24:24      [1/4] 6 pages
+09:24:24      [2/4] 38 pages
+09:24:25      [3/4] 12 pages
+09:24:26      [4/4] 26 pages
+09:24:27    + multi_pdf: 82 documents
+09:24:27    Processing: 87 docs → 981 chunks
+09:24:27    Embedding 981 chunks...
+09:24:28    Written 981 chunks to data/databases/medicine_childbirth.db (2.7 MB)
+09:24:28    ✓ Done — 87 docs, 981 chunks, 14.4s
+09:24:28  
+[9/18] Module: Medicine - Herbal & Plant
+09:24:28    Medicinal plants, herbal remedies, natural antibiotics
+09:24:28    ----------------------------------------
+09:24:30      Rate limited, waiting 8s... (attempt 1/4)
+09:24:39      Rate limited, waiting 16s... (attempt 2/4)
+09:24:55      Rate limited, waiting 24s... (attempt 3/4)
+09:25:32    + wikipedia_articles: 8 documents
+09:25:32      Downloading 5 PDFs for 'Where There Is No Doctor (2025)'...
+09:25:32      [1/5] 16 pages
+09:25:33      [2/5] 4 pages
+09:25:33      [3/5] 6 pages
+09:25:34      [4/5] 8 pages
+09:25:35      [5/5] 8 pages
+09:25:35    + multi_pdf: 42 documents
+09:25:39      Read 612 pages from fm3-05-70.pdf
+09:25:39    + local_pdf: 612 documents
+09:25:39    Processing: 662 docs → 2334 chunks
+09:25:39    Embedding 2334 chunks...
+09:25:43    Written 2334 chunks to data/databases/medicine_herbal.db (7.4 MB)
+09:25:43    ✓ Done — 662 docs, 2334 chunks, 75.0s
+09:25:43  
+[10/18] Module: Water - Finding & Purification
+09:25:43    Water sources, purification, storage, wells, rainwater, desalination
+09:25:43    ----------------------------------------
+09:25:49      Rate limited, waiting 8s... (attempt 1/4)
+09:25:58      Rate limited, waiting 16s... (attempt 2/4)
+09:26:26    + wikipedia_articles: 10 documents
+09:26:30      Read 612 pages from fm3-05-70.pdf
+09:26:30    + local_pdf: 612 documents
+09:26:30      Downloading 1 PDFs for 'Where There Is No Doctor (2025)'...
+09:26:30      [1/1] 20 pages
+09:26:30    + multi_pdf: 20 documents
+09:26:31    Processing: 642 docs → 2471 chunks
+09:26:31    Embedding 2471 chunks...
+09:26:35    Written 2471 chunks to data/databases/water.db (7.6 MB)
+09:26:35    ✓ Done — 642 docs, 2471 chunks, 52.2s
+09:26:35  
+[11/18] Module: Food - Foraging & Hunting
+09:26:35    Edible plants, mushrooms, hunting, trapping, fishing, insects
+09:26:35    ----------------------------------------
+09:26:41      Rate limited, waiting 8s... (attempt 1/4)
+09:26:49      Rate limited, waiting 16s... (attempt 2/4)
+09:27:15    + wikipedia_articles: 8 documents
+09:27:18      Read 612 pages from fm3-05-70.pdf
+09:27:18    + local_pdf: 612 documents
+09:27:28      Read 233 pages from FM21-76_SurvivalManual.pdf
+09:27:28    + local_pdf: 233 documents
+09:27:28    Processing: 853 docs → 3126 chunks
+09:27:28    Embedding 3126 chunks...
+09:27:35    Written 3126 chunks to data/databases/food_foraging.db (10.4 MB)
+09:27:35    ✓ Done — 853 docs, 3126 chunks, 59.3s
+09:27:35  
+[12/18] Module: Food - Agriculture & Preservation
+09:27:35    Crop rotation, composting, seed saving, food preservation, fermentation
+09:27:35    ----------------------------------------
+09:27:40      Rate limited, waiting 8s... (attempt 1/4)
+09:27:49      Rate limited, waiting 16s... (attempt 2/4)
+09:28:23    + wikipedia_articles: 13 documents
+09:28:26    + pdf: 31 documents
+09:28:26    Processing: 44 docs → 826 chunks
+09:28:26    Embedding 826 chunks...
+09:28:27    Written 826 chunks to data/databases/food_farming.db (2.1 MB)
+09:28:27    ✓ Done — 44 docs, 826 chunks, 52.5s
+09:28:27  
+[13/18] Module: Shelter & Construction
+09:28:27    Log cabins, adobe, timber framing, bridges, sanitation
+09:28:27    ----------------------------------------
+09:28:27      Rate limited, waiting 8s... (attempt 1/4)
+09:28:36      Rate limited, waiting 16s... (attempt 2/4)
+09:28:52      Rate limited, waiting 24s... (attempt 3/4)
+09:29:33      Rate limited, waiting 8s... (attempt 1/4)
+09:29:41      Rate limited, waiting 16s... (attempt 2/4)
+09:29:57      Rate limited, waiting 24s... (attempt 3/4)
+09:30:28    + wikipedia_articles: 13 documents
+09:30:32      Read 612 pages from fm3-05-70.pdf
+09:30:32    + local_pdf: 612 documents
+09:30:32    Processing: 625 docs → 2372 chunks
+09:30:32    Embedding 2372 chunks...
+09:30:36    Written 2372 chunks to data/databases/shelter_construction.db (7.4 MB)
+09:30:36    ✓ Done — 625 docs, 2372 chunks, 129.2s
+09:30:36  
+[14/18] Module: Energy Generation
+09:30:36    Micro-hydro, wind, biogas, wood gasification, steam, batteries
+09:30:36    ----------------------------------------
+09:30:48      Rate limited, waiting 8s... (attempt 1/4)
+09:30:56      Rate limited, waiting 16s... (attempt 2/4)
+09:31:26    + wikipedia_articles: 14 documents
+09:31:26    Processing: 14 docs → 909 chunks
+09:31:26    Embedding 909 chunks...
+09:31:28    Written 909 chunks to data/databases/energy.db (2.1 MB)
+09:31:28    ✓ Done — 14 docs, 909 chunks, 51.4s
+09:31:28  
+[15/18] Module: Materials & Manufacturing
+09:31:28    Metalworking, pottery, glassmaking, textiles, leather, tools
+09:31:28    ----------------------------------------
+09:31:32      Rate limited, waiting 8s... (attempt 1/4)
+09:31:40      Rate limited, waiting 16s... (attempt 2/4)
+09:31:56      Rate limited, waiting 24s... (attempt 3/4)
+09:32:39      Rate limited, waiting 8s... (attempt 1/4)
+09:32:47      Rate limited, waiting 16s... (attempt 2/4)
+09:33:12    + wikipedia_articles: 17 documents
+09:33:13    Processing: 17 docs → 1095 chunks
+09:33:13    Embedding 1095 chunks...
+09:33:14    Written 1095 chunks to data/databases/materials.db (2.5 MB)
+09:33:14    ✓ Done — 17 docs, 1095 chunks, 106.6s
+09:33:14  
+[16/18] Module: Chemistry & Industry
+09:33:14    Soap, fermentation, cement, distillation, salt, vinegar
+09:33:14    ----------------------------------------
+09:33:24      Rate limited, waiting 8s... (attempt 1/4)
+09:33:32      Rate limited, waiting 16s... (attempt 2/4)
+09:33:48      Rate limited, waiting 24s... (attempt 3/4)
+09:34:30    + wikipedia_articles: 15 documents
+09:34:30    Processing: 15 docs → 1018 chunks
+09:34:30    Embedding 1018 chunks...
+09:34:32    Written 1018 chunks to data/databases/chemistry.db (2.3 MB)
+09:34:32    ✓ Done — 15 docs, 1018 chunks, 77.4s
+09:34:32  
+[17/18] Module: Electronics & Communication
+09:34:32    Crystal radio, telegraph, generators, batteries, Morse code, antennas
+09:34:32    ----------------------------------------
+09:34:32      Rate limited, waiting 8s... (attempt 1/4)
+09:34:40      Rate limited, waiting 16s... (attempt 2/4)
+09:34:56      Rate limited, waiting 24s... (attempt 3/4)
+09:35:39      Rate limited, waiting 8s... (attempt 1/4)
+09:35:47      Rate limited, waiting 16s... (attempt 2/4)
+09:36:14    + wikipedia_articles: 16 documents
+09:36:16    + pdf: 3 documents
+09:36:16    Processing: 19 docs → 1555 chunks
+09:36:16    Embedding 1555 chunks...
+09:36:19    Written 1555 chunks to data/databases/electronics.db (3.8 MB)
+09:36:19    ✓ Done — 19 docs, 1555 chunks, 106.9s
+09:36:19  
+[18/18] Module: Governance & Society
+09:36:19    Community organizing, conflict resolution, trade, navigation, education
+09:36:19    ----------------------------------------
+09:36:26      Rate limited, waiting 8s... (attempt 1/4)
+09:36:34      Rate limited, waiting 16s... (attempt 2/4)
+09:36:51      Rate limited, waiting 24s... (attempt 3/4)
+09:37:33      Rate limited, waiting 8s... (attempt 1/4)
+09:37:41      Rate limited, waiting 16s... (attempt 2/4)
+09:37:57      Rate limited, waiting 24s... (attempt 3/4)
+09:38:24    + wikipedia_articles: 15 documents
+09:38:27    + pdf: 15 documents
+09:38:27    Processing: 30 docs → 1465 chunks
+09:38:27    Embedding 1465 chunks...
+09:38:29    Written 1465 chunks to data/databases/governance.db (3.6 MB)
+09:38:29    ✓ Done — 30 docs, 1465 chunks, 130.6s
+09:38:29  
+============================================================
+09:38:29    PIPELINE COMPLETE
+09:38:29  ============================================================
+09:38:29    ✓ Survival - General              2848 chunks  9.8 MB
+09:38:29    ✓ Survival - Fire & Shelter       1132 chunks  4.0 MB
+09:38:29    ✓ Survival - Navigation           2085 chunks  6.7 MB
+09:38:29    ✓ Survival - Desert               2695 chunks  9.1 MB
+09:38:29    ✓ Survival - Cold Weather         1905 chunks  6.2 MB
+09:38:29    ✓ Medicine - Trauma & Wounds       765 chunks  2.3 MB
+09:38:29    ✓ Medicine - Infection & Disease  1209 chunks  3.5 MB
+09:38:29    ✓ Medicine - Childbirth & Pediatrics   981 chunks  2.7 MB
+09:38:29    ✓ Medicine - Herbal & Plant       2334 chunks  7.4 MB
+09:38:29    ✓ Water - Finding & Purification  2471 chunks  7.6 MB
+09:38:29    ✓ Food - Foraging & Hunting       3126 chunks  10.4 MB
+09:38:29    ✓ Food - Agriculture & Preservation   826 chunks  2.1 MB
+09:38:29    ✓ Shelter & Construction          2372 chunks  7.4 MB
+09:38:29    ✓ Energy Generation                909 chunks  2.1 MB
+09:38:29    ✓ Materials & Manufacturing       1095 chunks  2.5 MB
+09:38:29    ✓ Chemistry & Industry            1018 chunks  2.3 MB
+09:38:29    ✓ Electronics & Communication     1555 chunks  3.8 MB
+09:38:29    ✓ Governance & Society            1465 chunks  3.6 MB
+09:38:29  
+  Total chunks : 30,791
+09:38:29    Total DB size: 93.4 MB
+09:38:29    Databases in : data/databases/
+
+09:38:29    Report saved: data/pipeline_report.json

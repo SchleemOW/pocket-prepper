@@ -1,0 +1,169 @@
+{
+  "run_at": "2026-05-17T09:38:29.848114",
+  "modules": [
+    {
+      "module_id": "survival_general",
+      "module_name": "Survival - General",
+      "docs": 848,
+      "chunks": 2848,
+      "db_path": "data/databases/survival_general.db",
+      "elapsed_s": 27.0,
+      "status": "ok"
+    },
+    {
+      "module_id": "survival_fire_shelter",
+      "module_name": "Survival - Fire & Shelter",
+      "docs": 239,
+      "chunks": 1132,
+      "db_path": "data/databases/survival_fire_shelter.db",
+      "elapsed_s": 23.8,
+      "status": "ok"
+    },
+    {
+      "module_id": "survival_navigation",
+      "module_name": "Survival - Navigation",
+      "docs": 618,
+      "chunks": 2085,
+      "db_path": "data/databases/survival_navigation.db",
+      "elapsed_s": 19.2,
+      "status": "ok"
+    },
+    {
+      "module_id": "survival_desert",
+      "module_name": "Survival - Desert",
+      "docs": 808,
+      "chunks": 2695,
+      "db_path": "data/databases/survival_desert.db",
+      "elapsed_s": 66.2,
+      "status": "ok"
+    },
+    {
+      "module_id": "survival_cold",
+      "module_name": "Survival - Cold Weather",
+      "docs": 618,
+      "chunks": 1905,
+      "db_path": "data/databases/survival_cold.db",
+      "elapsed_s": 18.7,
+      "status": "ok"
+    },
+    {
+      "module_id": "medicine_trauma",
+      "module_name": "Medicine - Trauma & Wounds",
+      "docs": 93,
+      "chunks": 765,
+      "db_path": "data/databases/medicine_trauma.db",
+      "elapsed_s": 42.8,
+      "status": "ok"
+    },
+    {
+      "module_id": "medicine_infection",
+      "module_name": "Medicine - Infection & Disease",
+      "docs": 125,
+      "chunks": 1209,
+      "db_path": "data/databases/medicine_infection.db",
+      "elapsed_s": 47.2,
+      "status": "ok"
+    },
+    {
+      "module_id": "medicine_childbirth",
+      "module_name": "Medicine - Childbirth & Pediatrics",
+      "docs": 87,
+      "chunks": 981,
+      "db_path": "data/databases/medicine_childbirth.db",
+      "elapsed_s": 14.4,
+      "status": "ok"
+    },
+    {
+      "module_id": "medicine_herbal",
+      "module_name": "Medicine - Herbal & Plant",
+      "docs": 662,
+      "chunks": 2334,
+      "db_path": "data/databases/medicine_herbal.db",
+      "elapsed_s": 75.0,
+      "status": "ok"
+    },
+    {
+      "module_id": "water",
+      "module_name": "Water - Finding & Purification",
+      "docs": 642,
+      "chunks": 2471,
+      "db_path": "data/databases/water.db",
+      "elapsed_s": 52.2,
+      "status": "ok"
+    },
+    {
+      "module_id": "food_foraging",
+      "module_name": "Food - Foraging & Hunting",
+      "docs": 853,
+      "chunks": 3126,
+      "db_path": "data/databases/food_foraging.db",
+      "elapsed_s": 59.3,
+      "status": "ok"
+    },
+    {
+      "module_id": "food_farming",
+      "module_name": "Food - Agriculture & Preservation",
+      "docs": 44,
+      "chunks": 826,
+      "db_path": "data/databases/food_farming.db",
+      "elapsed_s": 52.5,
+      "status": "ok"
+    },
+    {
+      "module_id": "shelter_construction",
+      "module_name": "Shelter & Construction",
+      "docs": 625,
+      "chunks": 2372,
+      "db_path": "data/databases/shelter_construction.db",
+      "elapsed_s": 129.2,
+      "status": "ok"
+    },
+    {
+      "module_id": "energy",
+      "module_name": "Energy Generation",
+      "docs": 14,
+      "chunks": 909,
+      "db_path": "data/databases/energy.db",
+      "elapsed_s": 51.4,
+      "status": "ok"
+    },
+    {
+      "module_id": "materials",
+      "module_name": "Materials & Manufacturing",
+      "docs": 17,
+      "chunks": 1095,
+      "db_path": "data/databases/materials.db",
+      "elapsed_s": 106.6,
+      "status": "ok"
+    },
+    {
+      "module_id": "chemistry",
+      "module_name": "Chemistry & Industry",
+      "docs": 15,
+      "chunks": 1018,
+      "db_path": "data/databases/chemistry.db",
+      "elapsed_s": 77.4,
+      "status": "ok"
+    },
+    {
+      "module_id": "electronics",
+      "module_name": "Electronics & Communication",
+      "docs": 19,
+      "chunks": 1555,
+      "db_path": "data/databases/electronics.db",
+      "elapsed_s": 106.9,
+      "status": "ok"
+    },
+    {
+      "module_id": "governance",
+      "module_name": "Governance & Society",
+      "docs": 30,
+      "chunks": 1465,
+      "db_path": "data/databases/governance.db",
+      "elapsed_s": 130.6,
+      "status": "ok"
+    }
+  ],
+  "total_chunks": 30791,
+  "total_mb": 93.45
+}

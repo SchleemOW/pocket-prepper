@@ -1,0 +1,516 @@
+{
+  "run_at": "2026-05-16T17:47:48.161337",
+  "model": "mistral",
+  "total_questions": 19,
+  "passed": 8,
+  "failed": 11,
+  "average_score": 0.575,
+  "missing_modules": [],
+  "results": [
+    {
+      "scenario": "urban_sweden",
+      "scenario_name": "Urban bombing - Stockholm, Sweden",
+      "module": "water",
+      "question": "There is no running water. How do I find and make water safe to drink in an urban area?",
+      "answer": " In the absence of running water, you can find and purify water from various sources in your urban area. Here's a step-by-step guide for safe drinking water:\n\n1. Find a source: Look for potentially safe water sources such as rainwater, underground wells, or any remaining water storage tanks if accessible. For surface water (like rivers, lakes, or stagnant pools), find the cleanest possible water by avoiding areas with animal waste or industrial pollution.\n\n2. Collecting water: Use clean containe",
+      "sources": [
+        "Water purification",
+        "Water treatment"
+      ],
+      "score": {
+        "required_hits": [
+          "boiling",
+          "filter"
+        ],
+        "required_misses": [
+          "rainwater collection"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6666666666666666,
+        "forbidden_score": 1.0,
+        "total_score": 0.7666666666666666
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "urban_sweden",
+      "scenario_name": "Urban bombing - Stockholm, Sweden",
+      "module": "survival_fire_shelter",
+      "question": "It's 2 degrees at night and my apartment is destroyed. How do I stay warm and build shelter from rubble?",
+      "answer": " To stay warm and build a shelter from rubble in cold temperatures (2\u00b0C), you can construct one of the following types of shelters based on the information provided in the US Army FM 21-76 Survival Manual:\n\n1. Lean-to Shelter:\n   - Find a sturdy debris lean against the wind direction.\n   - Create a sloping roof using additional rubble for protection from rain and wind.\n   - Insulate the shelter with leaves, pine needles, or other available insulating material to reduce heat loss to the ground.\n ",
+      "sources": [
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "score": {
+        "required_hits": [
+          "insulation"
+        ],
+        "required_misses": [
+          "wind protection",
+          "fire",
+          "body heat"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "urban_sweden",
+      "scenario_name": "Urban bombing - Stockholm, Sweden",
+      "module": "food_foraging",
+      "question": "All stores are looted. What can I eat in a Swedish forest in October?",
+      "answer": " In a Swedish forest in October, you may find edible wild mushrooms such as chanterelles, porcini, and common puffballs. To ensure safety, only consume mushrooms that you have positively identified as edible. Refer to the list of provisionally edible mushrooms provided in the context for guidance. Additionally, hunting small game like rabbits or birds may also provide a source of protein if necessary. Please be cautious while hunting and make sure to use proper equipment for trapping or shooting",
+      "sources": [
+        "Edible mushroom",
+        "Hunting"
+      ],
+      "score": {
+        "required_hits": [
+          "mushroom"
+        ],
+        "required_misses": [
+          "berries",
+          "roots",
+          "edibility test"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "urban_sweden",
+      "scenario_name": "Urban bombing - Stockholm, Sweden",
+      "module": "medicine_trauma",
+      "question": "Someone has a deep cut from broken glass and it won't stop bleeding. I have no medical supplies. What do I do?",
+      "answer": " In the given context, since you don't have any medical supplies, your best course of action would be to help the injured person stop the bleeding using the available resources:\n\n1. Wear gloves or a clean plastic bag on your hands to protect yourself from HIV and other blood-borne diseases. If you don't have gloves, make a makeshift one by covering your hands with a thick cloth or multiple layers of fabric and securing it with a bandage or string.\n\n2. Place a clean, thick cloth directly over the",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "pressure",
+          "clean",
+          "cloth"
+        ],
+        "required_misses": [
+          "elevate",
+          "tourniquet"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6,
+        "forbidden_score": 1.0,
+        "total_score": 0.72
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "rural_kenya",
+      "scenario_name": "Infrastructure collapse - Rural Kenya",
+      "module": "water",
+      "question": "The river is dry. How do I find water in a hot dry climate with no infrastructure?",
+      "answer": " In a hot dry climate with no infrastructure, you can find water through various methods. Here are some practical solutions based on the provided context:\n\n1. Rainwater harvesting: Collect rainwater during any rare showers by creating makeshift containers or using your hand tools to dig shallow wells in suitable locations. Remember to filter the collected water to ensure its safety for drinking.\n\n2. Atmospheric water generation: Extract water from the air by constructing a simple device that coo",
+      "sources": [
+        "Water purification",
+        "Rainwater harvesting"
+      ],
+      "score": {
+        "required_hits": [
+          "dig"
+        ],
+        "required_misses": [
+          "riverbed",
+          "vegetation",
+          "morning dew"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "rural_kenya",
+      "scenario_name": "Infrastructure collapse - Rural Kenya",
+      "module": "food_farming",
+      "question": "I need to grow food but the rainy season is 2 months away. How do I start farming in dry conditions?",
+      "answer": " In the given context, since the rainy season is 2 months away and you're in a rural area of Kenya near the equator, the temperature ranges between 25-35\u00b0C. Given that all infrastructure has collapsed, you can start farming using permaculture principles such as:\n\n1. Rainwater harvesting: Utilize the dry riverbed to collect rainwater when it eventually comes. You can create natural containers or wells to store this water for future use in irrigation.\n\n2. Composting: Start composting organic waste",
+      "sources": [
+        "Permaculture",
+        "Composting",
+        "Crop rotation",
+        "Animal husbandry"
+      ],
+      "score": {
+        "required_hits": [
+          "irrigation",
+          "soil"
+        ],
+        "required_misses": [
+          "drought resistant",
+          "shade"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "rural_kenya",
+      "scenario_name": "Infrastructure collapse - Rural Kenya",
+      "module": "energy",
+      "question": "How can I generate electricity with no fuel and no grid? I have basic tools and access to a dry riverbed.",
+      "answer": " Given your situation, you can generate electricity using a micro hydro system. You'll need to find a section of the dried-up riverbed that has a small but consistent flow of water during the 25-35\u00b0C daytime. Here's a simplified step-by-step guide on how to create a small micro hydroelectric power system:\n\n1. Identify a suitable location in your dry riverbed with a small but consistent water flow. The water should have enough velocity and volume to turn a turbine.\n\n2. Design and build a small tu",
+      "sources": [
+        "Micro hydro",
+        "Wind turbine"
+      ],
+      "score": {
+        "required_hits": [
+          "generator"
+        ],
+        "required_misses": [
+          "solar",
+          "wind"
+        ],
+        "forbidden_hits": [
+          "grid"
+        ],
+        "required_score": 0.3333333333333333,
+        "forbidden_score": 0.8,
+        "total_score": 0.4733333333333333
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "rural_kenya",
+      "scenario_name": "Infrastructure collapse - Rural Kenya",
+      "module": "medicine_infection",
+      "question": "Dirty water has caused diarrhea in my family for 3 days. What do I do with no medicine available?",
+      "answer": " In the absence of medicine, focus on preventing and controlling dehydration as a priority. Make rehydration drink at home using the provided recipe from \"Where There Is No Doctor (2025)\". Here's how to prepare it:\n\n1. Combine 6 level teaspoons of sugar with 1/2 level teaspoon of salt in a liter (about 4 cups) of boiled water. This is one serving for an adult. If treating children, adjust the quantities accordingly.\n\n2. For infants and young children, continue breastfeeding frequently. Also offe",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "score": {
+        "required_hits": [
+          "rehydration",
+          "clean water",
+          "salt",
+          "sugar",
+          "boil"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [
+          "doctor"
+        ],
+        "required_score": 1.0,
+        "forbidden_score": 0.8,
+        "total_score": 0.94
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "coastal_usa",
+      "scenario_name": "Societal collapse - Coastal Pacific Northwest",
+      "module": "food_foraging",
+      "question": "We have 20 people to feed on the coast. What food sources are available from the ocean and forest?",
+      "answer": " On the Oregon coast, you can find various food sources from both the ocean and the forest. Here's a list of edible species that could be potentially harvested sustainably, given the context provided:\n\nOcean:\n1. Herring\n2. Sardine\n3. Anchovy\n4. Tuna\n5. Flounder\n6. Mullet\n7. Squid\n8. Shrimp\n9. Salmon (depending on season and migration patterns)\n10. Crab (if you have crab traps or can construct them from available materials)\n11. Lobster (if found in rocky intertidal zones, depending on the locatio",
+      "sources": [
+        "Fishing",
+        "Foraging"
+      ],
+      "score": {
+        "required_hits": [
+          "berries",
+          "trap"
+        ],
+        "required_misses": [
+          "fish",
+          "shellfish",
+          "seaweed"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.4,
+        "forbidden_score": 1.0,
+        "total_score": 0.58
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "coastal_usa",
+      "scenario_name": "Societal collapse - Coastal Pacific Northwest",
+      "module": "shelter_construction",
+      "question": "We need to build permanent shelter for 20 people using forest materials. How do we start?",
+      "answer": " To build a permanent shelter for 20 people using forest materials, you can construct log cabins following the methods described in the provided context:\n\n1. Find suitable straight tree trunks (pine or spruce) in the dense forest.\n2. Stack the logs one on top of another and overlap them at the corners.\n3. Develop interlocking corners by notching the ends of the logs, resulting in strong structures.\n4. Insert moss or other soft material into the joints to make the structure weather-tight.\n5. Prio",
+      "sources": [
+        "Log cabin",
+        "Earthship"
+      ],
+      "score": {
+        "required_hits": [
+          "log"
+        ],
+        "required_misses": [
+          "frame",
+          "foundation",
+          "waterproof",
+          "roof"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.2,
+        "forbidden_score": 1.0,
+        "total_score": 0.43999999999999995
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "coastal_usa",
+      "scenario_name": "Societal collapse - Coastal Pacific Northwest",
+      "module": "governance",
+      "question": "Our group of 20 has disagreements about resource sharing. How do we organize decision-making?",
+      "answer": " To organize decision-making within your group of 20 people in a post-disaster scenario, you can use a cooperative conflict resolution style that focuses on finding a \"win-win\" solution. Here are some steps to help you collaborate effectively and manage resources for the betterment of all members:\n\n1. View conflicts as creative opportunities: Encourage group members to see disagreements not as obstacles but as opportunities for collaboration and innovation. This will foster a more positive and p",
+      "sources": [
+        "Conflict resolution"
+      ],
+      "score": {
+        "required_hits": [
+          "conflict"
+        ],
+        "required_misses": [
+          "vote",
+          "rules",
+          "leadership"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "coastal_usa",
+      "scenario_name": "Societal collapse - Coastal Pacific Northwest",
+      "module": "electronics",
+      "question": "We have no communication with the outside world. How can we build a basic radio from salvaged materials?",
+      "answer": " To build a basic radio in your current situation, you will need to utilize salvaged vacuum tubes, coils, capacitors, and a power source such as batteries or a generator (if available). Here's a simplified step-by-step process for building a crystal radio receiver:\n\n1. Gather materials:\n   - Vacuum tube (valve)\n   - Coil (can be made from wire, a spool, and a battery or a small motor)\n   - Capacitor (you may find larger capacitors that can be broken down into smaller ones)\n   - Wire\n   - Earphon",
+      "sources": [
+        "Amateur radio",
+        "Radio receiver",
+        "Telegraph",
+        "Vacuum tube"
+      ],
+      "score": {
+        "required_hits": [
+          "wire",
+          "coil",
+          "crystal",
+          "receiver"
+        ],
+        "required_misses": [
+          "antenna"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.8,
+        "forbidden_score": 1.0,
+        "total_score": 0.8599999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "rebuild_europe",
+      "scenario_name": "Year 5 rebuilding - Central Europe",
+      "module": "materials",
+      "question": "We found iron ore deposits. How do we smelt iron and make basic tools without modern equipment?",
+      "answer": " To smelt iron and create basic tools without modern equipment in your given scenario, you would need to follow a process similar to ancient methods of early iron smelting. Here's a simplified outline:\n\n1. **Preparation**: Gather materials like charcoal (for fuel), clay or mud (for making crucibles), and wood (for building the furnace).\n\n2. **Building the Furnace**: Construct an upright, bellows-blown iron blast furnace using stone or mud bricks. The furnace should have a tuyere at its base for ",
+      "sources": [
+        "Smelting",
+        "Ironworking"
+      ],
+      "score": {
+        "required_hits": [
+          "furnace",
+          "charcoal",
+          "bellows"
+        ],
+        "required_misses": [
+          "temperature",
+          "forge",
+          "anvil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.6499999999999999
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "rebuild_europe",
+      "scenario_name": "Year 5 rebuilding - Central Europe",
+      "module": "chemistry",
+      "question": "We need soap for hygiene but have no chemical supplies. How do we make soap from scratch?",
+      "answer": " To make soap from scratch without chemical supplies, you can follow a traditional method using animal fat or vegetable oils, wood ashes (lye), and water. Here's a simplified version of the process based on the provided context:\n\n1. Gather resources:\n   - Animal fat (rendered from available animals) or vegetable oils (from seeds or fruits)\n   - Wood for burning (hardwoods are best as they produce more alkali)\n   - Clean water\n\n2. Obtain wood ash:\n   - Burn the gathered wood until only ashes rema",
+      "sources": [
+        "Soap"
+      ],
+      "score": {
+        "required_hits": [
+          "lye",
+          "fat",
+          "ash"
+        ],
+        "required_misses": [
+          "boil",
+          "saponification"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6,
+        "forbidden_score": 1.0,
+        "total_score": 0.72
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "rebuild_europe",
+      "scenario_name": "Year 5 rebuilding - Central Europe",
+      "module": "energy",
+      "question": "We have a river with a 3 meter drop. How do we build a micro-hydro system to generate electricity?",
+      "answer": " To build a micro-hydro system in your community, follow these steps:\n\n1. Assess the flow rate of the river during different seasons and estimate an average flow. This will help determine how much power the system can produce.\n\n2. Calculate the hydraulic head by measuring the vertical drop (3 meters) between the water source and the generator location.\n\n3. Based on the calculated head and flow rate, design a micro-hydro system using a Pelton wheel or other suitable turbine for your specific cond",
+      "sources": [
+        "Micro hydro"
+      ],
+      "score": {
+        "required_hits": [
+          "turbine",
+          "wheel",
+          "generator"
+        ],
+        "required_misses": [
+          "penstock"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.825
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "rebuild_europe",
+      "scenario_name": "Year 5 rebuilding - Central Europe",
+      "module": "medicine_childbirth",
+      "question": "A woman in our community is about to give birth. No hospital exists. How do we ensure a safe delivery?",
+      "answer": " In the absence of hospitals, it's crucial to ensure a skilled and experienced midwife is present during the childbirth to minimize risks for both the mother and the baby. If there are no available trained midwives within your community, consider sending a representative to find one from neighboring communities or training someone from your own group.\n\nIn addition, creating a home-like birthing environment can help make the process more comfortable for the woman giving birth. Make sure she has a",
+      "sources": [
+        "Childbirth",
+        "Breastfeeding"
+      ],
+      "score": {
+        "required_hits": [
+          "clean"
+        ],
+        "required_misses": [
+          "sterile",
+          "position",
+          "cord",
+          "bleeding"
+        ],
+        "forbidden_hits": [
+          "hospital"
+        ],
+        "required_score": 0.2,
+        "forbidden_score": 0.8,
+        "total_score": 0.38
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "desert_mideast",
+      "scenario_name": "Desert survival - Middle East",
+      "module": "water",
+      "question": "It's 45 degrees and I have no water. How do I get water in the desert with no supplies?",
+      "answer": " Given the context, your best option would be to implement a rainwater harvesting system if possible. Here are some steps you could take:\n\n1. Find a suitable container: Look for an abandoned vehicle or building that has a large enough container (tank, drum, etc.) which can collect and store rainwater.\n\n2. Prepare the container: Clean it thoroughly to remove any dirt, debris, or potentially harmful substances.\n\n3. Construct a collection system: If there's no built-in collection system, create one",
+      "sources": [
+        "Water purification",
+        "Rainwater harvesting"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "solar still",
+          "condensation",
+          "dig",
+          "dawn",
+          "dew"
+        ],
+        "forbidden_hits": [
+          "store"
+        ],
+        "required_score": 0.0,
+        "forbidden_score": 0.8,
+        "total_score": 0.24
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "desert_mideast",
+      "scenario_name": "Desert survival - Middle East",
+      "module": "survival_fire_shelter",
+      "question": "How do I survive 45\u00b0C heat during the day and 10\u00b0C cold at night in the desert?",
+      "answer": " To survive in a desert with temperatures reaching 45\u00b0C during the day and 10\u00b0C at night, follow these steps:\n\n1. Prioritize finding water: Your primary concern should be locating sources of water. Look for any existing water containers or gather rainwater from vehicles or buildings if possible. If not, dig a well in sandy areas or search for plant life as they may hold some moisture.\n\n2. Build a shelter to reduce heat exposure: Use materials such as tarps, debris, and abandoned vehicle parts to",
+      "sources": [
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "score": {
+        "required_hits": [
+          "shade"
+        ],
+        "required_misses": [
+          "insulation",
+          "night travel",
+          "cover"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.475
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "desert_mideast",
+      "scenario_name": "Desert survival - Middle East",
+      "module": "food_foraging",
+      "question": "What can I eat in a desert with almost no vegetation?",
+      "answer": " In a desert region with minimal vegetation, you can consider hunting small destructive species like sparrows, squirrels, and certain reptiles (if legal according to local regulations). Additionally, edible mushrooms could potentially be found in the area. Remember, only select mushroom species are safe to eat raw, and a minimal amount of water should be used to clean them ideally in the field. Always identify any potential food sources carefully to avoid toxic or inedible species. Hunting skill",
+      "sources": [
+        "Edible mushroom",
+        "Hunting",
+        "Foraging"
+      ],
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "insects",
+          "cactus",
+          "roots",
+          "animals"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.3
+      },
+      "grade": "FAIL"
+    }
+  ]
+}

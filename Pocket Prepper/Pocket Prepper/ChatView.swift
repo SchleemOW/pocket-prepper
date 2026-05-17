@@ -1,4 +1,5 @@
 import SwiftUI
+import Combine
 
 struct ChatView: View {
     let module: Module
@@ -86,17 +87,21 @@ struct ChatView: View {
                 RAGService.shared.retrieve(question: text, module: self.module)
             }.value
 
-            let context = RAGService.shared.buildContext(from: chunks)
             let sources = RAGService.shared.uniqueTitles(from: chunks)
 
-            // Generate complete response (no streaming)
-            var fullText = ""
-            let _ = await llmService.generate(question: text, context: context) { token in
-                fullText += token
+            let answer: String
+            if chunks.isEmpty {
+                answer = "No relevant information found. Try rephrasing your question or selecting a different module."
+            } else {
+                // Show the most relevant chunks with source labels
+                answer = chunks.enumerated().map { (i, chunk) in
+                    let header = chunk.title.isEmpty ? "" : "[\(chunk.title)]\n"
+                    return "\(header)\(chunk.text.trimmingCharacters(in: .whitespacesAndNewlines))"
+                }.joined(separator: "\n\n---\n\n")
             }
 
             await MainActor.run {
-                messages.append(ChatMessage(role: .assistant, text: fullText, sources: sources))
+                messages.append(ChatMessage(role: .assistant, text: answer, sources: sources))
                 isThinking = false
             }
         }
@@ -140,7 +145,7 @@ struct ThinkingIndicator: View {
     let timer = Timer.publish(every: 0.4, on: .main, in: .common).autoconnect()
 
     var body: some View {
-        Text("THINKING" + String(repeating: ".", count: dotCount))
+        Text("SEARCHING" + String(repeating: ".", count: dotCount))
             .font(.system(.caption, design: .monospaced))
             .foregroundColor(.green.opacity(0.6))
             .onReceive(timer) { _ in

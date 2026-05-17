@@ -1,0 +1,2417 @@
+{
+  "run_at": "2026-05-17T09:14:11.536894",
+  "mode": "rag_only",
+  "top_k": 5,
+  "total_questions": 94,
+  "passed": 41,
+  "failed": 53,
+  "average_score": 0.526,
+  "results": [
+    {
+      "scenario": "survival_general_tests",
+      "module": "survival_general",
+      "question": "I just survived a disaster and I'm panicking. How do I calm down and think clearly?",
+      "sources": [
+        "Survival skills",
+        "Wilderness survival",
+        "US Army FM 21-76 Survival Manual",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4472",
+      "chunks_preview": "Mental clarity and preparedness are critical to survival. The will to live in a life-and-death situation often separates those that live and those that do not. Even well-trained survival experts may be mentally affected in disaster situations. It is critical to be calm and focused during a disaster.",
+      "score": {
+        "required_hits": [
+          "stress",
+          "plan",
+          "calm"
+        ],
+        "required_misses": [
+          "priorities"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "survival_general_tests",
+      "module": "survival_general",
+      "question": "What should my first priorities be in the first 24 hours after a collapse?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "avg_distance": "0.5446",
+      "chunks_preview": "A Look at Stress .......................................................... 2-2 \nNatural Reactions ........................................................ 2-6 \nPreparing Yourself ....................................................... 2-9 \nChapter 3 SURVIVAL PLANNING AND SURVIVAL KITS .......... 3-",
+      "score": {
+        "required_hits": [
+          "water",
+          "shelter",
+          "fire"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "survival_general_tests",
+      "module": "survival_general",
+      "question": "How do I signal for rescue if I'm stranded?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "US Army FM 21-76 Survival Manual",
+        "Survival skills"
+      ],
+      "avg_distance": "0.3685",
+      "chunks_preview": "FM 3-05.70\n16-7\ncloser together if you see or hear an aircraft. It is easier for\nan aircrew to spot rafts that are close together rather than\nscattered.\n\u2022 Remember, rescue at sea is a cooperative effort. Use all\navailable visual or electronic signaling devices to signal\nand make contact with rescuer",
+      "score": {
+        "required_hits": [
+          "fire",
+          "signal"
+        ],
+        "required_misses": [
+          "smoke",
+          "mirror"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "survival_general_tests",
+      "module": "survival_general",
+      "question": "I'm trapped in a building after an earthquake. What do I do?",
+      "sources": [
+        "Survival skills",
+        "Wilderness survival",
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "avg_distance": "0.456",
+      "chunks_preview": "DROP down on your hands and knees. This protects you from falling but lets you move if you need to.\nCOVER your head and neck (or your entire body if possible) under a sturdy table or desk (if it is within a few steps of you). If there is no shelter nearby, cover your head and neck with your arms and",
+      "score": {
+        "required_hits": [
+          "cover"
+        ],
+        "required_misses": [
+          "debris",
+          "breathe",
+          "signal"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "survival_general_tests",
+      "module": "survival_general",
+      "question": "How do I prioritize survival needs? What kills first?",
+      "sources": [
+        "US Army FM 21-76 Survival Manual",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4258",
+      "chunks_preview": "food, water, shelter, fire, first aid, and signals placed in order of importance. For example, in a cold \nenvironment, you would need a fire to get warm; a shelter to protect you from the cold, wind, and rain or \nsnow; traps or snares to get food; a means to signal friendly aircraft; and first aid t",
+      "score": {
+        "required_hits": [
+          "exposure",
+          "water",
+          "food",
+          "shelter"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "module": "survival_fire_shelter",
+      "question": "How do I start a fire with no matches, lighter, or modern tools?",
+      "sources": [
+        "Fire making",
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "avg_distance": "0.3691",
+      "chunks_preview": "Some fire-starting systems use a ferrocerium rod and a hard scraper to create hot sparks by manually scratching the ferro rod with a knife or sharp object to ignite man-made or natural tinder. Fire starters based upon ferrocerium are popular with Woodcraft practitioners, bushcraft hobbyists and surv",
+      "score": {
+        "required_hits": [
+          "friction",
+          "bow drill",
+          "tinder"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "module": "survival_fire_shelter",
+      "question": "It's raining heavily. How do I build a waterproof shelter quickly?",
+      "sources": [
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "avg_distance": "0.4442",
+      "chunks_preview": "See Chapter 15 for other arctic or cold weather shelters. \nBeach Shade Shelter \nThis shelter protects you from the sun, wind, rain, and heat. It is easy to make using natural materials. \nTo make this shelter (Figure 5-13)-- \n\u00b7 Find and collect driftwood or other natural material to use as support be",
+      "score": {
+        "required_hits": [
+          "lean-to",
+          "leaves",
+          "branches",
+          "angle"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "module": "survival_fire_shelter",
+      "question": "How do I keep a fire going overnight without constantly feeding it?",
+      "sources": [
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "avg_distance": "0.4784",
+      "chunks_preview": "starter fire burns, it will ignite the logs below it. This gives you a fire that burns downward, requiring no \nattention during the night. \nThere are several other ways to lay a fire that are quite effective. Your situation and the material \navailable in the area may make another method more suitabl",
+      "score": {
+        "required_hits": [
+          "bank",
+          "coal"
+        ],
+        "required_misses": [
+          "log",
+          "slow"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "module": "survival_fire_shelter",
+      "question": "What are the best natural materials for insulating a shelter?",
+      "sources": [
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "avg_distance": "0.46",
+      "chunks_preview": "moisture. \n\u00b7 Place finer sticks and brush crosswise on the ribbing. These form a latticework that will keep the \ninsulating material (grass, pine needles, leaves) from falling through the ribbing into the sleeping \narea. \n\u00b7 Add light, dry, if possible, soft debris over the ribbing until the insulati",
+      "score": {
+        "required_hits": [
+          "leaves",
+          "grass",
+          "debris",
+          "thick"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "module": "survival_fire_shelter",
+      "question": "How do I build a shelter that protects from both rain and cold wind?",
+      "sources": [
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "avg_distance": "0.3938",
+      "chunks_preview": "Shelters made from ice or snow usually require tools such as ice axes or saws. You must also expend \nmuch time and energy to build such a shelter. Be sure to ventilate an enclosed shelter, especially if you \nintend to build a fire in it. Always block a shelter's entrance, if possible, to keep the he",
+      "score": {
+        "required_hits": [
+          "wind",
+          "insulation"
+        ],
+        "required_misses": [
+          "wall",
+          "waterproof"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "fire_shelter_tests",
+      "module": "survival_fire_shelter",
+      "question": "What mistakes do people make when building fires that waste energy?",
+      "sources": [
+        "US Army FM 21-76 Survival Manual",
+        "Fire making"
+      ],
+      "avg_distance": "0.4706",
+      "chunks_preview": "psychological boost by providing peace of mind and companionship. You can also use fire \nto produce tools and weapons. \nFire can cause problems, as well. The enemy can detect the smoke and light it produces. \nIt can cause forest fires or destroy essential equipment. Fire can also cause burns carbon ",
+      "score": {
+        "required_hits": [
+          "tinder"
+        ],
+        "required_misses": [
+          "wet wood",
+          "wind"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.3333333333333333,
+        "forbidden_score": 1.0,
+        "total_score": 0.3333333333333333
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "desert_tests",
+      "module": "survival_desert",
+      "question": "It's 45\u00b0C and I have no water. How do I find water in the desert?",
+      "sources": [
+        "US Army FM 90-3 Desert Operations",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4114",
+      "chunks_preview": "cases, some water can be found. It does rain sometimes in the desert (although it\nmay be 20 years between showers) and some water will remain under the\nsurface. Signs of possible water are green plants or dry lake beds. Sometimes\nwater can be obtained in these places by digging down until the soil b",
+      "score": {
+        "required_hits": [
+          "dig",
+          "vegetation"
+        ],
+        "required_misses": [
+          "solar still",
+          "dew"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "desert_tests",
+      "module": "survival_desert",
+      "question": "Should I travel during the day or night in the desert?",
+      "sources": [
+        "US Army FM 90-3 Desert Operations",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4916",
+      "chunks_preview": "deployment to or arrival in a desert environment?\n2-1\nground and overcome the mirage effect. Mirages make land\nnavigation difficult because they obscure natural features. You\ncan survey the area at dawn, dusk, or by moonlight when there is\nlittle likelihood of mirage.\n13-27. Light levels in desert a",
+      "score": {
+        "required_hits": [
+          "night",
+          "heat",
+          "conserve",
+          "shade"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "module": "survival_desert",
+      "question": "How do I build a solar still to collect water?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Solar still"
+      ],
+      "avg_distance": "0.4263",
+      "chunks_preview": "(jet fuel, hydraulic fluid, or oil) before using an MROD. The filter\nmedium is very sensitive to petroleum, oils, and lubricants, and\nwill render the filter useless, destroying your water production\ncapability.\n Solar Still\n16-47. When solar stills are available, read the instructions and\nset them u",
+      "score": {
+        "required_hits": [
+          "container",
+          "condensation",
+          "sun"
+        ],
+        "required_misses": [
+          "hole",
+          "plastic"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6,
+        "forbidden_score": 1.0,
+        "total_score": 0.6
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "module": "survival_desert",
+      "question": "How do I protect myself from heat stroke in extreme heat?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "US Army FM 90-3 Desert Operations"
+      ],
+      "avg_distance": "0.4699",
+      "chunks_preview": "15-9. You must not only have enough clothing to protect you from\nthe cold, you must also know how to maximize the warmth you\nget from it. For example, always keep your head covered. You can\nlose 40 to 45 percent of body heat from an unprotected head and\neven more from the unprotected neck, wrist, an",
+      "score": {
+        "required_hits": [
+          "shade",
+          "water",
+          "cover"
+        ],
+        "required_misses": [
+          "rest"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "module": "survival_desert",
+      "question": "What can I eat in a desert environment?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "US Army FM 90-3 Desert Operations"
+      ],
+      "avg_distance": "0.4182",
+      "chunks_preview": "FM 3-05.70\n13-12\nDESERT HAZARDS\n13-40. There are several hazards unique to desert survival. These\ninclude insects, snakes, thorned plants and cacti, contaminated\nwater, sunburn, eye irritation, and climatic stress.\n13-41. Insects of almost every type abound in the desert. Man, as\na source of water a",
+      "score": {
+        "required_hits": [
+          "insects",
+          "cactus"
+        ],
+        "required_misses": [
+          "reptile"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6666666666666666,
+        "forbidden_score": 1.0,
+        "total_score": 0.6666666666666666
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "desert_tests",
+      "module": "survival_desert",
+      "question": "How do I navigate in a desert with no landmarks?",
+      "sources": [
+        "US Army FM 90-3 Desert Operations",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4462",
+      "chunks_preview": "improve on natural cover and concealment. See Appendix E for additional\ninformation on concealment and camouflage.\nObstacles\nNatural obstacles do exist in the desert, and arid regions are well suited for\nman-made obstacles. The wadis and steep slopes of escarpments, mountains,\nhills, and dunes hinde",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "sun",
+          "star",
+          "shadow",
+          "direction"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "desert_tests",
+      "module": "survival_desert",
+      "question": "A sandstorm is approaching. What do I do?",
+      "sources": [
+        "Sandstorm",
+        "US Army FM 90-3 Desert Operations",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4551",
+      "chunks_preview": "The term sandstorm is used most often in the context of desert dust storms, especially in the Sahara Desert, or places where sand is a more prevalent soil type than dirt or rock, when, in addition to fine particles obscuring visibility, a considerable amount of larger sand particles are blown closer",
+      "score": {
+        "required_hits": [
+          "cover",
+          "shelter"
+        ],
+        "required_misses": [
+          "face",
+          "breathe"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "cold_tests",
+      "module": "survival_cold",
+      "question": "I'm soaking wet and it's -15\u00b0C. How do I avoid hypothermia?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Hypothermia"
+      ],
+      "avg_distance": "0.3923",
+      "chunks_preview": "rate faster than the body can produce heat. Causes of\nhypothermia may be general exposure or the sudden wetting of\nthe body by falling into a lake or spraying with fuel or other\nliquids. \n15-25. The initial symptom is shivering. This shivering may\nprogress to the point that it is uncontrollable and ",
+      "score": {
+        "required_hits": [
+          "dry",
+          "insulation",
+          "wind"
+        ],
+        "required_misses": [
+          "fire"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "cold_tests",
+      "module": "survival_cold",
+      "question": "How do I build a snow shelter to survive the night?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.2536",
+      "chunks_preview": "Remember that it takes time and energy to build and that you\nwill get wet while building it. Firs t, you need to find a drift about\n3 meters (10 feet) deep into which you can dig. While building this\nshelter, keep the roof arched for strength and to allow melted\nsnow to drain down the sides. Build t",
+      "score": {
+        "required_hits": [
+          "snow",
+          "dig",
+          "insulation"
+        ],
+        "required_misses": [
+          "ventilation"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "cold_tests",
+      "module": "survival_cold",
+      "question": "My fingers and toes are numb and white. Is this frostbite? What do I do?",
+      "sources": [
+        "Frostbite",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4108",
+      "chunks_preview": "Frostbite is an injury to skin or other living tissue that is allowed to freeze, especially affecting the fingers, toes, nose, ears, cheeks and chin. Most often, frostbite occurs in the hands and feet, often preceded by frostnip, a paling or reddening of a body part as its blood vessels constrict th",
+      "score": {
+        "required_hits": [
+          "warm",
+          "skin"
+        ],
+        "required_misses": [
+          "gradual"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6666666666666666,
+        "forbidden_score": 1.0,
+        "total_score": 0.6666666666666666
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "cold_tests",
+      "module": "survival_cold",
+      "question": "How do I find food in a frozen winter landscape?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Ice fishing",
+        "Snowshoe"
+      ],
+      "avg_distance": "0.4936",
+      "chunks_preview": "FM 3-05.70\n15-22\n15-75. O n c e y o u h a v e w a t e r , k e e p i t n e x t t o y o u t o p r e v e n t\nrefreezing. Also, do not fill your canteen completely. Allowing the\nwater to slosh around will help keep it from freezing. \nFOOD\n15-76. There are several sources of food in the arctic and\nsubarc",
+      "score": {
+        "required_hits": [
+          "ice fishing",
+          "hunt"
+        ],
+        "required_misses": [
+          "trap",
+          "bark"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "cold_tests",
+      "module": "survival_cold",
+      "question": "How do I melt snow for drinking water safely?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.3756",
+      "chunks_preview": "water bag and place the bag between your layers of clothing. This\nis a slow process, but you can use it on the move or when you\nhave no fire. \nNOTE: Do not waste fuel to melt ice or snow when drinkable\nwater is available from other sources. \n15-72. When ice is available, melt it rather than snow. On",
+      "score": {
+        "required_hits": [
+          "fire",
+          "melt",
+          "container"
+        ],
+        "required_misses": [
+          "boil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "module": "medicine_trauma",
+      "question": "Someone is bleeding heavily from a leg wound. How do I stop the bleeding?",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.3423",
+      "chunks_preview": "PRECAUTIONS:\n\u2022 Using a tourniquet to stop the bleeding usually results in total loss of the arm or \nleg. Only use a tourniquet if you have no other option. Never use a string or wire. \nIt can cut right through the skin.\n\u2022 Never use dirt, kerosene, or lime to stop bleeding.\n\u2022 When bleeding or injury ",
+      "score": {
+        "required_hits": [
+          "pressure",
+          "elevate",
+          "cloth",
+          "tourniquet"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "module": "medicine_trauma",
+      "question": "I think someone has a broken arm. How do I splint it with no medical supplies?",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Bone fracture",
+        "Splint (medicine)"
+      ],
+      "avg_distance": "0.3887",
+      "chunks_preview": "and the bone are absolutely clean.\nSplint the limb to prevent more injury.\nIf the bone has broken the skin, use an antibiotic immediately to help prevent \ninfection: dicloxacillin (p. 350), clindamycin (p. 358), or ceftriaxone (p. 358).\nCAUTION: Never rub or massage a broken limb \nor a limb that may",
+      "score": {
+        "required_hits": [
+          "splint"
+        ],
+        "required_misses": [
+          "straight",
+          "immobilize",
+          "padding"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "module": "medicine_trauma",
+      "question": "Someone has a severe burn from a fire. How do I treat it?",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.3025",
+      "chunks_preview": "Special Precautions for Very Serious Burns\nAny person who has been badly burned can easily go into shock (p. 77) because \nof combined pain, fear, and the loss of body fluids from the oozing burn.\nComfort and reassure the burned person. Give him aspirin, acetaminophen, or \nibuprofen for the pain and ",
+      "score": {
+        "required_hits": [
+          "cool",
+          "water",
+          "clean",
+          "cover"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "module": "medicine_trauma",
+      "question": "How do I close a deep wound when I have no stitches or medical tape?",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.3128",
+      "chunks_preview": "There are two methods to close a cut:\nBUTTERFL Y BANDAGES OF ADHESIVE TAPE\nWhere There Is No Doctor 2025\nIf the wound that has been closed shows any signs of infection, remove the \nstitches immediately and leave the wound open (p. 88).\nHOW TO TIE A \nGOOD KNOT\n1. 2.\n1. 2. 3.\nWhere There Is No Doctor ",
+      "score": {
+        "required_hits": [
+          "clean",
+          "close",
+          "bandage"
+        ],
+        "required_misses": [
+          "strip"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_trauma_tests",
+      "module": "medicine_trauma",
+      "question": "Someone fell and hit their head hard. They're confused. What do I watch for?",
+      "sources": [
+        "First aid",
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.6051",
+      "chunks_preview": "Checking skills\nThey evaluate the condition of the victim, first attending to the main threats for life.\nThe preferred initial way of checking consist of asking, commonly by touching the patient in one of his shoulders and shouting something, such as: \"can you hear me?\"\nIn some cases, the victim has",
+      "score": {
+        "required_hits": [
+          "conscious",
+          "vomit"
+        ],
+        "required_misses": [
+          "pupil",
+          "sleep"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "module": "medicine_infection",
+      "question": "How do I know if a wound is infected and what do I do?",
+      "sources": [
+        "Infection"
+      ],
+      "avg_distance": "0.4703",
+      "chunks_preview": ". A review of chronic wounds in the Journal of the American Medical Association's \"Rational Clinical Examination Series\" quantified the importance of increased pain as an indicator of infection. The review showed that the most useful finding is an increase in the level of pain [likelihood ratio (LR)",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "red",
+          "swollen",
+          "pus",
+          "clean",
+          "hot"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "module": "medicine_infection",
+      "question": "Multiple people have diarrhea from bad water. How do I treat them?",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.3783",
+      "chunks_preview": "\u2666\t\t Drink lots of liquids. Usually no special treatment is needed. It is usually \nbest not to use \u201canti-diarrhea\u201d medicines such as bismuth subsalicylate \n(Kaopectate, p. 384) or diphenoxylate (Lomotil). They are never necessary \nand do not help either to correct dehydration or get rid of infection ",
+      "score": {
+        "required_hits": [
+          "rehydration",
+          "salt",
+          "sugar",
+          "water",
+          "boil"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "module": "medicine_infection",
+      "question": "How do I make oral rehydration solution with no medical supplies?",
+      "sources": [
+        "Oral rehydration therapy",
+        "Cholera",
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.3233",
+      "chunks_preview": "A basic oral rehydration therapy solution can also be prepared when packets of oral rehydration salts are not available. The molar ratio of sugar to salt should be 1:1 and the solution should not be hyperosmolar. The Rehydration Project states, \"Making the mixture a little diluted (with more than 1 ",
+      "score": {
+        "required_hits": [
+          "water",
+          "salt",
+          "sugar",
+          "liter"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "module": "medicine_infection",
+      "question": "How do I prevent disease from spreading in a group with no sanitation?",
+      "sources": [
+        "Sanitation",
+        "Cholera",
+        "Where There Is No Doctor (2025)",
+        "Waterborne diseases"
+      ],
+      "avg_distance": "0.3637",
+      "chunks_preview": ". There are many other diseases which are easily transmitted in communities that have low levels of sanitation, such as ascariasis (a type of intestinal worm infection or helminthiasis), cholera, hepatitis, polio, schistosomiasis, and trachoma, to name just a few.\nEffective sanitation practices, if ",
+      "score": {
+        "required_hits": [
+          "wash"
+        ],
+        "required_misses": [
+          "hands",
+          "latrine",
+          "separate",
+          "boil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.2,
+        "forbidden_score": 1.0,
+        "total_score": 0.2
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "medicine_infection_tests",
+      "module": "medicine_infection",
+      "question": "Someone has a high fever for 3 days. What can I do without medicine?",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.428",
+      "chunks_preview": "\u2666\t If the child has a high fever, lower it with cool water (p. 76) or paracetamol (p 380). \n\u2666\t If the child is dehydrated, give an enema of Rehydration Drink slowly. \nSend for medical help. Give nothing by mouth during a seizure.\n\u2666\t If there are signs of meningitis (p. 185), begin treatment at once.",
+      "score": {
+        "required_hits": [
+          "cool",
+          "water",
+          "rest"
+        ],
+        "required_misses": [
+          "fluids"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "module": "medicine_childbirth",
+      "question": "A woman is in labor. What are the basic steps for a safe home delivery?",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Childbirth"
+      ],
+      "avg_distance": "0.4466",
+      "chunks_preview": "During the first stage of labor, the midwife or birth attendant should:\n\u2666 Wash the mother\u2019s belly, genitals, buttocks, and legs well with soap and warm \nwater. The bed should be in a clean place with enough light to see clearly.\n\u2666 Spread clean sheets, towels, or newspapers on the bed and change them",
+      "score": {
+        "required_hits": [
+          "clean",
+          "position",
+          "push",
+          "cord"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "module": "medicine_childbirth",
+      "question": "How do I cut and tie the umbilical cord safely?",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Childbirth"
+      ],
+      "avg_distance": "0.3943",
+      "chunks_preview": "CARE OF THE NEWBORN BABY\nThe Cord\nTo prevent the freshly cut cord from becoming infected, it should be kept clean \nand dry. If possible, clean it with alcohol and a clean cloth with every diaper (nappy) \nchange. The drier it is, the sooner it will fall off and the navel will heal. For this reason, \n",
+      "score": {
+        "required_hits": [
+          "tie",
+          "cut",
+          "sterile",
+          "clean"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "module": "medicine_childbirth",
+      "question": "The mother is bleeding heavily after delivery. What do I do?",
+      "sources": [
+        "Childbirth",
+        "Breastfeeding",
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.3171",
+      "chunks_preview": "Postpartum bleeding\nPostpartum bleeding\nRehydration Drink, p. 152). If she grows faint or has a fast, weak pulse or \nshows other signs of shock, put her legs up and her head down (p. 77).\nIf heavy bleeding continues, or if the mother is losing a great deal of blood \nthrough a slow trickle, keep mass",
+      "score": {
+        "required_hits": [
+          "massage",
+          "uterus",
+          "breastfeed"
+        ],
+        "required_misses": [
+          "pressure"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "module": "medicine_childbirth",
+      "question": "The baby isn't breathing after birth. What do I do immediately?",
+      "sources": [
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.3404",
+      "chunks_preview": "not to push, but to take short, rapid breaths. Before the baby starts breathing, wipe its \nmouth and nose with a clean cloth or use a suction bulb to suck the feces out. Keep \nthe baby\u2019s head lower than its body to help empty the mouth and nose. If the baby has \ndifficulty breathing, take it to a ho",
+      "score": {
+        "required_hits": [
+          "airway",
+          "breathe"
+        ],
+        "required_misses": [
+          "clear",
+          "stimulate"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "childbirth_tests",
+      "module": "medicine_childbirth",
+      "question": "How can I tell if a pregnancy is high-risk before labor begins?",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Childbirth"
+      ],
+      "avg_distance": "0.394",
+      "chunks_preview": "doctor before labor begins, because an operation may \nbe needed. For checking the baby\u2019s position near the \ntime of birth, see page 257.\n3. Minor problems\nAsk the mother if she has any of the common problems of pregnancy. Explain \nthat they are not serious, and give what advice you can (p. 248).\n4. ",
+      "score": {
+        "required_hits": [
+          "bleeding",
+          "position"
+        ],
+        "required_misses": [
+          "swelling",
+          "previous"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "water_tests",
+      "module": "water",
+      "question": "I found a muddy pond. How do I make this water safe to drink?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4538",
+      "chunks_preview": "FM 3-05.70\n6-13\nFigure 6-9. Belowground Still to Get Potable Water\nFrom Polluted Water\nWATER PURIFICATION\n6-29. Rainwater collected in clean containers or in plants is\nusually safe for drinking. Howe ver, purify water from lakes,\nponds, swamps, springs, or stre ams, especially the water near\nhuman s",
+      "score": {
+        "required_hits": [
+          "filter",
+          "boil",
+          "cloth"
+        ],
+        "required_misses": [
+          "settle"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "module": "water",
+      "question": "How do I build a simple water filter from natural materials?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Biosand filter"
+      ],
+      "avg_distance": "0.4282",
+      "chunks_preview": "palatable. You will have to purify it.\n6-36. To make a filtering system, place several centimeters or\nlayers of filtering material such as sand, crushed rock, charcoal,\nThere are challenges to creating biosand water filters in developing countries. Many lack the professional capability of constructi",
+      "score": {
+        "required_hits": [
+          "sand",
+          "charcoal"
+        ],
+        "required_misses": [
+          "gravel",
+          "layer"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "water_tests",
+      "module": "water",
+      "question": "How can I collect rainwater for drinking?",
+      "sources": [
+        "Rainwater harvesting",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.3681",
+      "chunks_preview": ". Water can be collected from roofs and tanks can be constructed to hold large quantities of rainwater.\nRainwater harvesting (RWH) is the collection and storage of rainwater, rather than allowing it to run off. Rainwater is collected from a roof-like surface and redirected to a tank, cistern, deep p",
+      "score": {
+        "required_hits": [
+          "container",
+          "roof",
+          "clean"
+        ],
+        "required_misses": [
+          "store"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "module": "water",
+      "question": "How do I dig a well by hand to reach groundwater?",
+      "sources": [
+        "Well"
+      ],
+      "avg_distance": "0.3117",
+      "chunks_preview": "Hand-dug wells are inexpensive and low tech (compared to drilling) and they use mostly manual labour to access groundwater in rural locations of developing countries. They may be built with a high degree of community participation, or by local entrepreneurs who specialize in hand-dug wells. They hav",
+      "score": {
+        "required_hits": [
+          "dig",
+          "water table",
+          "lining"
+        ],
+        "required_misses": [
+          "depth"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "water_tests",
+      "module": "water",
+      "question": "Can I drink salt water? How do I desalinate sea water?",
+      "sources": [
+        "Water purification",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.444",
+      "chunks_preview": "Desalination\nSeawater can be desalinated by distillation or reverse osmosis.\nSurface water\nFreshwater bodies that are open to the atmosphere and are not designated as groundwater are termed surface waters.\nFM 3-05.70\n6-2\nEnvironment\nSources of\nWater\nMeans of\nObtaining and/or\nMaking Potable Remarks\nF",
+      "score": {
+        "required_hits": [
+          "distill"
+        ],
+        "required_misses": [
+          "boil",
+          "steam",
+          "condense"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "water_tests",
+      "module": "water",
+      "question": "How do I store water safely for long periods without it going bad?",
+      "sources": [
+        "Water purification",
+        "US Army FM 3-05.70 Survival (2002)",
+        "Rainwater harvesting",
+        "Solar water disinfection"
+      ],
+      "avg_distance": "0.4464",
+      "chunks_preview": "Storage\nWater from rivers may also be stored in bankside reservoirs for periods between a few days and many months to allow natural biological purification to take place. This is especially important if treatment is by slow sand filters. Storage reservoirs also provide a buffer against short periods",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "clean",
+          "sealed",
+          "dark",
+          "container"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "water_tests",
+      "module": "water",
+      "question": "What are the signs of waterborne illness and how do I prevent it?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Well",
+        "Water treatment"
+      ],
+      "avg_distance": "0.466",
+      "chunks_preview": "potentially fatal waterborne illnesses.\n6-33. Two of the most prevalent pathogens found in most water\nsources throughout the world are\u2014\n\u2022 Giardia, which causes Giardi asis (beaver fever). It is\ncharacterized by an explosive, watery diarrhea\naccompanied by severe cramps lasting 7 to 14 days.\n\u2022 Crypto",
+      "score": {
+        "required_hits": [
+          "diarrhea",
+          "filter"
+        ],
+        "required_misses": [
+          "boil",
+          "clean"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "module": "food_foraging",
+      "question": "I don't recognize any plants around me. How do I test if a plant is safe to eat?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.3329",
+      "chunks_preview": "FM 3-05.70\n9-2\n9-2. Absolutely identify plants before using them as food. Poison\nhemlock has killed people who mi stook it for its relatives, wild\ncarrots and wild parsnips.\n9-3. You may find yourself in a situation where you have had\nthe chance to learn the plant life of the region in which you mus",
+      "score": {
+        "required_hits": [
+          "test"
+        ],
+        "required_misses": [
+          "skin",
+          "lip",
+          "small amount",
+          "wait"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.2,
+        "forbidden_score": 1.0,
+        "total_score": 0.2
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "module": "food_foraging",
+      "question": "What are the universal signs that a plant is poisonous?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.3476",
+      "chunks_preview": "\u2022 Absorption or inhalation. This happens when a person\neither absorbs the poison through the skin or inhales it\ninto the respiratory system.\n10-2. Plant poisoning ranges from minor irritation to death. A\ncommon question asked is, \u201cHow poisonous is this plant?\u201d It is\ndifficult to say how poisonous pl",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "milky sap",
+          "bitter",
+          "almond smell"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "module": "food_foraging",
+      "question": "How do I trap small animals for food?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Trapping"
+      ],
+      "avg_distance": "0.3322",
+      "chunks_preview": "in a good location. A baited trap can actually draw animals to it.\nThe bait should be something the animal knows. However, this\nbait should not be so readily available in the immediate area that\nthe animal can get it close by. For example, baiting a trap with\ncorn in the middle of a cornfi eld would",
+      "score": {
+        "required_hits": [
+          "snare",
+          "trail",
+          "bait"
+        ],
+        "required_misses": [
+          "wire"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "module": "food_foraging",
+      "question": "What insects are safe to eat and how do I prepare them?",
+      "sources": [
+        "Entomophagy",
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4122",
+      "chunks_preview": "External links\n Media related to Entomophagy at Wikimedia Commons\n\n\"Edible insects\". New Scientist. 193 (2595): 56. 2007. doi:10.1016/s0262-4079(07)60691-5.\nEdible insects: Future prospects for food and feed security\nRisk profile related to production and consumption of insects as food and feed Euro",
+      "score": {
+        "required_hits": [
+          "cook",
+          "cricket"
+        ],
+        "required_misses": [
+          "larvae",
+          "avoid bright"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "module": "food_foraging",
+      "question": "How do I catch fish without a fishing rod?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Fishing"
+      ],
+      "avg_distance": "0.3572",
+      "chunks_preview": "groups of three or more threads. Shoelaces and parachute\nsuspension line also work well. \n\u2022 Fish hooks. No one at sea should be without fishing\nequipment, but if you are, improvise hooks as shown in\nChapter 8. \n\u2022 Fish lures. You can fashion lures by attaching a double\nhook to any shiny piece of meta",
+      "score": {
+        "required_hits": [
+          "trap",
+          "spear",
+          "net"
+        ],
+        "required_misses": [
+          "weir"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "food_foraging_tests",
+      "module": "food_foraging",
+      "question": "What parts of common trees can I eat in an emergency?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4544",
+      "chunks_preview": "subtropical regions. It has been introduced to the southern United States and has\nescaped to thickets, old fields, and disturbed areas. \nCAUTION\nAll parts of the tree should be considered dangerous if eaten.\nIts leaves are a natural insecticide and will repel insects from\nstored fruits and grains. T",
+      "score": {
+        "required_hits": [
+          "bark",
+          "pine"
+        ],
+        "required_misses": [
+          "cambium",
+          "nuts"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "module": "food_farming",
+      "question": "How do I start a garden from scratch with no seeds from a store?",
+      "sources": [
+        "Seed saving",
+        "Composting"
+      ],
+      "avg_distance": "0.5238",
+      "chunks_preview": "Whealy, Kent; Garden Seed Inventory: An Inventory of Seed Catalogs Listing All Non-Hybrid Vegetable Seeds Available in the United States and Canada, Seed Savers Exchange, 2005. ISBN 978-1-882424-60-3\nPhillips, Catherine; Saving More Than Seeds: Practices and Politics of Seed Saving, London, Routledg",
+      "score": {
+        "required_hits": [
+          "seed"
+        ],
+        "required_misses": [
+          "wild",
+          "propagate",
+          "cutting"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "module": "food_farming",
+      "question": "How do I make compost to fertilize soil?",
+      "sources": [
+        "Composting",
+        "Permaculture"
+      ],
+      "avg_distance": "0.334",
+      "chunks_preview": "Compost can be added to soil, coir, or peat, as a tilth improver, supplying humus and nutrients. It provides a rich growing medium as absorbent material. This material contains moisture and soluble minerals, which provide support and nutrients. Although it is rarely used alone, plants can flourish f",
+      "score": {
+        "required_hits": [
+          "green",
+          "brown"
+        ],
+        "required_misses": [
+          "decompose",
+          "turn",
+          "pile"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.4,
+        "forbidden_score": 1.0,
+        "total_score": 0.4
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "module": "food_farming",
+      "question": "How do I save seeds from this year's harvest for next year?",
+      "sources": [
+        "Seed saving"
+      ],
+      "avg_distance": "0.4352",
+      "chunks_preview": "In agriculture and gardening, seed saving (sometimes known as brown bagging) is the practice of saving seeds or other reproductive material (e.g. tubers, scions, cuttings) from vegetables, grain, herbs, and flowers for use from year to year for annuals and nuts, tree fruits, and berries for perennia",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "dry",
+          "store",
+          "select",
+          "mature"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "module": "food_farming",
+      "question": "How do I preserve food for winter without refrigeration?",
+      "sources": [
+        "Food preservation"
+      ],
+      "avg_distance": "0.3975",
+      "chunks_preview": "Freezing\n\nFreezing is also one of the most commonly used processes, both commercially and domestically, for preserving a very wide range of foods, including prepared foods that would not have required freezing in their unprepared state. For example, potato waffles are stored in the freezer, but pota",
+      "score": {
+        "required_hits": [
+          "salt",
+          "dry",
+          "ferment"
+        ],
+        "required_misses": [
+          "smoke"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "food_farming_tests",
+      "module": "food_farming",
+      "question": "What crops grow fastest and provide the most calories?",
+      "sources": [
+        "Crop rotation",
+        "Animal husbandry"
+      ],
+      "avg_distance": "0.5311",
+      "chunks_preview": "Crop choice is often related to the goal the farmer is looking to achieve with the rotation, which could be weed management, increasing available nitrogen in the soil, controlling for erosion, or increasing soil structure and biomass, to name a few. When discussing crop rotations, crops are classifi",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "potato",
+          "corn",
+          "bean",
+          "squash"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "module": "shelter_construction",
+      "question": "How do I build a log cabin with hand tools only?",
+      "sources": [
+        "Log cabin",
+        "Timber framing"
+      ],
+      "avg_distance": "0.3856",
+      "chunks_preview": "Log cabins are mostly constructed without the use of nails and thus derive their stability from simple stacking, with only a few dowel joints for reinforcement. This is because a log cabin tends to compress slightly as it settles, over a few months or years. Nails would soon be out of alignment and ",
+      "score": {
+        "required_hits": [
+          "log"
+        ],
+        "required_misses": [
+          "notch",
+          "foundation",
+          "chinking"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "module": "shelter_construction",
+      "question": "How do I make mortar and cement from natural materials?",
+      "sources": [
+        "Roman engineering",
+        "Lime mortar"
+      ],
+      "avg_distance": "0.4306",
+      "chunks_preview": "Cement was made of hydrated lime (calcium oxide) mixed with sand and water. The Romans discovered that substituting or supplementing the sand with a pozzolanic additive, such as volcanic ash, would produce a very hard cement, known as hydraulic mortar or hydraulic cement. They used it widely in stru",
+      "score": {
+        "required_hits": [
+          "lime",
+          "calcium",
+          "calcium"
+        ],
+        "required_misses": [
+          "heat"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "module": "shelter_construction",
+      "question": "How do I waterproof a roof using only natural materials?",
+      "sources": [
+        "Adobe",
+        "Thatching",
+        "Timber framing",
+        "Log cabin"
+      ],
+      "avg_distance": "0.5338",
+      "chunks_preview": "Adobe roof\nThe traditional adobe roof has been constructed using a mixture of soil/clay, water, sand and organic materials. The mixture was then formed and pressed into wood forms, producing rows of dried earth bricks that would then be laid across a support structure of wood and plastered into plac",
+      "score": {
+        "required_hits": [
+          "thatch",
+          "bark"
+        ],
+        "required_misses": [
+          "overlap",
+          "pitch"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "module": "shelter_construction",
+      "question": "How do I build a basic bridge across a stream?",
+      "sources": [
+        "Roman engineering",
+        "Aqueduct",
+        "Arch"
+      ],
+      "avg_distance": "0.4884",
+      "chunks_preview": "Bridges\nStructures\nAqueduct (bridge), a bridge to convey water over an obstacle, such as a ravine or valley\nNavigable aqueduct, or water bridge, a structure to carry navigable waterway canals over other rivers, valleys, railways or roads\nAqueduct (water supply), a watercourse constructed to convey w",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "log",
+          "span",
+          "support",
+          "secure"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "shelter_construction_tests",
+      "module": "shelter_construction",
+      "question": "How do I make adobe bricks for building walls?",
+      "sources": [
+        "Adobe"
+      ],
+      "avg_distance": "0.3265",
+      "chunks_preview": "Adobe wall construction\nDepending on the materials available, a roof may be assembled using wood or metal beams to create a framework to begin layering adobe bricks. Depending on the thickness of the adobe bricks, the framework has been preformed using a steel framing and a layering of a metal fenci",
+      "score": {
+        "required_hits": [
+          "clay",
+          "straw",
+          "dry"
+        ],
+        "required_misses": [
+          "water",
+          "sun"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.6,
+        "forbidden_score": 1.0,
+        "total_score": 0.6
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "energy_tests",
+      "module": "energy",
+      "question": "How do I build a waterwheel to generate mechanical power?",
+      "sources": [
+        "Waterwheel"
+      ],
+      "avg_distance": "0.389",
+      "chunks_preview": "A water wheel is a machine for converting the kinetic energy of flowing or falling water into useful forms of power, often in a watermill. A water wheel consists of a large wheel (usually constructed from wood or metal), with numerous blades or buckets attached to the outer rim forming the drive mec",
+      "score": {
+        "required_hits": [
+          "wheel",
+          "blades",
+          "water",
+          "axle"
+        ],
+        "required_misses": [
+          "shaft"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.8,
+        "forbidden_score": 1.0,
+        "total_score": 0.8
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "energy_tests",
+      "module": "energy",
+      "question": "How do I build a wind turbine from scrap materials?",
+      "sources": [
+        "Wind turbine"
+      ],
+      "avg_distance": "0.3486",
+      "chunks_preview": ". Used wind turbine blades have been recycled by incorporating them as part of the support structures within pedestrian bridges in Poland and Ireland. In 2026, Chinese manufacturer Ming Yang developed the first fully recyclable wind turbine, which uses pultruded carbon fiber panels instead of fiberg",
+      "score": {
+        "required_hits": [
+          "blade",
+          "tower",
+          "wind"
+        ],
+        "required_misses": [
+          "generator"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "energy_tests",
+      "module": "energy",
+      "question": "How do I produce biogas from animal waste?",
+      "sources": [
+        "Biogas",
+        "Biogas digester"
+      ],
+      "avg_distance": "0.2611",
+      "chunks_preview": "Biogas is a renewable gaseous fuel generated from organic materials including agricultural residues, manure, municipal waste, plant matter, sewage, wastewater, green waste, and food waste. Biogas is produced industrially via anaerobic digestion with anaerobic organisms or methanogens inside an anaer",
+      "score": {
+        "required_hits": [
+          "digester",
+          "manure",
+          "methane"
+        ],
+        "required_misses": [
+          "sealed"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "energy_tests",
+      "module": "energy",
+      "question": "How do I make a simple battery from scratch?",
+      "sources": [
+        "Micro hydro",
+        "Wind turbine",
+        "Steam engine",
+        "Alcohol fuel"
+      ],
+      "avg_distance": "0.6878",
+      "chunks_preview": "Very small installations (pico hydro), a few kilowatts or smaller, may generate direct current and charge batteries for peak use times.\nIn July 1887, Scottish academic James Blyth installed a battery-charging machine to light his holiday home in Marykirk, Scotland. Some months later, American invent",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "copper",
+          "zinc",
+          "acid",
+          "electrolyte"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "energy_tests",
+      "module": "energy",
+      "question": "How can I run an engine on wood instead of gasoline?",
+      "sources": [
+        "Wood gas"
+      ],
+      "avg_distance": "0.4492",
+      "chunks_preview": "Most of these engines have strict purity requirements of the wood gas, so the gas often has to pass through extensive gas cleaning in order to remove or convert, i.e., \"crack\", tars and particles. The removal of tar is often accomplished by using a water scrubber. Running wood gas in an unmodified g",
+      "score": {
+        "required_hits": [
+          "gasifier",
+          "wood gas",
+          "filter",
+          "combustion"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "materials_tests",
+      "module": "materials",
+      "question": "How do I smelt iron from ore using primitive methods?",
+      "sources": [
+        "Ironworking",
+        "Smelting"
+      ],
+      "avg_distance": "0.3081",
+      "chunks_preview": "Iron smelting\u2014the extraction of usable metal from oxidized iron ores\u2014is more difficult than tin and copper smelting. While these metals and their alloys can be cold-worked or melted in relatively simple furnaces (such as the kilns used for pottery) and cast into molds, smelted iron requires hot-work",
+      "score": {
+        "required_hits": [
+          "furnace",
+          "ore"
+        ],
+        "required_misses": [
+          "charcoal",
+          "bellows"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "materials_tests",
+      "module": "materials",
+      "question": "How do I make rope from plant fibers?",
+      "sources": [
+        "Rope"
+      ],
+      "avg_distance": "0.3363",
+      "chunks_preview": "Common natural fibres for rope are Manila hemp, hemp, linen, cotton, coir, jute, straw, and sisal. Synthetic fibres in use for rope-making include polypropylene, nylon, polyesters (e.g. PET, LCP, Vectran), polyethylene (e.g. Dyneema and Spectra), Aramids (e.g. Twaron, Technora and Kevlar) and acryli",
+      "score": {
+        "required_hits": [
+          "fiber",
+          "twist",
+          "plant"
+        ],
+        "required_misses": [
+          "braid"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "materials_tests",
+      "module": "materials",
+      "question": "How do I tan animal hides into usable leather?",
+      "sources": [
+        "Tanning",
+        "Charcoal",
+        "Pottery",
+        "Weaving"
+      ],
+      "avg_distance": "0.6436",
+      "chunks_preview": "Tanning may refer to:\n\nTanning (leather), treating animal skins to produce leather\nSun tanning, using the sun to darken pale skin\nIndoor tanning, the use of artificial light in place of the sun\nSunless tanning, application of a stain or dye to the skin (active ingredient in tanning lotion products i",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "scrape",
+          "brain",
+          "soak",
+          "stretch"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "materials_tests",
+      "module": "materials",
+      "question": "How do I make charcoal for metalworking?",
+      "sources": [
+        "Charcoal",
+        "Blacksmithing"
+      ],
+      "avg_distance": "0.3641",
+      "chunks_preview": "Charcoal burns at temperatures exceeding 1,100 degrees Celsius (2,010 degrees Fahrenheit). By comparison, the melting point of iron is approximately 1,200 to 1,550 \u00b0C (2,190 to 2,820 \u00b0F). Due to its porosity, it is sensitive to the flow of air and the heat generated can be moderated by controlling t",
+      "score": {
+        "required_hits": [
+          "wood",
+          "oxygen"
+        ],
+        "required_misses": [
+          "burn",
+          "cover"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "materials_tests",
+      "module": "materials",
+      "question": "How do I make basic pottery for cooking and storage?",
+      "sources": [
+        "Pottery"
+      ],
+      "avg_distance": "0.3327",
+      "chunks_preview": "Early pottery\nProduction\n\nThe production of pottery includes the following stages:\n\nPreparing the clay body.\nShaping\nDrying\nFiring\nGlazing and decorating. (This can be undertaken before firing. Also, additional firing stages after decoration may be needed.)\nPottery is made by forming a clay body int",
+      "score": {
+        "required_hits": [
+          "clay",
+          "shape",
+          "fire",
+          "kiln"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "module": "chemistry",
+      "question": "How do I make soap from animal fat and wood ash?",
+      "sources": [
+        "Soap"
+      ],
+      "avg_distance": "0.3993",
+      "chunks_preview": "The Ebers papyrus (Egypt, 1550 BC) indicates the ancient Egyptians used a soap-like product as a medicine and created this by combining animal fats or vegetable oils with a soda ash substance called trona. Egyptian documents mention a similar substance was used in the preparation of wool for weaving",
+      "score": {
+        "required_hits": [
+          "lye",
+          "fat",
+          "ash"
+        ],
+        "required_misses": [
+          "boil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "module": "chemistry",
+      "question": "How do I make vinegar for food preservation?",
+      "sources": [
+        "Vinegar"
+      ],
+      "avg_distance": "0.3822",
+      "chunks_preview": "Vinegar is commonly used in food preparation, in particular as pickling liquids, vinaigrettes, and other salad dressings. It is an ingredient in sauces, such as hot sauce, mustard, ketchup, and mayonnaise. Vinegar is sometimes used in chutneys. It is often used as a condiment on its own, or as a par",
+      "score": {
+        "required_hits": [
+          "ferment",
+          "bacteria"
+        ],
+        "required_misses": [
+          "alcohol",
+          "time"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "module": "chemistry",
+      "question": "How do I produce lime for mortar and construction?",
+      "sources": [
+        "Lime (material)"
+      ],
+      "avg_distance": "0.3421",
+      "chunks_preview": "Ca(OH)2 + CO2 \u2192 CaCO3 + H2O.\nThe carbon dioxide that takes part in this reaction is principally available in the air or dissolved in rainwater so pure lime mortar will not recarbonate under water or inside a thick masonry wall.\nLime used in building materials is broadly classified as \"pure\", \"hydrau",
+      "score": {
+        "required_hits": [
+          "limestone",
+          "calcium",
+          "kiln"
+        ],
+        "required_misses": [
+          "heat"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "module": "chemistry",
+      "question": "How do I distill alcohol for fuel or antiseptic?",
+      "sources": [
+        "Distillation"
+      ],
+      "avg_distance": "0.4674",
+      "chunks_preview": "In food processing\n\nBeverages\n\nCarbohydrate-containing plant materials are allowed to ferment, producing a dilute solution of ethanol in the process. Spirits such as whiskey and rum are prepared by distilling these dilute solutions of ethanol. Components other than ethanol, including water, esters, ",
+      "score": {
+        "required_hits": [
+          "ferment",
+          "vapor"
+        ],
+        "required_misses": [
+          "heat",
+          "condense",
+          "collect"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.4,
+        "forbidden_score": 1.0,
+        "total_score": 0.4
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "chemistry_tests",
+      "module": "chemistry",
+      "question": "How do I extract salt from sea water?",
+      "sources": [
+        "Distillation",
+        "Saltpeter"
+      ],
+      "avg_distance": "0.6373",
+      "chunks_preview": "Aristotle\nAristotle knew that water condensing from evaporating seawater is fresh:\n\nI have proved by experiment that salt water evaporated forms fresh, and the vapour does not, when it condenses, condense into sea water again.\nLetting seawater evaporate and condense into freshwater cannot be called ",
+      "score": {
+        "required_hits": [
+          "evaporate",
+          "boil"
+        ],
+        "required_misses": [
+          "sun",
+          "collect"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "electronics_tests",
+      "module": "electronics",
+      "question": "How do I build a simple crystal radio receiver from salvaged parts?",
+      "sources": [
+        "Radio receiver"
+      ],
+      "avg_distance": "0.5615",
+      "chunks_preview": "Designs\n\nTuned radio frequency (TRF) receiver\nIn radio communications, a radio receiver, also known as a receiver, a wireless, or simply a radio, is an electronic device that receives radio waves and converts the information carried by them to a usable form. It is used with an antenna. The antenna r",
+      "score": {
+        "required_hits": [
+          "wire",
+          "antenna"
+        ],
+        "required_misses": [
+          "coil",
+          "crystal",
+          "earpiece"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.4,
+        "forbidden_score": 1.0,
+        "total_score": 0.4
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "electronics_tests",
+      "module": "electronics",
+      "question": "How do I generate electricity using a hand-cranked generator?",
+      "sources": [
+        "Electrical generator"
+      ],
+      "avg_distance": "0.383",
+      "chunks_preview": "In electricity generation, a generator, also called an electric generator, electrical generator, and electromagnetic generator is an electromechanical device that converts mechanical energy to electrical energy for use in an external circuit. In most generators which are rotating machines, a source ",
+      "score": {
+        "required_hits": [
+          "motor"
+        ],
+        "required_misses": [
+          "magnet",
+          "coil",
+          "crank",
+          "wire"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.2,
+        "forbidden_score": 1.0,
+        "total_score": 0.2
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "electronics_tests",
+      "module": "electronics",
+      "question": "How does Morse code work and how do I use it?",
+      "sources": [
+        "Morse code"
+      ],
+      "avg_distance": "0.2635",
+      "chunks_preview": "International Morse code\nMorse code is a telecommunications method which encodes text characters as standardized sequences of two different signal durations, called dots and dashes, or dits and dahs. It is named after Samuel Morse, one of several developers of the system. Morse's preliminary proposa",
+      "score": {
+        "required_hits": [
+          "dot",
+          "signal"
+        ],
+        "required_misses": [
+          "dash",
+          "letter"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "electronics_tests",
+      "module": "electronics",
+      "question": "How do I build a basic telegraph system between two locations?",
+      "sources": [
+        "Telegraph"
+      ],
+      "avg_distance": "0.3868",
+      "chunks_preview": "Wireless telegraphy\nElectrical telegraph\nA telegraph is a device for transmitting and receiving messages over long distances, i.e., for telegraphy. The word telegraph alone generally refers to an electrical telegraph. Wireless telegraphy is transmission of messages over radio with telegraphic codes.",
+      "score": {
+        "required_hits": [
+          "wire"
+        ],
+        "required_misses": [
+          "battery",
+          "key",
+          "sounder"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "electronics_tests",
+      "module": "electronics",
+      "question": "How do I build a simple antenna for radio communication?",
+      "sources": [
+        "Antenna (radio)",
+        "Radio receiver"
+      ],
+      "avg_distance": "0.43",
+      "chunks_preview": "Overview\n\nAntennas are required by any radio receiver or transmitter to couple its electrical connection to the electromagnetic field. Radio waves are electromagnetic waves that carry signals through space at the speed of light; in free space they propagate without material absorption, apart from ge",
+      "score": {
+        "required_hits": [
+          "wire"
+        ],
+        "required_misses": [
+          "length",
+          "height",
+          "ground"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "governance_tests",
+      "module": "governance",
+      "question": "How do we organize fair decision-making for our community of 50 people?",
+      "sources": [
+        "Direct democracy"
+      ],
+      "avg_distance": "0.6333",
+      "chunks_preview": ". Empirical evidence from dozens of studies suggests deliberation leads to better decision making. The most popularly disputed form of direct popular participation is the referendum on constitutional matters.\nDemocratic theorists have identified a trilemma due to the presence of three desirable char",
+      "score": {
+        "required_hits": [
+          "vote",
+          "council",
+          "consensus"
+        ],
+        "required_misses": [
+          "meeting"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.75,
+        "forbidden_score": 1.0,
+        "total_score": 0.75
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "governance_tests",
+      "module": "governance",
+      "question": "Two families are in a dispute over resources. How do we resolve it fairly?",
+      "sources": [
+        "Conflict resolution"
+      ],
+      "avg_distance": "0.5448",
+      "chunks_preview": "Works cited\nBannon, I. & Paul Collier (Eds.). (2003). Natural resources and violent conflict: Options and actions. The World Bank.\nUry, F. & Rodger Fisher. (1981). Getting to yes: Negotiating agreement without giving in. Penguin.\nWilmot, W. & Jouyce Hocker. (2007). Interpersonal conflict. McGraw-Hil",
+      "score": {
+        "required_hits": [
+          "agreement"
+        ],
+        "required_misses": [
+          "mediation",
+          "neutral",
+          "fair"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "governance_tests",
+      "module": "governance",
+      "question": "How do we set up a barter and trade system without money?",
+      "sources": [
+        "Barter"
+      ],
+      "avg_distance": "0.3487",
+      "chunks_preview": "In trade, barter (derived from bareter) is a system of exchange in which participants in a transaction directly exchange goods or services for other goods or services without using a medium of exchange, such as money. Barter is considered one of the earliest systems of economic exchange, used before",
+      "score": {
+        "required_hits": [
+          "exchange",
+          "value",
+          "goods",
+          "trade"
+        ],
+        "required_misses": [],
+        "forbidden_hits": [],
+        "required_score": 1.0,
+        "forbidden_score": 1.0,
+        "total_score": 1.0
+      },
+      "grade": "PASS"
+    },
+    {
+      "scenario": "governance_tests",
+      "module": "governance",
+      "question": "How do we teach children with no schools or books?",
+      "sources": [
+        "Pedagogy"
+      ],
+      "avg_distance": "0.5573",
+      "chunks_preview": "Educational research\n\nSee also\n\nReferences\n\nSources\n This article incorporates text from a free content work. Licensed under CC BY-SA 3.0 IGO. Text taken from Empowering students for just societies: a handbook for secondary school teachers\u200b, UNESCO, UNESCO. UNESCO.\n\nFurther reading\nPedagogical consi",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "oral",
+          "practice",
+          "apprentice",
+          "skill"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "governance_tests",
+      "module": "governance",
+      "question": "How do we navigate at sea or over land without GPS or maps?",
+      "sources": [
+        "Celestial navigation",
+        "Cartography"
+      ],
+      "avg_distance": "0.4527",
+      "chunks_preview": "Practical navigation\nField-rugged computers, GPS, and laser rangefinders make it possible to create maps directly from measurements made on site.\nModern celestial navigation\nCelestial navigation continues to be used by private yachtsmen, and particularly by long-distance cruising yachts around the w",
+      "score": {
+        "required_hits": [
+          "star"
+        ],
+        "required_misses": [
+          "sun",
+          "compass",
+          "landmark"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_urban_europe",
+      "module": "water",
+      "question": "We have 30 people and no water. There is snow on the ground and a river 2km away. What's our water strategy?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.4895",
+      "chunks_preview": "17-1\nChapter 17\n Expedient Water Crossings\nIn a survival situation, you may have to cross a\nwater obstacle. It may be in the form of a river, a\nstream, a lake, a bog, quicksand, quagmire, or\nmuskeg. Even in the desert, flash floods occur,\nmaking streams an obstacle. Whatever the\nobstacle, you need t",
+      "score": {
+        "required_hits": [
+          "river"
+        ],
+        "required_misses": [
+          "melt",
+          "boil",
+          "filter",
+          "container"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.2,
+        "forbidden_score": 1.0,
+        "total_score": 0.2
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_urban_europe",
+      "module": "survival_fire_shelter",
+      "question": "Half our building is destroyed but half still has walls and a partial roof. How do we make it livable in winter?",
+      "sources": [
+        "US Army FM 21-76 Survival Manual"
+      ],
+      "avg_distance": "0.5036",
+      "chunks_preview": "Shelters made from ice or snow usually require tools such as ice axes or saws. You must also expend \nmuch time and energy to build such a shelter. Be sure to ventilate an enclosed shelter, especially if you \nintend to build a fire in it. Always block a shelter's entrance, if possible, to keep the he",
+      "score": {
+        "required_hits": [
+          "fire"
+        ],
+        "required_misses": [
+          "insulate",
+          "seal",
+          "ventilation"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_urban_europe",
+      "module": "medicine_infection",
+      "question": "Several people have infected cuts and we have no antibiotics. What natural alternatives exist?",
+      "sources": [
+        "Infection",
+        "Where There Is No Doctor (2025)"
+      ],
+      "avg_distance": "0.4616",
+      "chunks_preview": "Treatment for infections depends on the type of pathogen involved. Common medications include:\nOther types of infection\nWhen used correctly, antibiotics are extremely useful and important medicines. \nThey fight certain infections and diseases caused by bacteria. Some well-known \nantibiotics are peni",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "honey",
+          "garlic",
+          "clean",
+          "boil"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_urban_europe",
+      "module": "food_foraging",
+      "question": "It's winter in Europe with snow. Where do we find food for 30 people?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)"
+      ],
+      "avg_distance": "0.568",
+      "chunks_preview": "FM 3-05.70\n15-22\n15-75. O n c e y o u h a v e w a t e r , k e e p i t n e x t t o y o u t o p r e v e n t\nrefreezing. Also, do not fill your canteen completely. Allowing the\nwater to slosh around will help keep it from freezing. \nFOOD\n15-76. There are several sources of food in the arctic and\nsubarc",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "trap",
+          "hunt",
+          "bark",
+          "stored"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_tropical",
+      "module": "water",
+      "question": "We're on a tropical island after a tsunami. Fresh water sources are contaminated with salt water. What do we do?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Water purification",
+        "Well"
+      ],
+      "avg_distance": "0.4904",
+      "chunks_preview": "Keep the tarpaulin handy for catching water. If it is encrusted\nwith dried salt, wash it in seawater. Normally, a small amount of\nseawater mixed with rain will ha rdly be noticeable and will not\ncause any physical reaction. In rough seas you cannot get\nuncontaminated fresh water.\n16-45. At night, se",
+      "score": {
+        "required_hits": [
+          "rain"
+        ],
+        "required_misses": [
+          "distill",
+          "coconut",
+          "dig"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_tropical",
+      "module": "food_foraging",
+      "question": "We're on a tropical island with reef and jungle. How do we feed 100 people?",
+      "sources": [
+        "US Army FM 3-05.70 Survival (2002)",
+        "Foraging",
+        "Fishing"
+      ],
+      "avg_distance": "0.5101",
+      "chunks_preview": "FM 3-05.70\n14-10\nbanks of streams and rivers. Wherever the sun penetrates the\njungle, there will be a mass of vegetation, but riverbanks may be\nthe most accessible areas. \n14-46. If you are weak, do not expend energy climbing or felling a\ntree for food. There are more easily obtained sources of food",
+      "score": {
+        "required_hits": [
+          "fish"
+        ],
+        "required_misses": [
+          "coconut",
+          "shellfish",
+          "fruit"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.25,
+        "forbidden_score": 1.0,
+        "total_score": 0.25
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_tropical",
+      "module": "shelter_construction",
+      "question": "All buildings destroyed by tsunami. How do we quickly shelter 100 people using jungle materials?",
+      "sources": [
+        "Timber framing",
+        "Adobe",
+        "Thatching",
+        "Earthship"
+      ],
+      "avg_distance": "0.6632",
+      "chunks_preview": "Additionally, in such nations as Germany, where energy efficiency is highly regulated, the renovated building may be required to meet modern energy efficiencies, if it is to be used as a residential or commercial structure (museums and significant historic buildings have no semi-permanent habitade e",
+      "score": {
+        "required_hits": [],
+        "required_misses": [
+          "bamboo",
+          "palm",
+          "frame",
+          "elevated"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.0,
+        "forbidden_score": 1.0,
+        "total_score": 0.0
+      },
+      "grade": "FAIL"
+    },
+    {
+      "scenario": "composite_tropical",
+      "module": "medicine_trauma",
+      "question": "Many people have coral cuts and saltwater wounds that are getting infected. How do we treat them?",
+      "sources": [
+        "Where There Is No Doctor (2025)",
+        "Wound healing"
+      ],
+      "avg_distance": "0.4434",
+      "chunks_preview": "Cleanliness is of first importance in preventing\ninfection and helping wounds to heal.\nCUTS, SCRAPES, AND SMALL WOUNDS\nTo treat a wound:\nFirst, wash your hands very \nwell with soap and water.\nIf the wound is bleeding or oozing, \nwear gloves or plastic bags on your hands. \nWash the skin around the wo",
+      "score": {
+        "required_hits": [
+          "clean",
+          "bandage"
+        ],
+        "required_misses": [
+          "fresh water",
+          "honey"
+        ],
+        "forbidden_hits": [],
+        "required_score": 0.5,
+        "forbidden_score": 1.0,
+        "total_score": 0.5
+      },
+      "grade": "FAIL"
+    }
+  ]
+}

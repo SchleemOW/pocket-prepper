@@ -10,6 +10,7 @@ struct Module: Identifiable, Codable, Hashable {
     let dbFileName: String
     let downloadURL: String
     let sizeMB: Double
+    let isFree: Bool
 
     var isDownloaded: Bool {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -20,17 +21,29 @@ struct Module: Identifiable, Codable, Hashable {
 // MARK: - Module Registry
 
 extension Module {
-    static let baseURL = "https://github.com/SchleemOW/pocket-prepper/releases/download/v4.0"
+    static let baseURL = "https://github.com/SchleemOW/pocket-prepper/releases/download/v5.0"
 
     static let all: [Module] = [
-        // ── LAYER 1: SURVIVE ──
+        // ── FREE: PREPARE ──
+        Module(
+            id: "prepper", name: "Emergency Preparedness",
+            description: "Pre-disaster planning, emergency kits, food & water storage, family plans, evacuation routes, home safety.",
+            category: "Prepare",
+            dbFileName: "prepper.db",
+            downloadURL: "\(baseURL)/prepper.db",
+            sizeMB: 4.3,  // Will update after build
+            isFree: true
+        ),
+
+        // ── PAID: SURVIVE ──
         Module(
             id: "survival_general", name: "Survival - General",
             description: "Psychology of survival, planning, stress management, the SURVIVAL acronym.",
             category: "Survive",
             dbFileName: "survival_general.db",
             downloadURL: "\(baseURL)/survival_general.db",
-            sizeMB: 6.4
+            sizeMB: 6.4,
+            isFree: false
         ),
         Module(
             id: "survival_fire_shelter", name: "Survival - Fire & Shelter",
@@ -38,7 +51,8 @@ extension Module {
             category: "Survive",
             dbFileName: "survival_fire_shelter.db",
             downloadURL: "\(baseURL)/survival_fire_shelter.db",
-            sizeMB: 3.8
+            sizeMB: 3.8,
+            isFree: false
         ),
         Module(
             id: "survival_navigation", name: "Survival - Navigation",
@@ -46,7 +60,8 @@ extension Module {
             category: "Survive",
             dbFileName: "survival_navigation.db",
             downloadURL: "\(baseURL)/survival_navigation.db",
-            sizeMB: 5.8
+            sizeMB: 5.8,
+            isFree: false
         ),
         Module(
             id: "survival_desert", name: "Survival - Desert",
@@ -54,7 +69,8 @@ extension Module {
             category: "Survive",
             dbFileName: "survival_desert.db",
             downloadURL: "\(baseURL)/survival_desert.db",
-            sizeMB: 6.2
+            sizeMB: 6.2,
+            isFree: false
         ),
         Module(
             id: "survival_cold", name: "Survival - Cold Weather",
@@ -62,17 +78,19 @@ extension Module {
             category: "Survive",
             dbFileName: "survival_cold.db",
             downloadURL: "\(baseURL)/survival_cold.db",
-            sizeMB: 4.2
+            sizeMB: 4.2,
+            isFree: false
         ),
 
-        // ── MEDICINE ──
+        // ── PAID: MEDICINE ──
         Module(
             id: "medicine_trauma", name: "Medicine - Trauma & Wounds",
             description: "Wound care, bleeding control, fractures, burns, splints, tourniquets.",
             category: "Medicine",
             dbFileName: "medicine_trauma.db",
             downloadURL: "\(baseURL)/medicine_trauma.db",
-            sizeMB: 2.0
+            sizeMB: 2.0,
+            isFree: false
         ),
         Module(
             id: "medicine_infection", name: "Medicine - Infection & Disease",
@@ -80,7 +98,8 @@ extension Module {
             category: "Medicine",
             dbFileName: "medicine_infection.db",
             downloadURL: "\(baseURL)/medicine_infection.db",
-            sizeMB: 3.7
+            sizeMB: 3.7,
+            isFree: false
         ),
         Module(
             id: "medicine_childbirth", name: "Medicine - Childbirth",
@@ -88,7 +107,8 @@ extension Module {
             category: "Medicine",
             dbFileName: "medicine_childbirth.db",
             downloadURL: "\(baseURL)/medicine_childbirth.db",
-            sizeMB: 2.0
+            sizeMB: 2.0,
+            isFree: false
         ),
         Module(
             id: "medicine_herbal", name: "Medicine - Herbal & Plant",
@@ -96,17 +116,19 @@ extension Module {
             category: "Medicine",
             dbFileName: "medicine_herbal.db",
             downloadURL: "\(baseURL)/medicine_herbal.db",
-            sizeMB: 1.9
+            sizeMB: 1.9,
+            isFree: false
         ),
 
-        // ── LAYER 2: STABILIZE ──
+        // ── PAID: STABILIZE ──
         Module(
             id: "water", name: "Water",
             description: "Water sources, purification, solar stills, well digging, rainwater collection.",
             category: "Stabilize",
             dbFileName: "water.db",
             downloadURL: "\(baseURL)/water.db",
-            sizeMB: 5.8
+            sizeMB: 5.8,
+            isFree: false
         ),
         Module(
             id: "food_foraging", name: "Food - Foraging & Hunting",
@@ -114,7 +136,8 @@ extension Module {
             category: "Stabilize",
             dbFileName: "food_foraging.db",
             downloadURL: "\(baseURL)/food_foraging.db",
-            sizeMB: 5.8
+            sizeMB: 5.8,
+            isFree: false
         ),
         Module(
             id: "food_farming", name: "Food - Agriculture",
@@ -122,7 +145,8 @@ extension Module {
             category: "Stabilize",
             dbFileName: "food_farming.db",
             downloadURL: "\(baseURL)/food_farming.db",
-            sizeMB: 1.8
+            sizeMB: 1.8,
+            isFree: false
         ),
         Module(
             id: "shelter_construction", name: "Shelter & Construction",
@@ -130,17 +154,19 @@ extension Module {
             category: "Stabilize",
             dbFileName: "shelter_construction.db",
             downloadURL: "\(baseURL)/shelter_construction.db",
-            sizeMB: 1.9
+            sizeMB: 1.9,
+            isFree: false
         ),
 
-        // ── LAYER 3: REBUILD ──
+        // ── PAID: REBUILD ──
         Module(
             id: "energy", name: "Energy Generation",
             description: "Micro-hydro, wind turbines, biogas, wood gasification, steam power.",
             category: "Rebuild",
             dbFileName: "energy.db",
             downloadURL: "\(baseURL)/energy.db",
-            sizeMB: 2.0
+            sizeMB: 2.0,
+            isFree: false
         ),
         Module(
             id: "materials", name: "Materials & Manufacturing",
@@ -148,7 +174,8 @@ extension Module {
             category: "Rebuild",
             dbFileName: "materials.db",
             downloadURL: "\(baseURL)/materials.db",
-            sizeMB: 2.0
+            sizeMB: 2.0,
+            isFree: false
         ),
         Module(
             id: "chemistry", name: "Chemistry & Industry",
@@ -156,7 +183,8 @@ extension Module {
             category: "Rebuild",
             dbFileName: "chemistry.db",
             downloadURL: "\(baseURL)/chemistry.db",
-            sizeMB: 1.9
+            sizeMB: 1.9,
+            isFree: false
         ),
         Module(
             id: "electronics", name: "Electronics & Communication",
@@ -164,7 +192,8 @@ extension Module {
             category: "Rebuild",
             dbFileName: "electronics.db",
             downloadURL: "\(baseURL)/electronics.db",
-            sizeMB: 3.6
+            sizeMB: 3.6,
+            isFree: false
         ),
         Module(
             id: "governance", name: "Governance & Society",
@@ -172,14 +201,23 @@ extension Module {
             category: "Rebuild",
             dbFileName: "governance.db",
             downloadURL: "\(baseURL)/governance.db",
-            sizeMB: 3.6
+            sizeMB: 3.6,
+            isFree: false
         ),
     ]
 
-    static let categories = ["Survive", "Medicine", "Stabilize", "Rebuild"]
+    static let categories = ["Prepare", "Survive", "Medicine", "Stabilize", "Rebuild"]
 
     static func modules(for category: String) -> [Module] {
         all.filter { $0.category == category }
+    }
+
+    static var freeModules: [Module] {
+        all.filter { $0.isFree }
+    }
+
+    static var paidModules: [Module] {
+        all.filter { !$0.isFree }
     }
 }
 
@@ -203,4 +241,21 @@ struct RAGChunk {
     let title: String
     let source: String
     let distance: Float
+}
+
+// MARK: - Map Region
+
+struct MapRegion: Identifiable, Codable {
+    let id: String
+    var name: String
+    var bounds: Bounds
+    var downloadedAt: Date
+    var estimatedSizeMB: Double
+
+    struct Bounds: Codable {
+        let swLat: Double
+        let swLon: Double
+        let neLat: Double
+        let neLon: Double
+    }
 }

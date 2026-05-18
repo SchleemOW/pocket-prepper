@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D47BF342FBB78C30065181D /* MapLibre in Frameworks */ = {isa = PBXBuildFile; productRef = 8D47BF332FBB78C30065181D /* MapLibre */; };
 		8D4BC4152FB8694200D0CC9F /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4BC4142FB8694200D0CC9F /* SQLite */; };
 		8D4BC4332FB86DD000D0CC9F /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4BC4322FB86DD000D0CC9F /* MLXLLM */; };
 		8D4BC4352FB86DD400D0CC9F /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4BC4342FB86DD400D0CC9F /* MLXLMCommon */; };
@@ -31,6 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D4BC4332FB86DD000D0CC9F /* MLXLLM in Frameworks */,
+				8D47BF342FBB78C30065181D /* MapLibre in Frameworks */,
 				8D4BC4352FB86DD400D0CC9F /* MLXLMCommon in Frameworks */,
 				8D4BC4152FB8694200D0CC9F /* SQLite in Frameworks */,
 				8D4BC4372FB873D400D0CC9F /* MLXEmbedders in Frameworks */,
@@ -88,6 +90,7 @@
 				8D4BC4322FB86DD000D0CC9F /* MLXLLM */,
 				8D4BC4342FB86DD400D0CC9F /* MLXLMCommon */,
 				8D4BC4362FB873D400D0CC9F /* MLXEmbedders */,
+				8D47BF332FBB78C30065181D /* MapLibre */,
 			);
 			productName = "Pocket Prepper";
 			productReference = 8D4BC4042FB8688600D0CC9F /* Pocket Prepper.app */;
@@ -120,6 +123,7 @@
 			packageReferences = (
 				8D4BC4122FB8692C00D0CC9F /* XCRemoteSwiftPackageReference "mlx-swift-examples" */,
 				8D4BC4132FB8694200D0CC9F /* XCRemoteSwiftPackageReference "SQLite" */,
+				8D47BF322FBB78C30065181D /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8D4BC4052FB8688600D0CC9F /* Products */;
@@ -281,6 +285,7 @@
 				DEVELOPMENT_TEAM = 98FLNTR94C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "sed to show your position on the offline map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +319,7 @@
 				DEVELOPMENT_TEAM = 98FLNTR94C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "sed to show your position on the offline map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -361,6 +367,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8D47BF322FBB78C30065181D /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.26.0;
+			};
+		};
 		8D4BC4122FB8692C00D0CC9F /* XCRemoteSwiftPackageReference "mlx-swift-examples" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ml-explore/mlx-swift-examples";
@@ -380,6 +394,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8D47BF332FBB78C30065181D /* MapLibre */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D47BF322FBB78C30065181D /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapLibre;
+		};
 		8D4BC4142FB8694200D0CC9F /* SQLite */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D4BC4132FB8694200D0CC9F /* XCRemoteSwiftPackageReference "SQLite" */;

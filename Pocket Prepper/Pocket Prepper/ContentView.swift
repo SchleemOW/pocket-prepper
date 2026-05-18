@@ -4,21 +4,72 @@ struct ContentView: View {
     @StateObject private var moduleManager = ModuleManager.shared
     @StateObject private var llmService = LLMService.shared
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+    @AppStorage("hasAcceptedDisclaimer") private var hasAcceptedDisclaimer = false
 
     var body: some View {
         if !hasCompletedOnboarding {
             OnboardingView(hasCompletedOnboarding: $hasCompletedOnboarding)
                 .environmentObject(moduleManager)
                 .environmentObject(llmService)
+        } else if !hasAcceptedDisclaimer {
+            DisclaimerView {
+                hasAcceptedDisclaimer = true
+            }
         } else {
-            HomeView()
+            MainTabView()
                 .environmentObject(moduleManager)
                 .environmentObject(llmService)
         }
     }
 }
 
-// MARK: - Home
+// MARK: - Tab Bar
+
+struct MainTabView: View {
+    @EnvironmentObject var moduleManager: ModuleManager
+    @EnvironmentObject var llmService: LLMService
+    @State private var selectedTab = 0
+
+    var body: some View {
+        TabView(selection: $selectedTab) {
+            HomeView()
+                .environmentObject(moduleManager)
+                .environmentObject(llmService)
+                .tabItem {
+                    Label("Modules", systemImage: "square.grid.2x2")
+                }
+                .tag(0)
+
+            MapsRootView()
+                .tabItem {
+                    Label("Maps", systemImage: "map")
+                }
+                .tag(1)
+        }
+        .tint(.green)
+        .preferredColorScheme(.dark)
+        // Style the tab bar to match the black theme
+        .onAppear {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor.black
+            appearance.stackedLayoutAppearance.normal.iconColor = UIColor.gray
+            appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
+                .foregroundColor: UIColor.gray,
+                .font: UIFont.monospacedSystemFont(ofSize: 10, weight: .regular)
+            ]
+            appearance.stackedLayoutAppearance.selected.iconColor = UIColor.systemGreen
+            appearance.stackedLayoutAppearance.selected.titleTextAttributes = [
+                .foregroundColor: UIColor.systemGreen,
+                .font: UIFont.monospacedSystemFont(ofSize: 10, weight: .bold)
+            ]
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
+    }
+}
+
+// MARK: - Home (unchanged from before)
 
 struct HomeView: View {
     @EnvironmentObject var moduleManager: ModuleManager
@@ -177,6 +228,7 @@ struct CategoryHeader: View {
 
     var categoryDescription: String {
         switch category {
+        case "Prepare": return "BEFORE IT HAPPENS"
         case "Survive": return "DAY 1-90"
         case "Medicine": return "HEALTH & SAFETY"
         case "Stabilize": return "MONTH 1 - YEAR 5"

@@ -1861,3 +1861,89 @@
 09:38:29    Databases in : data/databases/
 
 09:38:29    Report saved: data/pipeline_report.json
+09:50:38  
+============================================================
+09:50:38    DOOMSDAY RAG PIPELINE
+09:50:38    Modules to process: 1
+09:50:38    Started: 2026-05-18 09:50:38
+09:50:38  ============================================================
+
+09:50:38  No device provided, using mps
+09:50:38  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+09:50:41    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+09:50:41  
+[1/1] Module: Emergency Preparedness
+09:50:41    Pre-disaster planning, emergency kits, food and water storage, family plans, evacuation, home safety
+09:50:41    ----------------------------------------
+09:50:59      Rate limited, waiting 8s... (attempt 1/4)
+09:51:14    + wikipedia_articles: 14 documents
+09:51:16    + pdf: 32 documents
+09:51:17    + pdf: 14 documents
+09:51:18    + pdf: 2 documents
+09:51:37    + pdf: 102 documents
+09:51:37    Processing: 164 docs → 1450 chunks
+09:51:37    Embedding 1450 chunks...
+09:51:41    Written 1450 chunks to data/databases/prepper.db (4.3 MB)
+09:51:41    ✓ Done — 164 docs, 1450 chunks, 60.1s
+09:51:41  
+============================================================
+09:51:41    PIPELINE COMPLETE
+09:51:41  ============================================================
+09:51:41    ✓ Emergency Preparedness          1450 chunks  4.3 MB
+09:51:41  
+  Total chunks : 1,450
+09:51:41    Total DB size: 4.3 MB
+09:51:41    Databases in : data/databases/
+
+09:51:41    Report saved: data/pipeline_report.json
+09:52:29  
+============================================================
+09:52:29    DOOMSDAY RAG PIPELINE
+09:52:29    Modules to process: 1
+09:52:29    Started: 2026-05-18 09:52:29
+09:52:29  ============================================================
+
+09:52:29  No device provided, using mps
+09:52:29  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+09:52:31    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+09:52:31  
+[1/1] Module: Emergency Preparedness
+09:52:31    Pre-disaster planning, emergency kits, food and water storage, family plans, evacuation, home safety
+09:52:31    ----------------------------------------
+09:52:56  
+============================================================
+09:52:56    DOOMSDAY RAG PIPELINE
+09:52:56    Modules to process: 1
+09:52:56    Started: 2026-05-18 09:52:56
+09:52:56  ============================================================
+
+09:52:56  No device provided, using mps
+09:52:56  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+09:52:58    ✓ Loaded SentenceTransformer: all-MiniLM-L6-v2
+09:52:58  
+[1/1] Module: Emergency Preparedness
+09:52:58    Pre-disaster planning, emergency kits, food and water storage, family plans, evacuation, home safety
+09:52:58    ----------------------------------------
+09:53:18      Rate limited, waiting 8s... (attempt 1/4)
+09:53:26      Rate limited, waiting 16s... (attempt 2/4)
+09:53:42      Rate limited, waiting 24s... (attempt 3/4)
+09:54:12    + wikipedia_articles: 14 documents
+09:54:13    + pdf: 32 documents
+09:54:13    + pdf: 14 documents
+09:54:14    + pdf: 2 documents
+09:54:20    + pdf: 102 documents
+09:54:20    Processing: 164 docs → 1450 chunks
+09:54:20    Embedding 1450 chunks...
+09:54:23    Written 1450 chunks to data/databases/prepper.db (4.3 MB)
+09:54:23    ✓ Done — 164 docs, 1450 chunks, 85.3s
+09:54:23  
+============================================================
+09:54:23    PIPELINE COMPLETE
+09:54:23  ============================================================
+09:54:23    ✓ Emergency Preparedness          1450 chunks  4.3 MB
+09:54:23  
+  Total chunks : 1,450
+09:54:23    Total DB size: 4.3 MB
+09:54:23    Databases in : data/databases/
+
+09:54:23    Report saved: data/pipeline_report.json

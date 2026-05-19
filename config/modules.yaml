@@ -1,301 +1,493 @@
 modules:
-  # ═══════════════════════════════════════════════════
-  # LAYER 1 — SURVIVE
-  # ═══════════════════════════════════════════════════
-
-  - id: survival_general
-    name: "Survival - General"
-    description: "Psychology of survival, planning, priorities, stress management"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Survival skills", "Wilderness survival", "Hypothermia"]
-        license: cc
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/FM21-76_SurvivalManual.pdf"
-        title: "US Army FM 21-76 Survival Manual"
-        license: public_domain
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/fm3-05-70.pdf"
-        title: "US Army FM 3-05.70 Survival (2002)"
-        license: public_domain
-        priority: P1
-
-  - id: survival_fire_shelter
-    name: "Survival - Fire & Shelter"
-    description: "Fire making, shelter construction, insulation, cold weather protection"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Fire making", "Bow drill", "Lean-to", "Debris hut", "Snow cave", "Bivouac shelter", "Tinder"]
-        license: cc
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/FM21-76_SurvivalManual.pdf"
-        title: "US Army FM 21-76 Survival Manual"
-        license: public_domain
-        priority: P1
-
-  - id: survival_navigation
-    name: "Survival - Navigation"
-    description: "Celestial navigation, compass, map reading, natural navigation"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Navigation", "Celestial navigation", "Polaris", "Southern Cross", "Dead reckoning", "Orienteering", "Natural navigation"]
-        license: cc
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/fm3-05-70.pdf"
-        title: "US Army FM 3-05.70 Survival (2002)"
-        license: public_domain
-        priority: P1
-
-  - id: survival_desert
-    name: "Survival - Desert"
-    description: "Desert water, heat management, solar stills, desert navigation"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Desert survival", "Solar still", "Dehydration", "Sandstorm", "Cactus"]
-        license: cc
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/fm3-05-70.pdf"
-        title: "US Army FM 3-05.70 Survival (2002)"
-        license: public_domain
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/FM-90-3-Desert-Operations-24-August-1993.pdf"
-        title: "US Army FM 90-3 Desert Operations"
-        license: public_domain
-        priority: P1
-
-  - id: survival_cold
-    name: "Survival - Cold Weather"
-    description: "Hypothermia, frostbite, snow shelters, Arctic survival"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Hypothermia", "Frostbite", "Snow cave", "Igloo", "Ice fishing", "Snowshoe"]
-        license: cc
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/fm3-05-70.pdf"
-        title: "US Army FM 3-05.70 Survival (2002)"
-        license: public_domain
-        priority: P1
-
-  # ═══════════════════════════════════════════════════
-  # MEDICINE
-  # ═══════════════════════════════════════════════════
-
-  - id: medicine_trauma
-    name: "Medicine - Trauma & Wounds"
-    description: "Wound care, bleeding, fractures, burns, splints, tourniquets"
-    sources:
-      - type: wikipedia_articles
-        titles: ["First aid", "Wound healing", "Tourniquet", "Splint (medicine)", "Burn", "Bone fracture", "Hemorrhage"]
-        license: cc
-        priority: P1
-      - type: multi_pdf
-        title: "Where There Is No Doctor (2025)"
-        license: free
-        priority: P1
-        urls:
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_03.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_04.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_10.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_14.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_15.pdf"
-
-  - id: medicine_infection
-    name: "Medicine - Infection & Disease"
-    description: "Infection signs, common diseases, antibiotics, prevention, sanitation"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Infection", "Sanitation", "Waterborne diseases", "Dysentery", "Cholera", "Malaria", "Oral rehydration therapy", "Antiseptic"]
-        license: cc
-        priority: P1
-      - type: multi_pdf
-        title: "Where There Is No Doctor (2025)"
-        license: free
-        priority: P1
-        urls:
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_01.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_02.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_03.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_05.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_07.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_11.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_12.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_13.pdf"
-
-  - id: medicine_childbirth
-    name: "Medicine - Childbirth & Pediatrics"
-    description: "Pregnancy, safe delivery, newborn care, breastfeeding"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Childbirth", "Midwifery", "Breastfeeding", "Neonatal care", "Obstetric emergency", "Umbilical cord"]
-        license: cc
-        priority: P1
-      - type: multi_pdf
-        title: "Where There Is No Doctor (2025)"
-        license: free
-        priority: P1
-        urls:
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_04.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_19.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_20.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_21.pdf"
-
-  - id: medicine_herbal
-    name: "Medicine - Herbal & Plant"
-    description: "Medicinal plants, herbal remedies, natural antibiotics"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Medicinal plants", "Herbal medicine", "Willow bark", "Aloe vera", "Garlic", "Honey", "Turmeric", "Echinacea"]
-        license: cc
-        priority: P1
-      - type: multi_pdf
-        title: "Where There Is No Doctor (2025)"
-        license: free
-        priority: P1
-        urls:
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_01.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_05.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_06.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_22.pdf"
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_23.pdf"
-      - type: local_pdf
-        path: "data/pdfs/fm3-05-70.pdf"
-        title: "US Army FM 3-05.70 Survival (2002)"
-        license: public_domain
-        priority: P1
-
-  # ═══════════════════════════════════════════════════
-  # LAYER 2 — STABILIZE
-  # ═══════════════════════════════════════════════════
-
-  - id: water
-    name: "Water - Finding & Purification"
-    description: "Water sources, purification, storage, wells, rainwater, desalination"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Water purification", "Rainwater harvesting", "Well", "Water treatment", "Solar water disinfection", "Slow sand filter", "Biosand filter", "Desalination", "Solar still", "Distillation"]
-        license: cc
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/fm3-05-70.pdf"
-        title: "US Army FM 3-05.70 Survival (2002)"
-        license: public_domain
-        priority: P1
-      - type: multi_pdf
-        title: "Where There Is No Doctor (2025)"
-        license: free
-        priority: P1
-        urls:
-          - "https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_12.pdf"
-
-  - id: food_foraging
-    name: "Food - Foraging & Hunting"
-    description: "Edible plants, mushrooms, hunting, trapping, fishing, insects"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Foraging", "Edible plant", "Edible mushroom", "Hunting", "Trapping", "Fishing", "Entomophagy", "Universal edibility test", "Fish trap", "Snare (trap)"]
-        license: cc
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/fm3-05-70.pdf"
-        title: "US Army FM 3-05.70 Survival (2002)"
-        license: public_domain
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/FM21-76_SurvivalManual.pdf"
-        title: "US Army FM 21-76 Survival Manual"
-        license: public_domain
-        priority: P1
-
-  - id: food_farming
-    name: "Food - Agriculture & Preservation"
-    description: "Crop rotation, composting, seed saving, food preservation, fermentation"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Permaculture", "Crop rotation", "Composting", "Seed saving", "Animal husbandry", "Food preservation", "Fermentation", "Smoking (cooking)", "Salting", "Root cellar", "Pickling", "Drying (food)", "Three Sisters (agriculture)"]
-        license: cc
-        priority: P1
-      - type: pdf
-        url: "https://www.fao.org/3/cb2113en/CB2113EN.pdf"
-        title: "FAO Preserve Your Own Food"
-        license: free
-        priority: P1
-
-  - id: shelter_construction
-    name: "Shelter & Construction"
-    description: "Log cabins, adobe, timber framing, bridges, sanitation"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Log cabin", "Adobe", "Earthship", "Cob (building material)", "Thatching", "Structural engineering", "Arch", "Aqueduct", "Roman engineering", "Dry stone", "Timber framing", "Lime mortar", "Wattle and daub", "Rammed earth"]
-        license: cc
-        priority: P1
-      - type: local_pdf
-        path: "data/pdfs/fm3-05-70.pdf"
-        title: "US Army FM 3-05.70 Survival (2002)"
-        license: public_domain
-        priority: P1
-
-  # ═══════════════════════════════════════════════════
-  # LAYER 3 — REBUILD
-  # ═══════════════════════════════════════════════════
-
-  - id: energy
-    name: "Energy Generation"
-    description: "Micro-hydro, wind, biogas, wood gasification, steam, batteries"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Micro hydro", "Wind turbine", "Biogas", "Wood gas", "Steam engine", "Waterwheel", "Windmill", "Alcohol fuel", "Biomass", "Solar thermal energy", "Animal power", "Galvanic cell", "Voltaic pile", "Lemon battery"]
-        license: cc
-        priority: P1
-
-  - id: materials
-    name: "Materials & Manufacturing"
-    description: "Metalworking, pottery, glassmaking, textiles, leather, tools"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Blacksmithing", "Pottery", "Glassblowing", "Tanning", "Spinning (textiles)", "Weaving", "Charcoal", "Smelting", "Casting (metalworking)", "Rope", "Papermaking", "Woodworking", "Stone tool", "Ironworking", "Bloomery", "Bellows", "Anvil"]
-        license: cc
-        priority: P1
-
-  - id: chemistry
-    name: "Chemistry & Industry"
-    description: "Soap, fermentation, cement, distillation, salt, vinegar"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Soap", "Saponification", "Fermentation", "Portland cement", "Lime (material)", "Distillation", "Natural dye", "Vinegar", "Lye", "Beeswax", "Tallow", "Penicillin", "Salt", "Ethanol", "Charcoal"]
-        license: cc
-        priority: P1
-
-  - id: electronics
-    name: "Electronics & Communication"
-    description: "Crystal radio, telegraph, generators, batteries, Morse code, antennas"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Crystal radio", "Amateur radio", "Telegraph", "Electrical telegraph", "Vacuum tube", "Electrical generator", "Battery (electricity)", "Antenna (radio)", "Morse code", "Semaphore", "Electrical wiring", "Transformer", "Radio receiver", "Galena", "Electromagnetic induction", "Solenoid"]
-        license: cc
-        priority: P1
-      - type: pdf
-        url: "https://www.arrl.org/files/file/Technology/tis/info/pdf/129756.pdf"
-        title: "ARRL Crystal Radio Construction"
-        license: free
-        priority: P1
-
-  - id: governance
-    name: "Governance & Society"
-    description: "Community organizing, conflict resolution, trade, navigation, education"
-    sources:
-      - type: wikipedia_articles
-        titles: ["Celestial navigation", "Barter", "Common law", "Direct democracy", "Conflict resolution", "Pedagogy", "Writing system", "Calendar", "Cartography", "Trade", "Money", "Consensus decision-making", "Mediation", "Apprenticeship", "Oral tradition"]
-        license: cc
-        priority: P1
-      - type: pdf
-        url: "https://www.ssccc.org/sites/default/files/apb/files/Robert%E2%80%99s%20Rules%20of%20Order.pdf"
-        title: "Robert's Rules of Order"
-        license: public_domain
-        priority: P1
+- id: prepper
+  name: Emergency Preparedness
+  description: Pre-disaster planning, emergency kits, food and water storage, family
+    plans, evacuation, home safety
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Emergency management
+    - Bug-out bag
+    - Emergency evacuation
+    - Food storage
+    - Water storage
+    - First aid kit
+    - Emergency communication system
+    - Survivalism
+    - Shelter in place
+    - Emergency power system
+    - Fire safety
+    - Earthquake preparedness
+    - Flood preparedness
+    - Hurricane preparedness
+    - Tornado preparedness
+    license: cc
+    priority: P1
+  - type: pdf
+    url: https://www.ready.gov/sites/default/files/2021-11/are-you-ready-guide.pdf
+    title: FEMA Are You Ready Guide
+    license: public_domain
+    priority: P1
+  - type: pdf
+    url: https://www.fema.gov/pdf/library/f&web.pdf
+    title: FEMA Food and Water in Emergency
+    license: public_domain
+    priority: P1
+  - type: pdf
+    url: https://www.redcross.org/content/dam/redcross/get-help/pdfs/preparedness-essentials/Preparedness-Checklist-Update_ENG.pdf
+    title: Red Cross Preparedness Checklist
+    license: free
+    priority: P1
+  - type: pdf
+    url: https://extension.usu.edu/preserve-the-harvest/files/Food-Storage-Booklet.pdf
+    title: Utah State Food Storage Guide
+    license: free
+    priority: P1
+- id: survival_general
+  name: Survival - General
+  description: Psychology of survival, planning, priorities, stress management
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Survival skills
+    - Wilderness survival
+    - Hypothermia
+    license: cc
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/FM21-76_SurvivalManual.pdf
+    title: US Army FM 21-76 Survival Manual
+    license: public_domain
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/fm3-05-70.pdf
+    title: US Army FM 3-05.70 Survival (2002)
+    license: public_domain
+    priority: P1
+- id: survival_fire_shelter
+  name: Survival - Fire & Shelter
+  description: Fire making, shelter construction, insulation, cold weather protection
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Fire making
+    - Bow drill
+    - Lean-to
+    - Debris hut
+    - Snow cave
+    - Bivouac shelter
+    - Tinder
+    license: cc
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/FM21-76_SurvivalManual.pdf
+    title: US Army FM 21-76 Survival Manual
+    license: public_domain
+    priority: P1
+- id: survival_navigation
+  name: Survival - Navigation
+  description: Celestial navigation, compass, map reading, natural navigation
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Navigation
+    - Celestial navigation
+    - Polaris
+    - Southern Cross
+    - Dead reckoning
+    - Orienteering
+    - Natural navigation
+    license: cc
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/fm3-05-70.pdf
+    title: US Army FM 3-05.70 Survival (2002)
+    license: public_domain
+    priority: P1
+- id: survival_desert
+  name: Survival - Desert
+  description: Desert water, heat management, solar stills, desert navigation
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Desert survival
+    - Solar still
+    - Dehydration
+    - Sandstorm
+    - Cactus
+    license: cc
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/fm3-05-70.pdf
+    title: US Army FM 3-05.70 Survival (2002)
+    license: public_domain
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/FM-90-3-Desert-Operations-24-August-1993.pdf
+    title: US Army FM 90-3 Desert Operations
+    license: public_domain
+    priority: P1
+- id: survival_cold
+  name: Survival - Cold Weather
+  description: Hypothermia, frostbite, snow shelters, Arctic survival
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Hypothermia
+    - Frostbite
+    - Snow cave
+    - Igloo
+    - Ice fishing
+    - Snowshoe
+    license: cc
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/fm3-05-70.pdf
+    title: US Army FM 3-05.70 Survival (2002)
+    license: public_domain
+    priority: P1
+- id: medicine_trauma
+  name: Medicine - Trauma & Wounds
+  description: Wound care, bleeding, fractures, burns, splints, tourniquets
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - First aid
+    - Wound healing
+    - Tourniquet
+    - Splint (medicine)
+    - Burn
+    - Bone fracture
+    - Hemorrhage
+    license: cc
+    priority: P1
+  - type: multi_pdf
+    title: Where There Is No Doctor (2025)
+    license: free
+    priority: P1
+    urls:
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_03.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_04.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_10.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_14.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_15.pdf
+- id: medicine_infection
+  name: Medicine - Infection & Disease
+  description: Infection signs, common diseases, antibiotics, prevention, sanitation
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Infection
+    - Sanitation
+    - Waterborne diseases
+    - Dysentery
+    - Cholera
+    - Malaria
+    - Oral rehydration therapy
+    - Antiseptic
+    license: cc
+    priority: P1
+  - type: multi_pdf
+    title: Where There Is No Doctor (2025)
+    license: free
+    priority: P1
+    urls:
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_01.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_02.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_03.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_05.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_07.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_11.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_12.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_13.pdf
+- id: medicine_childbirth
+  name: Medicine - Childbirth & Pediatrics
+  description: Pregnancy, safe delivery, newborn care, breastfeeding
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Childbirth
+    - Midwifery
+    - Breastfeeding
+    - Neonatal care
+    - Obstetric emergency
+    - Umbilical cord
+    license: cc
+    priority: P1
+  - type: multi_pdf
+    title: Where There Is No Doctor (2025)
+    license: free
+    priority: P1
+    urls:
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_04.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_19.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_20.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_21.pdf
+- id: medicine_herbal
+  name: Medicine - Herbal & Plant
+  description: Medicinal plants, herbal remedies, natural antibiotics
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Medicinal plants
+    - Herbal medicine
+    - Willow bark
+    - Aloe vera
+    - Garlic
+    - Honey
+    - Turmeric
+    - Echinacea
+    license: cc
+    priority: P1
+  - type: multi_pdf
+    title: Where There Is No Doctor (2025)
+    license: free
+    priority: P1
+    urls:
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_01.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_05.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_06.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_22.pdf
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_23.pdf
+  - type: local_pdf
+    path: data/pdfs/fm3-05-70.pdf
+    title: US Army FM 3-05.70 Survival (2002)
+    license: public_domain
+    priority: P1
+- id: water
+  name: Water - Finding & Purification
+  description: Water sources, purification, storage, wells, rainwater, desalination
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Water purification
+    - Rainwater harvesting
+    - Well
+    - Water treatment
+    - Solar water disinfection
+    - Slow sand filter
+    - Biosand filter
+    - Desalination
+    - Solar still
+    - Distillation
+    license: cc
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/fm3-05-70.pdf
+    title: US Army FM 3-05.70 Survival (2002)
+    license: public_domain
+    priority: P1
+  - type: multi_pdf
+    title: Where There Is No Doctor (2025)
+    license: free
+    priority: P1
+    urls:
+    - https://hesperian.org/wp-content/uploads/pdf/en_wtnd_2025/en_wtnd_2025_12.pdf
+- id: food_foraging
+  name: Food - Foraging & Hunting
+  description: Edible plants, mushrooms, hunting, trapping, fishing, insects
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Foraging
+    - Edible plant
+    - Edible mushroom
+    - Hunting
+    - Trapping
+    - Fishing
+    - Entomophagy
+    - Universal edibility test
+    - Fish trap
+    - Snare (trap)
+    license: cc
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/fm3-05-70.pdf
+    title: US Army FM 3-05.70 Survival (2002)
+    license: public_domain
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/FM21-76_SurvivalManual.pdf
+    title: US Army FM 21-76 Survival Manual
+    license: public_domain
+    priority: P1
+- id: food_farming
+  name: Food - Agriculture & Preservation
+  description: Crop rotation, composting, seed saving, food preservation, fermentation
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Permaculture
+    - Crop rotation
+    - Composting
+    - Seed saving
+    - Animal husbandry
+    - Food preservation
+    - Fermentation
+    - Smoking (cooking)
+    - Salting
+    - Root cellar
+    - Pickling
+    - Drying (food)
+    - Three Sisters (agriculture)
+    license: cc
+    priority: P1
+  - type: pdf
+    url: https://www.fao.org/3/cb2113en/CB2113EN.pdf
+    title: FAO Preserve Your Own Food
+    license: free
+    priority: P1
+- id: shelter_construction
+  name: Shelter & Construction
+  description: Log cabins, adobe, timber framing, bridges, sanitation
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Log cabin
+    - Adobe
+    - Earthship
+    - Cob (building material)
+    - Thatching
+    - Structural engineering
+    - Arch
+    - Aqueduct
+    - Roman engineering
+    - Dry stone
+    - Timber framing
+    - Lime mortar
+    - Wattle and daub
+    - Rammed earth
+    license: cc
+    priority: P1
+  - type: local_pdf
+    path: data/pdfs/fm3-05-70.pdf
+    title: US Army FM 3-05.70 Survival (2002)
+    license: public_domain
+    priority: P1
+- id: energy
+  name: Energy Generation
+  description: Micro-hydro, wind, biogas, wood gasification, steam, batteries
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Micro hydro
+    - Wind turbine
+    - Biogas
+    - Wood gas
+    - Steam engine
+    - Waterwheel
+    - Windmill
+    - Alcohol fuel
+    - Biomass
+    - Solar thermal energy
+    - Animal power
+    - Galvanic cell
+    - Voltaic pile
+    - Lemon battery
+    license: cc
+    priority: P1
+- id: materials
+  name: Materials & Manufacturing
+  description: Metalworking, pottery, glassmaking, textiles, leather, tools
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Blacksmithing
+    - Pottery
+    - Glassblowing
+    - Tanning
+    - Spinning (textiles)
+    - Weaving
+    - Charcoal
+    - Smelting
+    - Casting (metalworking)
+    - Rope
+    - Papermaking
+    - Woodworking
+    - Stone tool
+    - Ironworking
+    - Bloomery
+    - Bellows
+    - Anvil
+    license: cc
+    priority: P1
+- id: chemistry
+  name: Chemistry & Industry
+  description: Soap, fermentation, cement, distillation, salt, vinegar
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Soap
+    - Saponification
+    - Fermentation
+    - Portland cement
+    - Lime (material)
+    - Distillation
+    - Natural dye
+    - Vinegar
+    - Lye
+    - Beeswax
+    - Tallow
+    - Penicillin
+    - Salt
+    - Ethanol
+    - Charcoal
+    license: cc
+    priority: P1
+- id: electronics
+  name: Electronics & Communication
+  description: Crystal radio, telegraph, generators, batteries, Morse code, antennas
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Crystal radio
+    - Amateur radio
+    - Telegraph
+    - Electrical telegraph
+    - Vacuum tube
+    - Electrical generator
+    - Battery (electricity)
+    - Antenna (radio)
+    - Morse code
+    - Semaphore
+    - Electrical wiring
+    - Transformer
+    - Radio receiver
+    - Galena
+    - Electromagnetic induction
+    - Solenoid
+    license: cc
+    priority: P1
+  - type: pdf
+    url: https://www.arrl.org/files/file/Technology/tis/info/pdf/129756.pdf
+    title: ARRL Crystal Radio Construction
+    license: free
+    priority: P1
+- id: governance
+  name: Governance & Society
+  description: Community organizing, conflict resolution, trade, navigation, education
+  sources:
+  - type: wikipedia_articles
+    titles:
+    - Celestial navigation
+    - Barter
+    - Common law
+    - Direct democracy
+    - Conflict resolution
+    - Pedagogy
+    - Writing system
+    - Calendar
+    - Cartography
+    - Trade
+    - Money
+    - Consensus decision-making
+    - Mediation
+    - Apprenticeship
+    - Oral tradition
+    license: cc
+    priority: P1
+  - type: pdf
+    url: https://www.ssccc.org/sites/default/files/apb/files/Robert%E2%80%99s%20Rules%20of%20Order.pdf
+    title: Robert's Rules of Order
+    license: public_domain
+    priority: P1

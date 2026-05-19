@@ -18,7 +18,7 @@ RESULTS_DIR = Path(__file__).parent / "results"
 RESULTS_DIR.mkdir(exist_ok=True)
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-EVAL_MODEL = "mistral"
+EVAL_MODEL = "gemma2:2b"
 TOP_K = 15
 
 SYNONYMS = {

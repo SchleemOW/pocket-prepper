@@ -25,7 +25,7 @@ class RAGService {
         }
     }
 
-    func retrieve(question: String, module: Module, topK: Int = 5) -> [RAGChunk] {
+    func retrieve(question: String, module: Module, topK: Int = 15) -> [RAGChunk] {
         guard let embedding = EmbeddingService.shared.embed(question) else {
             print("Embedding failed")
             return []

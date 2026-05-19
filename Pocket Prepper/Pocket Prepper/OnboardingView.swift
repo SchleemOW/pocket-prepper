@@ -3,6 +3,7 @@ import SwiftUI
 struct OnboardingView: View {
     @Binding var hasCompletedOnboarding: Bool
     @State private var currentPage = 0
+    private let totalPages = 4
 
     var body: some View {
         ZStack {
@@ -12,12 +13,13 @@ struct OnboardingView: View {
                 TabView(selection: $currentPage) {
                     OnboardingPage1().tag(0)
                     OnboardingPage2().tag(1)
-                    OnboardingPage3(hasCompletedOnboarding: $hasCompletedOnboarding).tag(2)
+                    OnboardingPage3().tag(2)
+                    OnboardingPage4(hasCompletedOnboarding: $hasCompletedOnboarding).tag(3)
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
 
                 HStack(spacing: 8) {
-                    ForEach(0..<3) { i in
+                    ForEach(0..<totalPages) { i in
                         RoundedRectangle(cornerRadius: 2)
                             .fill(i == currentPage ? Color.green : Color.gray.opacity(0.4))
                             .frame(width: i == currentPage ? 20 : 6, height: 4)
@@ -26,7 +28,7 @@ struct OnboardingView: View {
                 }
                 .padding(.bottom, 20)
 
-                if currentPage < 2 {
+                if currentPage < totalPages - 1 {
                     Button {
                         withAnimation { currentPage += 1 }
                     } label: {
@@ -124,9 +126,80 @@ struct OnboardingPage2: View {
     }
 }
 
-// MARK: - Page 3
+// MARK: - Page 3 (Offline Maps)
 
 struct OnboardingPage3: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 24) {
+            Spacer()
+
+            Text("OFFLINE\nMAPS")
+                .font(.system(size: 42, weight: .black, design: .monospaced))
+                .foregroundColor(.green)
+                .lineSpacing(4)
+
+            Text("Download map areas before you need them. Navigate without cell service.")
+                .font(.system(.body, design: .monospaced))
+                .foregroundColor(.white)
+                .lineSpacing(6)
+
+            Divider().background(Color.green.opacity(0.3))
+
+            VStack(alignment: .leading, spacing: 14) {
+                FeatureLine(text: "Pan to any area and tap Download")
+                FeatureLine(text: "Name and save multiple regions")
+                FeatureLine(text: "Street-level detail stored on device")
+                FeatureLine(text: "No internet needed after download")
+            }
+
+            Spacer()
+
+            // Visual hint
+            HStack(spacing: 0) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("EXAMPLE REGIONS")
+                        .font(.system(.caption2, design: .monospaced).weight(.bold))
+                        .foregroundColor(.green.opacity(0.6))
+                    VStack(alignment: .leading, spacing: 4) {
+                        MapRegionHint(name: "Stockholm", size: "~45 MB")
+                        MapRegionHint(name: "Cabin area — Dalarna", size: "~12 MB")
+                        MapRegionHint(name: "E4 corridor", size: "~80 MB")
+                    }
+                }
+                Spacer()
+            }
+            .padding(14)
+            .background(Color.white.opacity(0.05))
+            .cornerRadius(8)
+
+            Spacer()
+        }
+        .padding(.horizontal, 28)
+    }
+}
+
+struct MapRegionHint: View {
+    let name: String
+    let size: String
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "checkmark.circle.fill")
+                .font(.system(size: 10))
+                .foregroundColor(.green)
+            Text(name)
+                .font(.system(.caption, design: .monospaced))
+                .foregroundColor(.white)
+            Spacer()
+            Text(size)
+                .font(.system(.caption2, design: .monospaced))
+                .foregroundColor(.gray)
+        }
+    }
+}
+
+// MARK: - Page 4 (formerly Page 3 — Download Modules)
+
+struct OnboardingPage4: View {
     @Binding var hasCompletedOnboarding: Bool
     @EnvironmentObject var moduleManager: ModuleManager
 

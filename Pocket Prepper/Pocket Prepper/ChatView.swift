@@ -8,6 +8,7 @@ struct ChatView: View {
     @State private var messages: [ChatMessage] = []
     @State private var inputText = ""
     @State private var isThinking = false
+    @State private var thinkingState: ThinkingState = .searching
     @FocusState private var inputFocused: Bool
 
     var body: some View {
@@ -42,7 +43,7 @@ struct ChatView: View {
                                     .id(message.id)
                             }
                             if isThinking {
-                                ThinkingIndicator()
+                                ThinkingIndicator(state: thinkingState)
                                     .id("thinking")
                             }
                         }
@@ -55,6 +56,11 @@ struct ChatView: View {
                             } else if let last = messages.last {
                                 proxy.scrollTo(last.id, anchor: .bottom)
                             }
+                        }
+                    }
+                    .onChange(of: isThinking) {
+                        if isThinking {
+                            withAnimation { proxy.scrollTo("thinking", anchor: .bottom) }
                         }
                     }
                 }
@@ -118,7 +124,6 @@ struct ChatView: View {
         let question = inputText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !question.isEmpty else { return }
 
-        // Guardrails
         if isBlockedQuery(question) {
             inputText = ""
             let blocked = ChatMessage(
@@ -133,19 +138,28 @@ struct ChatView: View {
         inputText = ""
         inputFocused = false
         messages.append(ChatMessage(role: .user, text: question))
+
+        // Phase 1: searching RAG
+        thinkingState = .searching
         isThinking = true
 
-        // RAG retrieval
         let chunks = await Task.detached {
             await RAGService.shared.retrieve(question: question, module: module, topK: 15)
         }.value
 
-        let context = RAGService.shared.buildContext(from: chunks)
+        // Use fewer chunks for on-device 2B model — too much context hurts small model quality
+        let chunksForContext: [RAGChunk]
+        #if targetEnvironment(simulator)
+        chunksForContext = chunks
+        #else
+        chunksForContext = Array(chunks.prefix(6))
+        #endif
+
+        let context = RAGService.shared.buildContext(from: chunksForContext)
         let sources = RAGService.shared.uniqueTitles(from: chunks)
 
-        isThinking = false
-
         if context.isEmpty {
+            isThinking = false
             messages.append(ChatMessage(
                 role: .assistant,
                 text: "No relevant information found in this module for that question. Try rephrasing or check another module.",
@@ -154,7 +168,12 @@ struct ChatView: View {
             return
         }
 
-        // Generate or return RAG context
+        // Phase 2: generating answer (LLM or RAG-only)
+        if llmService.isAICapable {
+            thinkingState = .thinking
+        }
+        // RAG-only devices stay on .searching since there's no generation step
+
         llmService.isGenerating = true
 
         let response: String
@@ -165,13 +184,12 @@ struct ChatView: View {
                 onToken: { _ in }
             )
         } else {
-            // RAG-only: return the context directly, formatted cleanly
             response = formatRAGResponse(chunks: chunks)
         }
 
         llmService.isGenerating = false
+        isThinking = false
 
-        // Build source attribution
         let sourceText = sources.isEmpty ? "" : "SRC: \(sources.prefix(3).joined(separator: ", "))"
 
         messages.append(ChatMessage(
@@ -184,7 +202,6 @@ struct ChatView: View {
     // MARK: - Format RAG chunks for display
 
     private func formatRAGResponse(chunks: [RAGChunk]) -> String {
-        // Deduplicate by title, take top 4 most relevant
         var seenTitles = Set<String>()
         var dedupedChunks: [RAGChunk] = []
         for chunk in chunks {
@@ -221,6 +238,27 @@ struct ChatView: View {
     private func callSOS() {
         if let url = URL(string: "tel://112") {
             UIApplication.shared.open(url)
+        }
+    }
+}
+
+// MARK: - Thinking State
+
+enum ThinkingState {
+    case searching  // RAG retrieval phase
+    case thinking   // LLM generation phase
+
+    var label: String {
+        switch self {
+        case .searching: return "SEARCHING"
+        case .thinking:  return "THINKING"
+        }
+    }
+
+    var icon: String {
+        switch self {
+        case .searching: return "magnifyingglass"
+        case .thinking:  return "cpu"
         }
     }
 }
@@ -273,12 +311,16 @@ struct MessageBubble: View {
 // MARK: - Thinking Indicator
 
 struct ThinkingIndicator: View {
+    let state: ThinkingState
     @State private var dotCount = 1
     let timer = Timer.publish(every: 0.4, on: .main, in: .common).autoconnect()
 
     var body: some View {
-        HStack(spacing: 4) {
-            Text("PREPPER")
+        HStack(spacing: 6) {
+            Image(systemName: state.icon)
+                .font(.system(size: 10, weight: .bold))
+                .foregroundColor(.green)
+            Text(state.label)
                 .font(.system(size: 10, weight: .bold, design: .monospaced))
                 .foregroundColor(.green)
             Text(String(repeating: ".", count: dotCount))

@@ -8,3 +8,5 @@ build/
 .env
 data/databases/*.db
 
+.DS_Store
+*.xcuserstate

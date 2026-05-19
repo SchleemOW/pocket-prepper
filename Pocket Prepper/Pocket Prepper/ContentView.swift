@@ -117,6 +117,12 @@ struct HomeView: View {
                         }
                         .padding()
                     }
+                    
+                    // Show model download prompt on capable devices
+                    if llmService.isAICapable && !llmService.isLoaded && !llmService.isLoading {
+                        ModelDownloadBanner()
+                            .environmentObject(llmService)
+                    }
 
                     if moduleManager.downloadedModules.isEmpty {
                         Spacer()

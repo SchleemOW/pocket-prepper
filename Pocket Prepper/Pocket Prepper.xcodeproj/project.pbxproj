@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D47BF342FBB78C30065181D /* MapLibre in Frameworks */ = {isa = PBXBuildFile; productRef = 8D47BF332FBB78C30065181D /* MapLibre */; };
+		8D47BF482FC4C2C50065181D /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 8D47BF472FC4C2C50065181D /* ZIPFoundation */; };
 		8D4BC4152FB8694200D0CC9F /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4BC4142FB8694200D0CC9F /* SQLite */; };
 		8D4BC4332FB86DD000D0CC9F /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4BC4322FB86DD000D0CC9F /* MLXLLM */; };
 		8D4BC4352FB86DD400D0CC9F /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4BC4342FB86DD400D0CC9F /* MLXLMCommon */; };
@@ -36,6 +37,7 @@
 				8D4BC4352FB86DD400D0CC9F /* MLXLMCommon in Frameworks */,
 				8D4BC4152FB8694200D0CC9F /* SQLite in Frameworks */,
 				8D4BC4372FB873D400D0CC9F /* MLXEmbedders in Frameworks */,
+				8D47BF482FC4C2C50065181D /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,7 @@
 				8D4BC4342FB86DD400D0CC9F /* MLXLMCommon */,
 				8D4BC4362FB873D400D0CC9F /* MLXEmbedders */,
 				8D47BF332FBB78C30065181D /* MapLibre */,
+				8D47BF472FC4C2C50065181D /* ZIPFoundation */,
 			);
 			productName = "Pocket Prepper";
 			productReference = 8D4BC4042FB8688600D0CC9F /* Pocket Prepper.app */;
@@ -124,6 +127,7 @@
 				8D4BC4122FB8692C00D0CC9F /* XCRemoteSwiftPackageReference "mlx-swift-examples" */,
 				8D4BC4132FB8694200D0CC9F /* XCRemoteSwiftPackageReference "SQLite" */,
 				8D47BF322FBB78C30065181D /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+				8D47BF462FC4C2C50065181D /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8D4BC4052FB8688600D0CC9F /* Products */;
@@ -281,10 +285,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 98FLNTR94C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Pocket Prepper uses the camera to identify plants and wildlife for survival and foraging guidance.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "sed to show your position on the offline map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -296,7 +302,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "schleem-digital.Pocket-Prepper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -315,10 +321,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 98FLNTR94C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Pocket Prepper uses the camera to identify plants and wildlife for survival and foraging guidance.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "sed to show your position on the offline map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,7 +338,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "schleem-digital.Pocket-Prepper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -375,6 +383,14 @@
 				minimumVersion = 6.26.0;
 			};
 		};
+		8D47BF462FC4C2C50065181D /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
 		8D4BC4122FB8692C00D0CC9F /* XCRemoteSwiftPackageReference "mlx-swift-examples" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ml-explore/mlx-swift-examples";
@@ -398,6 +414,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8D47BF322FBB78C30065181D /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
 			productName = MapLibre;
+		};
+		8D47BF472FC4C2C50065181D /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D47BF462FC4C2C50065181D /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
 		};
 		8D4BC4142FB8694200D0CC9F /* SQLite */ = {
 			isa = XCSwiftPackageProductDependency;

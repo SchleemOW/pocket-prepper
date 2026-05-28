@@ -18,6 +18,10 @@ class OfflineMapManager: NSObject, ObservableObject {
         super.init()
         loadSavedRegions()
         observePackNotifications()
+        
+        MLNOfflineStorage.shared.setMaximumAmbientCacheSize(30 * 1024 * 1024) { error in
+                if let error { print("Cache limit error: \(error)") }
+            }
     }
 
     // MARK: - Download
@@ -68,7 +72,7 @@ class OfflineMapManager: NSObject, ObservableObject {
             pack?.resume()
         }
     }
-
+    
     // MARK: - Delete
 
     func delete(region: MapRegion) {

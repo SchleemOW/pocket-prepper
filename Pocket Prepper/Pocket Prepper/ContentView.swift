@@ -45,6 +45,12 @@ struct MainTabView: View {
                     Label("Maps", systemImage: "map")
                 }
                 .tag(1)
+            
+            FloraRecognitionView()
+                .tabItem {
+                    Label("Identify", systemImage: "leaf.circle")
+                }
+                .tag(2)
         }
         .tint(.green)
         .preferredColorScheme(.dark)

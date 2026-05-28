@@ -3,7 +3,6 @@ import SwiftUI
 struct OnboardingView: View {
     @Binding var hasCompletedOnboarding: Bool
     @State private var currentPage = 0
-    private let totalPages = 4
 
     var body: some View {
         ZStack {
@@ -19,7 +18,7 @@ struct OnboardingView: View {
                 .tabViewStyle(.page(indexDisplayMode: .never))
 
                 HStack(spacing: 8) {
-                    ForEach(0..<totalPages) { i in
+                    ForEach(0..<4) { i in
                         RoundedRectangle(cornerRadius: 2)
                             .fill(i == currentPage ? Color.green : Color.gray.opacity(0.4))
                             .frame(width: i == currentPage ? 20 : 6, height: 4)
@@ -28,7 +27,7 @@ struct OnboardingView: View {
                 }
                 .padding(.bottom, 20)
 
-                if currentPage < totalPages - 1 {
+                if currentPage < 3 {
                     Button {
                         withAnimation { currentPage += 1 }
                     } label: {

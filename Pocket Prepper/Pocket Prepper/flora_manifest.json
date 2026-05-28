@@ -1,0 +1,50 @@
+{
+  "manifestVersion": 1,
+  "packs": [
+    {
+      "id": "australia_nz",
+      "kind": "australia_nz",
+      "version": "2.0.0",
+      "speciesCount": 668,
+      "fileSizeMB": 37.4,
+      "downloadURL": "https://github.com/SchleemOW/pocket-prepper/releases/download/flora-v1.0/flora_australia_nz.zip",
+      "checksum": "5f91c2222b244f8cabc0c213d947a90167da5c1fb00d9ec2f6d9f915ddd9f7d0"
+    },
+    {
+      "id": "east_asia",
+      "kind": "east_asia",
+      "version": "2.0.0",
+      "speciesCount": 662,
+      "fileSizeMB": 37.4,
+      "downloadURL": "https://github.com/SchleemOW/pocket-prepper/releases/download/flora-v1.0/flora_east_asia.zip",
+      "checksum": "93ffb6ea17481924ebecd6efb3c97e624c2ce27313e5f0cb727345ec023aef15"
+    },
+    {
+      "id": "north_america",
+      "kind": "north_america",
+      "version": "2.0.0",
+      "speciesCount": 783,
+      "fileSizeMB": 37.6,
+      "downloadURL": "https://github.com/SchleemOW/pocket-prepper/releases/download/flora-v1.0/flora_north_america.zip",
+      "checksum": "dc30197d57c4538cf00401ed2d9286abd4a73cedabee2793a1530b9afabe7cd7"
+    },
+    {
+      "id": "scandinavia",
+      "kind": "scandinavia",
+      "version": "2.0.0",
+      "speciesCount": 602,
+      "fileSizeMB": 37.2,
+      "downloadURL": "https://github.com/SchleemOW/pocket-prepper/releases/download/flora-v1.0/flora_scandinavia.zip",
+      "checksum": "2e21af63cfe6a3979ce167b51e4d4cb8da1773a894451c665c1f1592527344ff"
+    },
+    {
+      "id": "western_europe",
+      "kind": "western_europe",
+      "version": "2.0.0",
+      "speciesCount": 704,
+      "fileSizeMB": 37.4,
+      "downloadURL": "https://github.com/SchleemOW/pocket-prepper/releases/download/flora-v1.0/flora_western_europe.zip",
+      "checksum": "62dccef597d2ac20866f7052c2698a4d55694c07ee1a4fe0822f8ccfeb15a271"
+    }
+  ]
+}

@@ -15,7 +15,9 @@ struct ModelDownloadBanner: View {
                     .foregroundColor(.green)
             }
 
-            Text("Your device supports on-device AI. Download the \(OnDeviceModel.displayName) model (~\(String(format: "%.1f", OnDeviceModel.approximateSizeGB)) GB) to enable full AI responses without internet.")
+            Text(isAlreadyDownloaded
+                 ? "The \(OnDeviceModel.displayName) model is downloaded but not loaded. Tap below to load it into memory."
+                 : "Your device supports on-device AI. Download the \(OnDeviceModel.displayName) model (~\(String(format: "%.1f", OnDeviceModel.approximateSizeGB)) GB) to enable full AI responses without internet.")
                 .font(.system(.caption2, design: .monospaced))
                 .foregroundColor(.gray)
                 .fixedSize(horizontal: false, vertical: true)
@@ -55,14 +57,24 @@ struct ModelDownloadBanner: View {
         .padding(.top, 12)
     }
 
+    private var isAlreadyDownloaded: Bool {
+        OnDeviceModel.isDownloaded
+    }
+
     private var downloadButton: some View {
         Button {
-            Task { await llmService.downloadModel() }
+            Task {
+                if isAlreadyDownloaded {
+                    await llmService.loadModel()
+                } else {
+                    await llmService.downloadModel()
+                }
+            }
         } label: {
             HStack(spacing: 6) {
-                Image(systemName: "arrow.down.circle")
+                Image(systemName: isAlreadyDownloaded ? "arrow.clockwise.circle" : "arrow.down.circle")
                     .font(.system(size: 12))
-                Text("DOWNLOAD MODEL")
+                Text(isAlreadyDownloaded ? "LOAD MODEL" : "DOWNLOAD MODEL")
                     .font(.system(.caption2, design: .monospaced).weight(.bold))
             }
             .foregroundColor(.black)

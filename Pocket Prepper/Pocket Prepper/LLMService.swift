@@ -1,8 +1,10 @@
 import Foundation
 import Combine
+import SwiftUI
 
 #if !targetEnvironment(simulator)
 import MLXLLM
+import Hub
 import MLXLMCommon
 import MLX
 #endif
@@ -25,15 +27,12 @@ func isCapableOfOnDeviceAI() -> Bool {
     #else
     let model = deviceModelIdentifier()
     let capableModels = [
-        // iPhone 14 series (A15 Bionic, 6GB RAM)
-        "iPhone14,7", "iPhone14,8",     // iPhone 14, 14 Plus
-        "iPhone15,2", "iPhone15,3",     // iPhone 14 Pro, 14 Pro Max
-        // iPhone 15 series
-        "iPhone15,4", "iPhone15,5",     // iPhone 15, 15 Plus
-        "iPhone16,1", "iPhone16,2",     // iPhone 15 Pro, 15 Pro Max
-        // iPhone 16 series (A18)
-        "iPhone17,1", "iPhone17,2",     // iPhone 16, 16 Plus
-        "iPhone17,3", "iPhone17,4",     // iPhone 16 Pro, 16 Pro Max
+        "iPhone14,7", "iPhone14,8",
+        "iPhone15,2", "iPhone15,3",
+        "iPhone15,4", "iPhone15,5",
+        "iPhone16,1", "iPhone16,2",
+        "iPhone17,1", "iPhone17,2",
+        "iPhone17,3", "iPhone17,4",
     ]
     return capableModels.contains(model)
     #endif
@@ -45,15 +44,10 @@ struct OnDeviceModel {
     static let displayName = "Gemma 2 2B (4-bit)"
     static let approximateSizeGB = 1.58
 
+    /// Track download state with UserDefaults — no more path guessing
     static var isDownloaded: Bool {
-        #if targetEnvironment(simulator)
-        return true
-        #else
-        // HuggingFace hub caches to this path automatically
-        let cacheURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("huggingface/hub/models--mlx-community--gemma-2-2b-it-4bit")
-        return FileManager.default.fileExists(atPath: cacheURL.path)
-        #endif
+        get { UserDefaults.standard.bool(forKey: "modelDownloaded") }
+        set { UserDefaults.standard.set(newValue, forKey: "modelDownloaded") }
     }
 }
 
@@ -90,6 +84,12 @@ class LLMService: ObservableObject {
             return
         }
 
+        // Already loaded in memory — don't reload
+        if modelContainer != nil {
+            isLoaded = true
+            return
+        }
+
         guard OnDeviceModel.isDownloaded else {
             isLoaded = false
             return
@@ -101,11 +101,15 @@ class LLMService: ObservableObject {
         do {
             MLX.GPU.set(cacheLimit: 20 * 1024 * 1024)
 
+            let hub = HubApi(hfToken: nil, useOfflineMode: true)
+
             modelContainer = try await LLMModelFactory.shared.loadContainer(
+                hub: hub,
                 configuration: LLMRegistry.gemma_2_2b_it_4bit
-            ) { [weak self] progress in
-                Task { @MainActor in
-                    self?.loadingProgress = progress.fractionCompleted
+            ) { progress in
+                let fraction = progress.fractionCompleted
+                Task { @MainActor [weak self] in
+                    self?.loadingProgress = fraction
                 }
             }
             isLoaded = true
@@ -125,6 +129,12 @@ class LLMService: ObservableObject {
         #if !targetEnvironment(simulator)
         guard !isDownloadingModel else { return }
 
+        // Already downloaded and loaded — skip
+        if modelContainer != nil {
+            isLoaded = true
+            return
+        }
+
         isDownloadingModel = true
         modelDownloadProgress = 0
         modelError = nil
@@ -132,14 +142,20 @@ class LLMService: ObservableObject {
         do {
             MLX.GPU.set(cacheLimit: 20 * 1024 * 1024)
 
-            // loadContainer downloads from HuggingFace if not cached
+            let hub = HubApi(hfToken: nil, useOfflineMode: false)
+
             modelContainer = try await LLMModelFactory.shared.loadContainer(
+                hub: hub,
                 configuration: LLMRegistry.gemma_2_2b_it_4bit
-            ) { [weak self] progress in
-                Task { @MainActor in
-                    self?.modelDownloadProgress = progress.fractionCompleted
+            ) { progress in
+                let fraction = progress.fractionCompleted
+                Task { @MainActor [weak self] in
+                    self?.modelDownloadProgress = fraction
                 }
             }
+
+            // Mark as downloaded so we don't prompt again
+            OnDeviceModel.isDownloaded = true
 
             isDownloadingModel = false
             modelDownloadProgress = 1.0
@@ -201,7 +217,6 @@ class LLMService: ObservableObject {
             fullResponse = context
         }
 
-        // Strip Gemma end-of-sequence tokens
         fullResponse = fullResponse
             .replacingOccurrences(of: "<end_of_turn>", with: "")
             .trimmingCharacters(in: .whitespacesAndNewlines)
